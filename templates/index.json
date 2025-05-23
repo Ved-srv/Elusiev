@@ -1,1 +1,501 @@
-{"sections":{"1658995208ad05f95f":{"type":"hero-banner","blocks":{"slide_yYrjFh":{"type":"slide","settings":{"banner_layout":"hero-banner--full","color_scheme":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","header_menu_text_color":"#ffffff","heading":"","subheading":"","subheading_link":"","text":"<p>hello<\/p>","button_link_1":"\/","button_link_1_type":"button","button_label_1":"View more","button_style_1":"button--filled","button_link_2":"\/","button_label_2":"View more","button_style_2":"button--outlined","content_position":"end","content_alignment":"center","image":"shopify:\/\/shop_images\/laura-chouette-e62KfxaWi-g-unsplash.jpg","video_external":"","show_controls_on_video":false,"enable_media_overlay_desktop":true,"content_position_mobile":"end","content_alignment_mobile":"center","video_external_mobile":"","show_controls_on_video_mobile":false,"enable_media_overlay_mobile":true}},"slide_qkeVfg":{"type":"slide","settings":{"banner_layout":"hero-banner--full","color_scheme":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","header_menu_text_color":"#ffffff","heading":"","subheading":"","subheading_link":"","text":"<p>hello<\/p>","button_link_1":"\/","button_link_1_type":"button","button_label_1":"View more","button_style_1":"button--filled","button_link_2":"\/","button_label_2":"View more","button_style_2":"button--outlined","content_position":"end","content_alignment":"center","video_external":"","show_controls_on_video":false,"enable_media_overlay_desktop":true,"content_position_mobile":"end","content_alignment_mobile":"center","image_mobile":"shopify:\/\/shop_images\/dorrell-tibbs-5FofiNyQKX4-unsplash.jpg","video_external_mobile":"","show_controls_on_video_mobile":false,"enable_media_overlay_mobile":true}},"slide_WDUByx":{"type":"slide","settings":{"banner_layout":"hero-banner--full","color_scheme":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","header_menu_text_color":"#ffffff","heading":"","subheading":"","subheading_link":"","text":"<p>hello<\/p>","button_link_1":"\/","button_link_1_type":"button","button_label_1":"View more","button_style_1":"button--filled","button_link_2":"\/","button_label_2":"View more","button_style_2":"button--outlined","content_position":"end","content_alignment":"center","image":"shopify:\/\/shop_images\/pavlo-talpa-1Mhre9qvZeY-unsplash.jpg","video_external":"","show_controls_on_video":false,"enable_media_overlay_desktop":true,"content_position_mobile":"end","content_alignment_mobile":"center","video_external_mobile":"","show_controls_on_video_mobile":false,"enable_media_overlay_mobile":true}}},"block_order":["slide_yYrjFh","slide_qkeVfg","slide_WDUByx"],"settings":{"enable_transparent_header":true,"slider_height":100,"slideshow_autoplay_interval":3,"show_slideshow_navigation":true,"slideshow_navigation_position":"hero__swiper-buttons--sides","color_scheme_arrows":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","show_slideshow_pagination":true,"slideshow_pagination_style":"style-2","floating_bar":false}},"callout_banner_rVDLqh":{"type":"callout-banner","settings":{"section_layout":"vertical","media_position":"full","subheading":"","heading":"L’Essence","heading_size":"h3","text":"<p>20% off signature scents for a limited period.<\/p>","action_preference":"button","button_label":"Shop Now","button_link":"shopify:\/\/collections\/on-sale","newsletter_button_label":"Submit","button_style":"button--filled","show_timer":true,"timer_layout":"2","timer_size":"h1","timer_year":2025,"timer_month":"05","timer_day":30,"timer_hour":11,"timer_minute":42,"timer_end_message":"","show_timer_days":true,"show_timer_hours":true,"show_timer_minutes":true,"show_timer_seconds":true,"section_width":"max-w-full","color_scheme":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","color_scheme_for_content":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","spacing_top":"0","spacing_bottom":"0"}},"marquees_TFD63r":{"type":"marquees","blocks":{"item_Nze9Bw":{"type":"item","settings":{"icon":"option-return","title":"Easy returns","link":""}},"item_JUfXV4":{"type":"item","settings":{"icon":"option-truck","title":"Free Shipping","link":""}},"item_4yPWKr":{"type":"item","settings":{"icon":"theme-box","title":"100% Authenticity","link":""}}},"block_order":["item_Nze9Bw","item_JUfXV4","item_4yPWKr"],"settings":{"enable_animation":true,"marquee_duration_rate":2,"marquee_font_size":5,"marquee_items_spacing":6,"color_scheme":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","spacing_top":"0","spacing_bottom":"0"}},"featured_products_4eL4yE":{"type":"featured-products","blocks":{"collection_fmXcip":{"type":"collection","settings":{"title":"","collection":"","products":[],"vendor":"","collection_of_products":"","show_unavailable_products":false,"card_text_heading":"","card_text_button_label":"","card_text_button_style":"button--filled","card_text_button_link":"","content_position":"center","content_alignment":"center"}},"collection_Vznbb8":{"type":"collection","settings":{"title":"","collection":"","products":[],"vendor":"","collection_of_products":"","show_unavailable_products":false,"card_text_heading":"","card_text_button_label":"","card_text_button_style":"button--filled","card_text_button_link":"","content_position":"center","content_alignment":"center"}}},"block_order":["collection_fmXcip","collection_Vznbb8"],"settings":{"layout":"layout-1","heading":"NEW IN","heading_size":"h3","subheading":"","button_label":"View all","button_link":"shopify:\/\/products\/carolina-herrera-good-girl","button_style":"button--text","max_products":8,"enable_slideshow_overflow":false,"show_navigation_arrows":true,"slideshow_autoplay_interval":3,"tab_button_style":"button--text","section_width":"max-w-fluid","color_scheme":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","spacing_top":"4","spacing_bottom":"4"}},"featured_products_gQDpqX":{"type":"featured-products","blocks":{"collection_hxB39c":{"type":"collection","settings":{"title":"","collection":"","products":[],"vendor":"","collection_of_products":"","show_unavailable_products":false,"card_text_heading":"","card_text_button_label":"","card_text_button_style":"button--filled","card_text_button_link":"","content_position":"center","content_alignment":"center"}}},"block_order":["collection_hxB39c"],"settings":{"layout":"layout-1","heading":"Best Sellers","heading_size":"h3","subheading":"","button_label":"View all","button_link":"shopify:\/\/collections\/best-sellers","button_style":"button--text","max_products":8,"enable_slideshow_overflow":false,"show_navigation_arrows":true,"slideshow_autoplay_interval":2,"tab_button_style":"button--filled","section_width":"max-w-page","color_scheme":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","spacing_top":"4","spacing_bottom":"2"}},"1720280765e75f05ad":{"type":"apps","blocks":{"judge_me_reviews_featured_carousel_jUYnFm":{"type":"shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{"maxwidth":1080}}},"block_order":["judge_me_reviews_featured_carousel_jUYnFm"],"settings":{}},"multitile_8FTYPN":{"type":"multitile","blocks":{"tile_RYEbz7":{"type":"tile","settings":{"show_on":"both","column_factor":3,"row_factor":1,"color_scheme":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","gradient_background_color":"","tile_aspect_ratio":"auto","content_position_vertical":"justify-center","content_alignment":"align-center text-center","content_alignment_for_mobile":"start","media_position":"background","heading":"Handpicked for you","heading_size":"h4","text":"","button_label":"","button_link":"","button_style":"button--filled","video_external":"","show_controls_on_video":false,"video_external_mobile":"","show_controls_on_video_mobile":false,"spacing_inner":"2"}},"tile_R4GXyb":{"type":"tile","settings":{"show_on":"both","column_factor":1,"row_factor":1,"color_scheme":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","gradient_background_color":"","tile_aspect_ratio":"auto","content_position_vertical":"justify-center","content_alignment":"align-center text-center","content_alignment_for_mobile":"align-start--mobile text-start--mobile","media_position":"background","heading":"Heading for Multi Content Tiles","heading_size":"h3","text":"","button_label":"","button_link":"","button_style":"button--filled","video_external":"","show_controls_on_video":false,"video_external_mobile":"","show_controls_on_video_mobile":false,"spacing_inner":"2"}},"tile_343gBp":{"type":"tile","settings":{"show_on":"both","column_factor":1,"row_factor":1,"color_scheme":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","gradient_background_color":"","tile_aspect_ratio":"auto","content_position_vertical":"justify-center","content_alignment":"align-center text-center","content_alignment_for_mobile":"align-start--mobile text-start--mobile","media_position":"background","heading":"Heading for Multi Content Tiles","heading_size":"h3","text":"","button_label":"","button_link":"","button_style":"button--filled","video_external":"","show_controls_on_video":false,"video_external_mobile":"","show_controls_on_video_mobile":false,"spacing_inner":"2"}}},"block_order":["tile_RYEbz7","tile_R4GXyb","tile_343gBp"],"settings":{"block_order_mobile":false,"heading":"","heading_size":"h3","heading_alignment":"start","color_scheme":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","section_width":"max-w-page","spacing_top":"0","spacing_bottom":"2"}},"full_width_banner_JMAceU":{"type":"full-width-banner","blocks":{"heading_YDPDPz":{"type":"heading","settings":{"heading":"Headline full width banner","heading_size":"h3"}}},"block_order":["heading_YDPDPz"],"settings":{"enable_transparent_header":true,"media_position":"background","section_height":"half","content_position":"center","content_alignment":"center","video_external":"","show_controls_on_video":false,"aspect_ratio":"auto","section_height_mobile":"half","content_position_mobile":"center","content_alignment_mobile":"center","video_external_mobile":"","show_controls_on_video_mobile":false,"aspect_ratio_mobile":"auto","section_width":"max-w-full","color_scheme":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","color_scheme_for_content":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","spacing_inner":"2","spacing_top":"0","spacing_bottom":"0"}},"accordions_n4BT4M":{"type":"accordions","blocks":{"topic_8rMhpm":{"type":"topic","settings":{"is_open":false,"title":"Refund details","text":"","page":"refund-returns-policy"}},"topic_6DAHj6":{"type":"topic","settings":{"is_open":false,"title":"Customer Queries","text":"","page":"faq"}}},"block_order":["topic_8rMhpm","topic_6DAHj6"],"settings":{"heading":"Frequently asked questions","heading_size":"h3","section_width":"max-w-narrower","color_scheme":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","spacing_top":"2","spacing_bottom":"2"}}},"order":["1658995208ad05f95f","callout_banner_rVDLqh","marquees_TFD63r","featured_products_4eL4yE","featured_products_gQDpqX","1720280765e75f05ad","multitile_8FTYPN","full_width_banner_JMAceU","accordions_n4BT4M"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1658995208ad05f95f": {
+      "type": "hero-banner",
+      "blocks": {
+        "slide_yYrjFh": {
+          "type": "slide",
+          "settings": {
+            "banner_layout": "hero-banner--full",
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "header_menu_text_color": "#ffffff",
+            "heading": "",
+            "subheading": "",
+            "subheading_link": "",
+            "text": "<p>hello</p>",
+            "button_link_1": "/",
+            "button_link_1_type": "button",
+            "button_label_1": "Explore",
+            "button_style_1": "button--filled",
+            "button_link_2": "/",
+            "button_label_2": "",
+            "button_style_2": "button--outlined",
+            "content_position": "end",
+            "content_alignment": "center",
+            "image": "shopify://shop_images/laura-chouette-e62KfxaWi-g-unsplash.jpg",
+            "video_external": "",
+            "show_controls_on_video": false,
+            "enable_media_overlay_desktop": true,
+            "content_position_mobile": "end",
+            "content_alignment_mobile": "center",
+            "video_external_mobile": "",
+            "show_controls_on_video_mobile": false,
+            "enable_media_overlay_mobile": true
+          }
+        },
+        "slide_qkeVfg": {
+          "type": "slide",
+          "settings": {
+            "banner_layout": "hero-banner--full",
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "header_menu_text_color": "#ffffff",
+            "heading": "",
+            "subheading": "",
+            "subheading_link": "",
+            "text": "<p>hello</p>",
+            "button_link_1": "/",
+            "button_link_1_type": "button",
+            "button_label_1": "View more",
+            "button_style_1": "button--filled",
+            "button_link_2": "/",
+            "button_label_2": "View more",
+            "button_style_2": "button--outlined",
+            "content_position": "end",
+            "content_alignment": "center",
+            "video_external": "",
+            "show_controls_on_video": false,
+            "enable_media_overlay_desktop": true,
+            "content_position_mobile": "end",
+            "content_alignment_mobile": "center",
+            "image_mobile": "shopify://shop_images/dorrell-tibbs-5FofiNyQKX4-unsplash.jpg",
+            "video_external_mobile": "",
+            "show_controls_on_video_mobile": false,
+            "enable_media_overlay_mobile": true
+          }
+        },
+        "slide_WDUByx": {
+          "type": "slide",
+          "settings": {
+            "banner_layout": "hero-banner--full",
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "header_menu_text_color": "#ffffff",
+            "heading": "",
+            "subheading": "",
+            "subheading_link": "",
+            "text": "<p>hello</p>",
+            "button_link_1": "/",
+            "button_link_1_type": "button",
+            "button_label_1": "View more",
+            "button_style_1": "button--filled",
+            "button_link_2": "/",
+            "button_label_2": "View more",
+            "button_style_2": "button--outlined",
+            "content_position": "end",
+            "content_alignment": "center",
+            "image": "shopify://shop_images/pavlo-talpa-1Mhre9qvZeY-unsplash.jpg",
+            "video_external": "",
+            "show_controls_on_video": false,
+            "enable_media_overlay_desktop": true,
+            "content_position_mobile": "end",
+            "content_alignment_mobile": "center",
+            "video_external_mobile": "",
+            "show_controls_on_video_mobile": false,
+            "enable_media_overlay_mobile": true
+          }
+        }
+      },
+      "block_order": [
+        "slide_yYrjFh",
+        "slide_qkeVfg",
+        "slide_WDUByx"
+      ],
+      "settings": {
+        "enable_transparent_header": true,
+        "slider_height": 100,
+        "slideshow_autoplay_interval": 3,
+        "show_slideshow_navigation": true,
+        "slideshow_navigation_position": "hero__swiper-buttons--sides",
+        "color_scheme_arrows": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "show_slideshow_pagination": true,
+        "slideshow_pagination_style": "style-2",
+        "floating_bar": false
+      }
+    },
+    "callout_banner_rVDLqh": {
+      "type": "callout-banner",
+      "settings": {
+        "section_layout": "vertical",
+        "media_position": "full",
+        "subheading": "",
+        "heading": "L’Essence",
+        "heading_size": "h3",
+        "text": "<p>20% off signature scents for a limited period.</p>",
+        "action_preference": "button",
+        "button_label": "Shop Now",
+        "button_link": "shopify://collections/on-sale",
+        "newsletter_button_label": "Submit",
+        "button_style": "button--filled",
+        "show_timer": true,
+        "timer_layout": "2",
+        "timer_size": "h1",
+        "timer_year": 2025,
+        "timer_month": "05",
+        "timer_day": 30,
+        "timer_hour": 11,
+        "timer_minute": 42,
+        "timer_end_message": "",
+        "show_timer_days": true,
+        "show_timer_hours": true,
+        "show_timer_minutes": true,
+        "show_timer_seconds": true,
+        "section_width": "max-w-full",
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "color_scheme_for_content": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "spacing_top": "0",
+        "spacing_bottom": "0"
+      }
+    },
+    "marquees_TFD63r": {
+      "type": "marquees",
+      "blocks": {
+        "item_Nze9Bw": {
+          "type": "item",
+          "settings": {
+            "icon": "option-return",
+            "title": "Easy returns",
+            "link": ""
+          }
+        },
+        "item_JUfXV4": {
+          "type": "item",
+          "settings": {
+            "icon": "option-truck",
+            "title": "Free Shipping",
+            "link": ""
+          }
+        },
+        "item_4yPWKr": {
+          "type": "item",
+          "settings": {
+            "icon": "theme-box",
+            "title": "100% Authenticity",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_Nze9Bw",
+        "item_JUfXV4",
+        "item_4yPWKr"
+      ],
+      "settings": {
+        "enable_animation": true,
+        "marquee_duration_rate": 2,
+        "marquee_font_size": 5,
+        "marquee_items_spacing": 6,
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "spacing_top": "0",
+        "spacing_bottom": "0"
+      }
+    },
+    "featured_products_4eL4yE": {
+      "type": "featured-products",
+      "blocks": {
+        "collection_fmXcip": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "",
+            "products": [],
+            "vendor": "",
+            "collection_of_products": "",
+            "show_unavailable_products": false,
+            "card_text_heading": "",
+            "card_text_button_label": "",
+            "card_text_button_style": "button--filled",
+            "card_text_button_link": "",
+            "content_position": "center",
+            "content_alignment": "center"
+          }
+        },
+        "collection_Vznbb8": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "",
+            "products": [],
+            "vendor": "",
+            "collection_of_products": "",
+            "show_unavailable_products": false,
+            "card_text_heading": "",
+            "card_text_button_label": "",
+            "card_text_button_style": "button--filled",
+            "card_text_button_link": "",
+            "content_position": "center",
+            "content_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "collection_fmXcip",
+        "collection_Vznbb8"
+      ],
+      "settings": {
+        "layout": "layout-1",
+        "heading": "NEW IN",
+        "heading_size": "h3",
+        "subheading": "",
+        "button_label": "View all",
+        "button_link": "shopify://products/carolina-herrera-good-girl",
+        "button_style": "button--text",
+        "max_products": 8,
+        "enable_slideshow_overflow": false,
+        "show_navigation_arrows": true,
+        "slideshow_autoplay_interval": 3,
+        "tab_button_style": "button--text",
+        "section_width": "max-w-fluid",
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "spacing_top": "4",
+        "spacing_bottom": "4"
+      }
+    },
+    "featured_products_gQDpqX": {
+      "type": "featured-products",
+      "blocks": {
+        "collection_hxB39c": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "",
+            "products": [],
+            "vendor": "",
+            "collection_of_products": "",
+            "show_unavailable_products": false,
+            "card_text_heading": "",
+            "card_text_button_label": "",
+            "card_text_button_style": "button--filled",
+            "card_text_button_link": "",
+            "content_position": "center",
+            "content_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "collection_hxB39c"
+      ],
+      "settings": {
+        "layout": "layout-1",
+        "heading": "Best Sellers",
+        "heading_size": "h3",
+        "subheading": "",
+        "button_label": "View all",
+        "button_link": "shopify://collections/best-sellers",
+        "button_style": "button--text",
+        "max_products": 8,
+        "enable_slideshow_overflow": false,
+        "show_navigation_arrows": true,
+        "slideshow_autoplay_interval": 2,
+        "tab_button_style": "button--filled",
+        "section_width": "max-w-page",
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "spacing_top": "4",
+        "spacing_bottom": "2"
+      }
+    },
+    "1720280765e75f05ad": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_jUYnFm": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_jUYnFm"
+      ],
+      "settings": {}
+    },
+    "multitile_8FTYPN": {
+      "type": "multitile",
+      "blocks": {
+        "tile_RYEbz7": {
+          "type": "tile",
+          "settings": {
+            "show_on": "both",
+            "column_factor": 3,
+            "row_factor": 1,
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "gradient_background_color": "",
+            "tile_aspect_ratio": "auto",
+            "content_position_vertical": "justify-center",
+            "content_alignment": "align-center text-center",
+            "content_alignment_for_mobile": "start",
+            "media_position": "background",
+            "heading": "Handpicked for you",
+            "heading_size": "h4",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "button--filled",
+            "video_external": "",
+            "show_controls_on_video": false,
+            "video_external_mobile": "",
+            "show_controls_on_video_mobile": false,
+            "spacing_inner": "2"
+          }
+        },
+        "tile_R4GXyb": {
+          "type": "tile",
+          "settings": {
+            "show_on": "both",
+            "column_factor": 1,
+            "row_factor": 1,
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "gradient_background_color": "",
+            "tile_aspect_ratio": "auto",
+            "content_position_vertical": "justify-center",
+            "content_alignment": "align-center text-center",
+            "content_alignment_for_mobile": "align-start--mobile text-start--mobile",
+            "media_position": "background",
+            "heading": "Heading for Multi Content Tiles",
+            "heading_size": "h3",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "button--filled",
+            "video_external": "",
+            "show_controls_on_video": false,
+            "video_external_mobile": "",
+            "show_controls_on_video_mobile": false,
+            "spacing_inner": "2"
+          }
+        },
+        "tile_343gBp": {
+          "type": "tile",
+          "settings": {
+            "show_on": "both",
+            "column_factor": 1,
+            "row_factor": 1,
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "gradient_background_color": "",
+            "tile_aspect_ratio": "auto",
+            "content_position_vertical": "justify-center",
+            "content_alignment": "align-center text-center",
+            "content_alignment_for_mobile": "align-start--mobile text-start--mobile",
+            "media_position": "background",
+            "heading": "Heading for Multi Content Tiles",
+            "heading_size": "h3",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "button--filled",
+            "video_external": "",
+            "show_controls_on_video": false,
+            "video_external_mobile": "",
+            "show_controls_on_video_mobile": false,
+            "spacing_inner": "2"
+          }
+        }
+      },
+      "block_order": [
+        "tile_RYEbz7",
+        "tile_R4GXyb",
+        "tile_343gBp"
+      ],
+      "settings": {
+        "block_order_mobile": false,
+        "heading": "",
+        "heading_size": "h3",
+        "heading_alignment": "start",
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "section_width": "max-w-page",
+        "spacing_top": "0",
+        "spacing_bottom": "2"
+      }
+    },
+    "full_width_banner_JMAceU": {
+      "type": "full-width-banner",
+      "blocks": {
+        "heading_YDPDPz": {
+          "type": "heading",
+          "settings": {
+            "heading": "Headline full width banner",
+            "heading_size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_YDPDPz"
+      ],
+      "settings": {
+        "enable_transparent_header": true,
+        "media_position": "background",
+        "section_height": "half",
+        "content_position": "center",
+        "content_alignment": "center",
+        "video_external": "",
+        "show_controls_on_video": false,
+        "aspect_ratio": "auto",
+        "section_height_mobile": "half",
+        "content_position_mobile": "center",
+        "content_alignment_mobile": "center",
+        "video_external_mobile": "",
+        "show_controls_on_video_mobile": false,
+        "aspect_ratio_mobile": "auto",
+        "section_width": "max-w-full",
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "color_scheme_for_content": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "spacing_inner": "2",
+        "spacing_top": "0",
+        "spacing_bottom": "0"
+      }
+    },
+    "accordions_n4BT4M": {
+      "type": "accordions",
+      "blocks": {
+        "topic_8rMhpm": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Refund details",
+            "text": "",
+            "page": "refund-returns-policy"
+          }
+        },
+        "topic_6DAHj6": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Customer Queries",
+            "text": "",
+            "page": "faq"
+          }
+        }
+      },
+      "block_order": [
+        "topic_8rMhpm",
+        "topic_6DAHj6"
+      ],
+      "settings": {
+        "heading": "Frequently asked questions",
+        "heading_size": "h3",
+        "section_width": "max-w-narrower",
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "spacing_top": "2",
+        "spacing_bottom": "2"
+      }
+    }
+  },
+  "order": [
+    "1658995208ad05f95f",
+    "callout_banner_rVDLqh",
+    "marquees_TFD63r",
+    "featured_products_4eL4yE",
+    "featured_products_gQDpqX",
+    "1720280765e75f05ad",
+    "multitile_8FTYPN",
+    "full_width_banner_JMAceU",
+    "accordions_n4BT4M"
+  ]
+}
