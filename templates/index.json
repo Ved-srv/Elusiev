@@ -12,6 +12,36 @@
     "1658995208ad05f95f": {
       "type": "hero-banner",
       "blocks": {
+        "slide_WDUByx": {
+          "type": "slide",
+          "settings": {
+            "banner_layout": "hero-banner--full",
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "header_menu_text_color": "#ffffff",
+            "heading": "<h5><strong>Discover Valentino</strong></h5>",
+            "subheading": "<strong>Discover Valentino</strong>",
+            "subheading_link": "",
+            "text": "<p>hello</p>",
+            "button_link_1": "/",
+            "button_link_1_type": "button",
+            "button_label_1": "View more",
+            "button_style_1": "button--filled",
+            "button_link_2": "/",
+            "button_label_2": "View more",
+            "button_style_2": "button--outlined",
+            "content_position": "end",
+            "content_alignment": "center",
+            "image": "shopify://shop_images/pavlo-talpa-1Mhre9qvZeY-unsplash.jpg",
+            "video_external": "",
+            "show_controls_on_video": false,
+            "enable_media_overlay_desktop": true,
+            "content_position_mobile": "end",
+            "content_alignment_mobile": "center",
+            "video_external_mobile": "",
+            "show_controls_on_video_mobile": false,
+            "enable_media_overlay_mobile": true
+          }
+        },
         "slide_yYrjFh": {
           "type": "slide",
           "settings": {
@@ -71,42 +101,12 @@
             "show_controls_on_video_mobile": false,
             "enable_media_overlay_mobile": true
           }
-        },
-        "slide_WDUByx": {
-          "type": "slide",
-          "settings": {
-            "banner_layout": "hero-banner--full",
-            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-            "header_menu_text_color": "#ffffff",
-            "heading": "",
-            "subheading": "",
-            "subheading_link": "",
-            "text": "<p>hello</p>",
-            "button_link_1": "/",
-            "button_link_1_type": "button",
-            "button_label_1": "View more",
-            "button_style_1": "button--filled",
-            "button_link_2": "/",
-            "button_label_2": "View more",
-            "button_style_2": "button--outlined",
-            "content_position": "end",
-            "content_alignment": "center",
-            "image": "shopify://shop_images/pavlo-talpa-1Mhre9qvZeY-unsplash.jpg",
-            "video_external": "",
-            "show_controls_on_video": false,
-            "enable_media_overlay_desktop": true,
-            "content_position_mobile": "end",
-            "content_alignment_mobile": "center",
-            "video_external_mobile": "",
-            "show_controls_on_video_mobile": false,
-            "enable_media_overlay_mobile": true
-          }
         }
       },
       "block_order": [
+        "slide_WDUByx",
         "slide_yYrjFh",
-        "slide_qkeVfg",
-        "slide_WDUByx"
+        "slide_qkeVfg"
       ],
       "settings": {
         "enable_transparent_header": true,
