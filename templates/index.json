@@ -180,12 +180,21 @@
             "title": "Maison Margiela",
             "link": ""
           }
+        },
+        "item_VkE86z": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "title": "Yves Saint Laurent ",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "item_Nze9Bw",
         "item_RLHfFm",
-        "item_aifWeb"
+        "item_aifWeb",
+        "item_VkE86z"
       ],
       "settings": {
         "enable_animation": true,
