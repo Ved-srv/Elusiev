@@ -281,7 +281,7 @@
         "heading_size": "h3",
         "subheading": "",
         "button_label": "View all",
-        "button_link": "shopify://products/carolina-herrera-good-girl",
+        "button_link": "shopify://collections/all",
         "button_style": "button--text",
         "max_products": 8,
         "enable_slideshow_overflow": false,
