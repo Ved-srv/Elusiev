@@ -231,13 +231,8 @@
           "type": "collection",
           "settings": {
             "title": "",
-            "collection": "",
-            "products": [
-              "chanel-no-5-eau-de-parfum-for-her",
-              "bleu-de-chanel-eau-de-parfum-for-him",
-              "chanel-coco-mademoiselle-eau-de-parfum-for-her",
-              "bleu-de-chanel-parfum-for-him"
-            ],
+            "collection": "new-in-1",
+            "products": [],
             "vendor": "",
             "collection_of_products": "",
             "show_unavailable_products": false,
