@@ -248,12 +248,8 @@
           "type": "collection",
           "settings": {
             "title": "",
-            "collection": "",
-            "products": [
-              "jo-malone-lime-basil-mandarin-cologne-unisex",
-              "jo-malone-english-pear-freesia",
-              "tom-ford-tobacco-vanille-eau-de-parfum-unisex"
-            ],
+            "collection": "2",
+            "products": [],
             "vendor": "",
             "collection_of_products": "",
             "show_unavailable_products": false,
