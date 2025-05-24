@@ -360,15 +360,15 @@
           "settings": {
             "show_on": "both",
             "column_factor": 3,
-            "row_factor": 1,
+            "row_factor": 3,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
             "gradient_background_color": "",
             "tile_aspect_ratio": "auto",
             "content_position_vertical": "justify-center",
             "content_alignment": "align-center text-center",
-            "content_alignment_for_mobile": "start",
+            "content_alignment_for_mobile": "align-center--mobile text-center--mobile",
             "media_position": "background",
-            "heading": "Pure. Fresh. Timeless.",
+            "heading": "",
             "heading_size": "h4",
             "text": "",
             "button_label": "",
@@ -377,6 +377,7 @@
             "image": "shopify://shop_images/FB_EDP-3.webp",
             "video_external": "",
             "show_controls_on_video": false,
+            "video_mobile": "shopify://files/videos/GGB-video.mp4",
             "video_external_mobile": "",
             "show_controls_on_video_mobile": false,
             "spacing_inner": "4"
@@ -403,6 +404,7 @@
             "button_style": "button--filled",
             "video_external": "",
             "show_controls_on_video": false,
+            "video_mobile": "shopify://files/videos/ARA-3.mp4",
             "video_external_mobile": "",
             "show_controls_on_video_mobile": false,
             "spacing_inner": "2"
@@ -446,7 +448,7 @@
         "heading_size": "h3",
         "heading_alignment": "start",
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "section_width": "max-w-page",
+        "section_width": "max-w-full",
         "spacing_top": "0",
         "spacing_bottom": "2"
       }
