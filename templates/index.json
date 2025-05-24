@@ -198,7 +198,7 @@
       ],
       "settings": {
         "enable_animation": true,
-        "marquee_duration_rate": 3,
+        "marquee_duration_rate": 2,
         "marquee_font_size": 1,
         "marquee_items_spacing": 0.8,
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
