@@ -160,38 +160,29 @@
         "item_Nze9Bw": {
           "type": "item",
           "settings": {
-            "icon": "option-return",
-            "title": "Easy returns",
+            "icon": "",
+            "title": "Carolina Herrera ",
             "link": ""
           }
         },
-        "item_JUfXV4": {
+        "item_RLHfFm": {
           "type": "item",
           "settings": {
-            "icon": "option-truck",
-            "title": "Free Shipping",
-            "link": ""
-          }
-        },
-        "item_4yPWKr": {
-          "type": "item",
-          "settings": {
-            "icon": "theme-box",
-            "title": "100% Authenticity",
+            "icon": "",
+            "title": "Tom Ford",
             "link": ""
           }
         }
       },
       "block_order": [
         "item_Nze9Bw",
-        "item_JUfXV4",
-        "item_4yPWKr"
+        "item_RLHfFm"
       ],
       "settings": {
         "enable_animation": true,
-        "marquee_duration_rate": 2,
-        "marquee_font_size": 5,
-        "marquee_items_spacing": 6,
+        "marquee_duration_rate": 3,
+        "marquee_font_size": 1,
+        "marquee_items_spacing": 0.8,
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "spacing_top": "0",
         "spacing_bottom": "0"
