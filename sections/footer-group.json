@@ -1,1 +1,100 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"footer_xjQ6Rm":{"type":"footer","blocks":{"link_list_fpjyWg":{"type":"link_list","settings":{"column_factor":1,"row_factor":1,"menu_layout":"vertical","menu":"footer","title":"Company","title_url":"","menu_link_opacity":100,"show_first_menu_on_mobile":true}}},"block_order":["link_list_fpjyWg"],"settings":{"spacing_grid":"2","show_border_top":false,"section_width":"max-w-page","color_scheme":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","spacing_top":"2","spacing_bottom":"1"}},"footer_JadcgE":{"type":"footer","blocks":{"richtext_GWFib7":{"type":"richtext","settings":{"column_factor":1,"row_factor":1,"heading":"","text":"<p>Copyright © 2024 ScreenFits. All rights reserved.<\/p>","content_position_vertical":"center","content_alignment":"start","content_alignment_for_mobile":"center"}},"follow_on_shop_KpEWtJ":{"type":"follow_on_shop","settings":{"column_factor":1,"row_factor":1,"content_position_vertical":"center","content_alignment":"end","content_alignment_for_mobile":"center"}},"payment_icons_E8xVpn":{"type":"payment_icons","settings":{"column_factor":1,"row_factor":1,"custom_payment_types":"","payment_icons_color":false,"content_position_vertical":"start","content_alignment":"start","content_alignment_for_mobile":"start"}}},"block_order":["richtext_GWFib7","follow_on_shop_KpEWtJ","payment_icons_E8xVpn"],"settings":{"spacing_grid":"1","show_border_top":true,"section_width":"max-w-page","color_scheme":"scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a","spacing_top":"1","spacing_bottom":"1"}}},"order":["footer_xjQ6Rm","footer_JadcgE"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer_xjQ6Rm": {
+      "type": "footer",
+      "blocks": {
+        "link_list_fpjyWg": {
+          "type": "link_list",
+          "settings": {
+            "column_factor": 1,
+            "row_factor": 1,
+            "menu_layout": "vertical",
+            "menu": "footer",
+            "title": "Company",
+            "title_url": "",
+            "menu_link_opacity": 100,
+            "show_first_menu_on_mobile": true
+          }
+        }
+      },
+      "block_order": [
+        "link_list_fpjyWg"
+      ],
+      "settings": {
+        "spacing_grid": "2",
+        "show_border_top": false,
+        "section_width": "max-w-page",
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "spacing_top": "2",
+        "spacing_bottom": "1"
+      }
+    },
+    "footer_JadcgE": {
+      "type": "footer",
+      "blocks": {
+        "richtext_GWFib7": {
+          "type": "richtext",
+          "settings": {
+            "column_factor": 1,
+            "row_factor": 1,
+            "heading": "",
+            "text": "<p>Copyright © 2025 Elusiev. All rights reserved.</p>",
+            "content_position_vertical": "center",
+            "content_alignment": "start",
+            "content_alignment_for_mobile": "center"
+          }
+        },
+        "follow_on_shop_KpEWtJ": {
+          "type": "follow_on_shop",
+          "settings": {
+            "column_factor": 1,
+            "row_factor": 1,
+            "content_position_vertical": "center",
+            "content_alignment": "end",
+            "content_alignment_for_mobile": "center"
+          }
+        },
+        "payment_icons_E8xVpn": {
+          "type": "payment_icons",
+          "settings": {
+            "column_factor": 1,
+            "row_factor": 1,
+            "custom_payment_types": "",
+            "payment_icons_color": false,
+            "content_position_vertical": "start",
+            "content_alignment": "start",
+            "content_alignment_for_mobile": "start"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_GWFib7",
+        "follow_on_shop_KpEWtJ",
+        "payment_icons_E8xVpn"
+      ],
+      "settings": {
+        "spacing_grid": "1",
+        "show_border_top": true,
+        "section_width": "max-w-page",
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "spacing_top": "1",
+        "spacing_bottom": "1"
+      }
+    }
+  },
+  "order": [
+    "footer_xjQ6Rm",
+    "footer_JadcgE"
+  ]
+}
