@@ -188,13 +188,22 @@
             "title": "Yves Saint Laurent ",
             "link": ""
           }
+        },
+        "item_MFaEV9": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "title": "Chanel",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "item_Nze9Bw",
         "item_RLHfFm",
         "item_aifWeb",
-        "item_VkE86z"
+        "item_VkE86z",
+        "item_MFaEV9"
       ],
       "settings": {
         "enable_animation": true,
