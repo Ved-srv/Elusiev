@@ -374,11 +374,12 @@
             "button_label": "",
             "button_link": "",
             "button_style": "button--filled",
+            "image": "shopify://shop_images/FB_EDP-3.webp",
             "video_external": "",
             "show_controls_on_video": false,
             "video_external_mobile": "",
             "show_controls_on_video_mobile": false,
-            "spacing_inner": "2"
+            "spacing_inner": "4"
           }
         },
         "tile_R4GXyb": {
