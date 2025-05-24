@@ -387,7 +387,7 @@
           "type": "tile",
           "settings": {
             "show_on": "both",
-            "column_factor": 1,
+            "column_factor": 3,
             "row_factor": 1,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
             "gradient_background_color": "",
@@ -402,9 +402,9 @@
             "button_label": "",
             "button_link": "",
             "button_style": "button--filled",
+            "video": "shopify://files/videos/ARA-3.mp4",
             "video_external": "",
             "show_controls_on_video": false,
-            "video_mobile": "shopify://files/videos/ARA-3.mp4",
             "video_external_mobile": "",
             "show_controls_on_video_mobile": false,
             "spacing_inner": "2"
