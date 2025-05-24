@@ -55,16 +55,6 @@
             "content_alignment_for_mobile": "center"
           }
         },
-        "follow_on_shop_KpEWtJ": {
-          "type": "follow_on_shop",
-          "settings": {
-            "column_factor": 1,
-            "row_factor": 1,
-            "content_position_vertical": "center",
-            "content_alignment": "end",
-            "content_alignment_for_mobile": "center"
-          }
-        },
         "payment_icons_E8xVpn": {
           "type": "payment_icons",
           "settings": {
@@ -80,7 +70,6 @@
       },
       "block_order": [
         "richtext_GWFib7",
-        "follow_on_shop_KpEWtJ",
         "payment_icons_E8xVpn"
       ],
       "settings": {
