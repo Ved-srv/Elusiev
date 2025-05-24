@@ -172,11 +172,20 @@
             "title": "Tom Ford",
             "link": ""
           }
+        },
+        "item_aifWeb": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "title": "Maison Margiela",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "item_Nze9Bw",
-        "item_RLHfFm"
+        "item_RLHfFm",
+        "item_aifWeb"
       ],
       "settings": {
         "enable_animation": true,
