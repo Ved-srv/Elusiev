@@ -196,6 +196,14 @@
             "title": "Chanel",
             "link": ""
           }
+        },
+        "item_jJJtaD": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "title": "Dior Sauvage",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -203,11 +211,12 @@
         "item_RLHfFm",
         "item_aifWeb",
         "item_VkE86z",
-        "item_MFaEV9"
+        "item_MFaEV9",
+        "item_jJJtaD"
       ],
       "settings": {
         "enable_animation": true,
-        "marquee_duration_rate": 2,
+        "marquee_duration_rate": 1,
         "marquee_font_size": 1,
         "marquee_items_spacing": 0.8,
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
