@@ -180,9 +180,22 @@
             {%- render 'loading-spinner' -%}
           </div>
         </button>
-        {%- if show_dynamic_checkout and product_preorder == false -%}
-          {{ form | payment_button }}
-        {%- endif -%}
+       {%- if show_dynamic_checkout and product_preorder == false -%}
+  <!-- Custom "Own it" button with proper sizing -->
+  <button 
+    type="button" 
+    class="button button--luxury-own-it button--filled button--full uppercase"
+    style="width: 100%; min-height: 5rem; margin-top: 0.8rem;"
+    onclick="document.getElementById('ProductSubmitButton-{{ section_id }}').click()"
+  >
+    <span>Own it</span>
+  </button>
+  
+  <!-- Hide the original payment button -->
+  <div style="display: none;">
+    {{ form | payment_button }}
+  </div>
+{%- endif -%}
       </div>
 
       <div class="product-form__error-message-wrapper" role="alert" hidden>
