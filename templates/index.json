@@ -162,7 +162,8 @@
           "type": "item",
           "settings": {
             "icon": "",
-            "title": "Carolina Herrera ",
+            "custom_icon": "shopify://shop_images/Carolina-Herrera-black-Logo-Vector_svg.png",
+            "title": "",
             "link": ""
           }
         },
@@ -170,7 +171,8 @@
           "type": "item",
           "settings": {
             "icon": "",
-            "title": "Tom Ford",
+            "custom_icon": "shopify://shop_images/Tom-Ford-logo.png",
+            "title": "",
             "link": ""
           }
         },
