@@ -394,7 +394,7 @@
       "settings": {
         "enable_animation": true,
         "marquee_duration_rate": 1,
-        "marquee_font_size": 2,
+        "marquee_font_size": 3,
         "marquee_items_spacing": 0,
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "spacing_top": "0",
