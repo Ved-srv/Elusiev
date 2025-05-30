@@ -158,11 +158,155 @@
     "marquees_TFD63r": {
       "type": "marquees",
       "blocks": {
+        "item_wUw9XE": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/yves_saint_laurent-logo-freelogovectors.net.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "item_xQQ7AJ": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/gucci-logo-png-gucci-logo-png-transparent-background-download-1500.png.crdownload.png",
+            "title": "",
+            "link": ""
+          }
+        },
         "item_Nze9Bw": {
           "type": "item",
           "settings": {
             "icon": "",
             "custom_icon": "shopify://shop_images/Carolina-Herrera-black-Logo-Vector_svg.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "item_aifWeb": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Maison-Margiela-Logo.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "item_VkE86z": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/versace.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "item_mM6mVL": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Azzaro-logo.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "item_9CXXBN": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/blye_afnan_logo.webp",
+            "title": "",
+            "link": ""
+          }
+        },
+        "item_tPywze": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Rasasi-Logo-1-3603.webp",
+            "title": "",
+            "link": ""
+          }
+        },
+        "item_erzdkf": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/burberry-logo-png.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "item_qa99Rc": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Chanel-Symbol.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "item_b7jACG": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Calvin-Klein-Logo.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "item_RgC7CR": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/lattafa_logo_800x800_c54ef2e3-1539-4b80-9a65-63c1c4898ec8.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "item_P7zfCV": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Emporio-Armani-logo.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "item_rjzBiA": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Dior-Logo.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "item_gNCnxU": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Giorgio-Armani-Logo.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "item_8fwBdC": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/jo-malone-logo.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "item_hHYHzR": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/khadlaj_logo.png",
             "title": "",
             "link": ""
           }
@@ -176,51 +320,81 @@
             "link": ""
           }
         },
-        "item_aifWeb": {
+        "item_EV6jkC": {
           "type": "item",
           "settings": {
             "icon": "",
-            "title": "Maison Margiela",
+            "custom_icon": "shopify://shop_images/Logo-Afnan-Editado.webp",
+            "title": "",
             "link": ""
           }
         },
-        "item_VkE86z": {
+        "item_DnHVxb": {
           "type": "item",
           "settings": {
             "icon": "",
-            "title": "Yves Saint Laurent ",
+            "custom_icon": "shopify://shop_images/penhaligons-logo-png_seeklogo-437800.png",
+            "title": "",
             "link": ""
           }
         },
-        "item_MFaEV9": {
+        "item_UecV8h": {
           "type": "item",
           "settings": {
             "icon": "",
-            "title": "Chanel",
+            "custom_icon": "shopify://shop_images/roja-parfums.png",
+            "title": "",
             "link": ""
           }
         },
-        "item_jJJtaD": {
+        "item_QtU6B3": {
           "type": "item",
           "settings": {
             "icon": "",
-            "title": "Dior",
+            "custom_icon": "shopify://shop_images/viktor_and_rolf.png",
+            "title": "",
+            "link": ""
+          }
+        },
+        "item_EyYQVJ": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/xerjoff-universe-eu-logo-16354132571.png",
+            "title": "",
             "link": ""
           }
         }
       },
       "block_order": [
+        "item_wUw9XE",
+        "item_xQQ7AJ",
         "item_Nze9Bw",
-        "item_RLHfFm",
         "item_aifWeb",
         "item_VkE86z",
-        "item_MFaEV9",
-        "item_jJJtaD"
+        "item_mM6mVL",
+        "item_9CXXBN",
+        "item_tPywze",
+        "item_erzdkf",
+        "item_qa99Rc",
+        "item_b7jACG",
+        "item_RgC7CR",
+        "item_P7zfCV",
+        "item_rjzBiA",
+        "item_gNCnxU",
+        "item_8fwBdC",
+        "item_hHYHzR",
+        "item_RLHfFm",
+        "item_EV6jkC",
+        "item_DnHVxb",
+        "item_UecV8h",
+        "item_QtU6B3",
+        "item_EyYQVJ"
       ],
       "settings": {
         "enable_animation": true,
         "marquee_duration_rate": 1,
-        "marquee_font_size": 1,
+        "marquee_font_size": 2,
         "marquee_items_spacing": 0,
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "spacing_top": "0",
