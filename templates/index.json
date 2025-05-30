@@ -158,15 +158,6 @@
     "marquees_TFD63r": {
       "type": "marquees",
       "blocks": {
-        "item_RLHfFm": {
-          "type": "item",
-          "settings": {
-            "icon": "",
-            "custom_icon": "shopify://shop_images/Tom-Ford-logo.png",
-            "title": "",
-            "link": ""
-          }
-        },
         "item_wUw9XE": {
           "type": "item",
           "settings": {
@@ -356,6 +347,15 @@
             "link": ""
           }
         },
+        "item_RLHfFm": {
+          "type": "item",
+          "settings": {
+            "icon": "",
+            "custom_icon": "shopify://shop_images/Tom-Ford-logo_d7bafba8-08e6-41ca-9d95-84287f316690.png",
+            "title": "",
+            "link": ""
+          }
+        },
         "item_EyYQVJ": {
           "type": "item",
           "settings": {
@@ -367,7 +367,6 @@
         }
       },
       "block_order": [
-        "item_RLHfFm",
         "item_wUw9XE",
         "item_xQQ7AJ",
         "item_Nze9Bw",
@@ -389,6 +388,7 @@
         "item_DnHVxb",
         "item_UecV8h",
         "item_QtU6B3",
+        "item_RLHfFm",
         "item_EyYQVJ"
       ],
       "settings": {
