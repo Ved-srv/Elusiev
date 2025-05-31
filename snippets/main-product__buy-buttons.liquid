@@ -180,21 +180,98 @@
             {%- render 'loading-spinner' -%}
           </div>
         </button>
-       {%- if show_dynamic_checkout and product_preorder == false -%}
-  <!-- Custom "Own it" button with proper sizing -->
+{%- if show_dynamic_checkout and product_preorder == false -%}
   <button 
-    type="button" 
+    type="button"
     class="button button--luxury-own-it button--filled button--full uppercase"
     style="width: 100%; min-height: 5rem; margin-top: 0.8rem;"
-    onclick="document.getElementById('ProductSubmitButton-{{ section_id }}').click()"
+    onclick="ownItLuxuryCheckout()"
   >
     <span>Own it</span>
   </button>
+  
+  <!-- Luxury loading transition -->
+  <div id="luxury-transition" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); z-index: 9999; opacity: 0; transition: opacity 0.5s ease;">
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+      <div style="width: 2px; height: 40px; background: white; margin: 0 auto 20px; animation: luxuryPulse 1.5s ease-in-out infinite;"></div>
+      <p style="margin: 0; font-family: var(--font-body-family); font-size: 16px; letter-spacing: 2px; text-transform: uppercase;">Preparing your order</p>
+    </div>
+  </div>
   
   <!-- Hide the original payment button -->
   <div style="display: none;">
     {{ form | payment_button }}
   </div>
+  
+  <style>
+    @keyframes luxuryPulse {
+      0%, 100% { opacity: 0.3; transform: scaleY(1); }
+      50% { opacity: 1; transform: scaleY(1.5); }
+    }
+  </style>
+  
+  <script>
+    function ownItLuxuryCheckout() {
+      const button = document.querySelector('.button--luxury-own-it');
+      const span = button.querySelector('span');
+      const transition = document.getElementById('luxury-transition');
+      
+      // Show loading state
+      button.disabled = true;
+      span.textContent = 'Processing...';
+      button.style.opacity = '0.8';
+      
+      // Show luxury transition
+      transition.style.display = 'block';
+      setTimeout(() => {
+        transition.style.opacity = '1';
+      }, 10);
+      
+      // Get variant and quantity
+      const variantInput = document.querySelector('input[name="id"].product-variant-id');
+      const quantityInput = document.querySelector('#Quantity-{{ section.id }}');
+      
+      const variantId = variantInput ? variantInput.value : '{{ product.selected_or_first_available_variant.id }}';
+      const quantity = quantityInput ? quantityInput.value : 1;
+      
+      // Add to cart and redirect
+      fetch('/cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          items: [{
+            id: parseInt(variantId),
+            quantity: parseInt(quantity)
+          }]
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Keep transition visible longer to mask checkout loading
+        setTimeout(() => {
+          window.location.replace('/checkout');
+        }, 400);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        
+        // Hide transition on error
+        transition.style.opacity = '0';
+        setTimeout(() => {
+          transition.style.display = 'none';
+        }, 500);
+        
+        // Reset button
+        button.disabled = false;
+        span.textContent = 'Own it';
+        button.style.opacity = '1';
+        
+        alert('Sorry, there was an error. Please try again.');
+      });
+    }
+  </script>
 {%- endif -%}
       </div>
 
