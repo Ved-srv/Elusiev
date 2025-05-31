@@ -57,50 +57,11 @@
         "8604a6ff-ad0b-44dd-8068-1de4e062f8e8": {
           "type": "buy_buttons",
           "settings": {
-            "spacing_bottom": "1",
+            "spacing_bottom": "4",
             "show_quantity": true,
             "layout": "inline",
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": false
-          }
-        },
-        "text_mFbQDW": {
-          "type": "text",
-          "settings": {
-            "spacing_bottom": "1",
-            "heading": "",
-            "icon": "theme-check",
-            "link_to_resource": "none",
-            "text_before_link": false,
-            "heading_secondary": "",
-            "metafield_for_product_variant": "",
-            "show_block_content": true
-          }
-        },
-        "b2dabe12-2158-4ba6-bc54-9baae453acf5": {
-          "type": "text",
-          "settings": {
-            "spacing_bottom": "1",
-            "heading": "",
-            "icon": "theme-check",
-            "link_to_resource": "none",
-            "text_before_link": false,
-            "heading_secondary": "",
-            "metafield_for_product_variant": "",
-            "show_block_content": true
-          }
-        },
-        "1ad0121e-439d-45c0-b45d-4f080836ade5": {
-          "type": "text",
-          "settings": {
-            "spacing_bottom": "1",
-            "heading": "",
-            "icon": "theme-check",
-            "link_to_resource": "none",
-            "text_before_link": false,
-            "heading_secondary": "",
-            "metafield_for_product_variant": "",
-            "show_block_content": true
           }
         },
         "content_grid_W3Mqy6": {
@@ -113,7 +74,7 @@
         "content_grid_iCJFCN": {
           "type": "content_grid",
           "settings": {
-            "heading": "Free returns",
+            "heading": "Hassle free returns",
             "icon": "theme-return"
           }
         },
@@ -157,9 +118,6 @@
         "price_gDfxBd",
         "1e939cd6-0958-4135-a9e5-c50faef01437",
         "8604a6ff-ad0b-44dd-8068-1de4e062f8e8",
-        "text_mFbQDW",
-        "b2dabe12-2158-4ba6-bc54-9baae453acf5",
-        "1ad0121e-439d-45c0-b45d-4f080836ade5",
         "content_grid_W3Mqy6",
         "content_grid_iCJFCN",
         "content_grid_HTRRPP",
