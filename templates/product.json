@@ -177,7 +177,7 @@
             "author": "Jane Doe",
             "quote": "<p>“I absolutely love the quality of my Leo Bikini Bottoms.”</p>",
             "rating_score": 5,
-            "color_scheme": ""
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a"
           }
         },
         "testimonial_rqfKH9": {
@@ -186,7 +186,7 @@
             "author": "Jane Doe",
             "quote": "<p>“I absolutely love the quality of my Leo Bikini Bottoms.”</p>",
             "rating_score": 5,
-            "color_scheme": ""
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a"
           }
         }
       },
@@ -206,6 +206,29 @@
         "image_aspect_ratio": "1/1",
         "media_show_on": "desktop",
         "spacing_inner": "2",
+        "section_width": "max-w-page",
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "spacing_top": "2",
+        "spacing_bottom": "2"
+      }
+    },
+    "product_recommendations_hXz6rk": {
+      "type": "product-recommendations",
+      "name": "t:sections.product-recommendations.name",
+      "settings": {
+        "layout": "layout-1",
+        "enable_slideshow_overflow": false,
+        "heading": "You may also like",
+        "heading_size": "h3",
+        "subheading": "",
+        "button_label": "View all",
+        "button_link": "",
+        "button_style": "button--filled",
+        "show_navigation_arrows": true,
+        "slider_autoplay": 3,
+        "tabs_button_style": "tab-btn-text",
+        "max_products": 8,
+        "show_unavailable_products": false,
         "section_width": "max-w-page",
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "spacing_top": "2",
@@ -333,29 +356,6 @@
         "section_width": "max-w-page",
         "spacing_top": "0",
         "spacing_bottom": "0"
-      }
-    },
-    "product_recommendations_hXz6rk": {
-      "type": "product-recommendations",
-      "name": "t:sections.product-recommendations.name",
-      "settings": {
-        "layout": "layout-1",
-        "enable_slideshow_overflow": false,
-        "heading": "You may also like",
-        "heading_size": "h3",
-        "subheading": "",
-        "button_label": "View all",
-        "button_link": "",
-        "button_style": "button--filled",
-        "show_navigation_arrows": true,
-        "slider_autoplay": 3,
-        "tabs_button_style": "tab-btn-text",
-        "max_products": 8,
-        "show_unavailable_products": false,
-        "section_width": "max-w-page",
-        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "spacing_top": "2",
-        "spacing_bottom": "2"
       }
     }
   },
