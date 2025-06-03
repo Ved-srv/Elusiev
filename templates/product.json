@@ -214,10 +214,10 @@
     "product_recommendations_H6VDMA": {
       "type": "product-recommendations",
       "settings": {
-        "layout": "layout-1",
+        "layout": "layout-2",
         "enable_slideshow_overflow": false,
         "heading": "You Might Fancy",
-        "heading_size": "h3",
+        "heading_size": "h4",
         "subheading": "",
         "button_label": "View all",
         "button_link": "",
