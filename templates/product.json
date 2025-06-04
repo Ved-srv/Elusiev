@@ -299,7 +299,7 @@
             "text": "",
             "button_label": "Explore",
             "button_link": "shopify://products/skull-oversized-t-shirt",
-            "button_style": "button--filled",
+            "button_style": "button--text",
             "video_external": "",
             "show_controls_on_video": false,
             "video_external_mobile": "",
