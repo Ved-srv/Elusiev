@@ -179,10 +179,20 @@
             "rating_score": 5,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a"
           }
+        },
+        "testimonial_3JLcLR": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Jane Doe",
+            "quote": "<p>“I absolutely love the quality of my Leo Bikini Bottoms.”</p>",
+            "rating_score": 5,
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a"
+          }
         }
       },
       "block_order": [
-        "testimonial_hyeH9p"
+        "testimonial_hyeH9p",
+        "testimonial_3JLcLR"
       ],
       "name": "t:sections.testimonials.name",
       "settings": {
