@@ -218,8 +218,8 @@
       "settings": {
         "layout": "layout-1",
         "enable_slideshow_overflow": false,
-        "heading": "You may also like",
-        "heading_size": "h3",
+        "heading": "You might also fancy",
+        "heading_size": "h4",
         "subheading": "",
         "button_label": "View all",
         "button_link": "",
