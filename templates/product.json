@@ -168,19 +168,10 @@
       ],
       "settings": {}
     },
-    "testimonials_ywDVBy": {
+    "testimonials_6Bzypc": {
       "type": "testimonials",
       "blocks": {
-        "testimonial_JVMGef": {
-          "type": "testimonial",
-          "settings": {
-            "author": "Jane Doe",
-            "quote": "<p>“I absolutely love the quality of my Leo Bikini Bottoms.”</p>",
-            "rating_score": 5,
-            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a"
-          }
-        },
-        "testimonial_rqfKH9": {
+        "testimonial_hyeH9p": {
           "type": "testimonial",
           "settings": {
             "author": "Jane Doe",
@@ -191,8 +182,7 @@
         }
       },
       "block_order": [
-        "testimonial_JVMGef",
-        "testimonial_rqfKH9"
+        "testimonial_hyeH9p"
       ],
       "name": "t:sections.testimonials.name",
       "settings": {
@@ -204,7 +194,7 @@
         "slider_autoplay": 3,
         "image_position": "image-start",
         "image_aspect_ratio": "1/1",
-        "media_show_on": "both",
+        "media_show_on": "desktop",
         "spacing_inner": "2",
         "section_width": "max-w-page",
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
@@ -300,6 +290,7 @@
             "button_label": "Explore",
             "button_link": "shopify://products/skull-oversized-t-shirt",
             "button_style": "button--text",
+            "image": "shopify://shop_images/GGB-3.jpg",
             "video_external": "",
             "show_controls_on_video": false,
             "video_external_mobile": "",
@@ -361,7 +352,7 @@
   "order": [
     "main",
     "1720277631cea22aba",
-    "testimonials_ywDVBy",
+    "testimonials_6Bzypc",
     "product_recommendations_hXz6rk",
     "complete_the_set_LAN4cq",
     "multitile_ybjXjD"
