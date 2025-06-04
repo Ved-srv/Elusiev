@@ -154,9 +154,7 @@
             }
           }
         },
-        "block_order": [
-          "762130ce-c112-474e-ab41-0e908f95e578"
-        ],
+        "block_order": ["762130ce-c112-474e-ab41-0e908f95e578"],
         "settings": {}
       },
       "newsletter-popup": {
