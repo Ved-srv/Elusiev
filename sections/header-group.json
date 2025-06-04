@@ -20,10 +20,18 @@
             "content": "",
             "icon": "theme-box"
           }
+        },
+        "text_slide_CqbKaQ": {
+          "type": "text-slide",
+          "settings": {
+            "content": "<p>Welcome to our store</p>",
+            "icon": "theme-box"
+          }
         }
       },
       "block_order": [
-        "text_slide_PqACbj"
+        "text_slide_PqACbj",
+        "text_slide_CqbKaQ"
       ],
       "settings": {
         "text_block_behaviour": "marquee",
