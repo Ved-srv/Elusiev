@@ -529,7 +529,7 @@
           "type": "testimonial",
           "settings": {
             "author": "Devansh Agarwal",
-            "quote": "<p>I usually wear Tom ford but Acqua di Gio smells so much better. Lasts all day and gets lots of compliments!</p>",
+            "quote": "<p><strong>Acqua di Gio</strong><br/>I usually wear Tom ford but this smells so much better. Lasts all day and gets lots of compliments!</p>",
             "rating_score": 5,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a"
           }
@@ -537,7 +537,7 @@
         "testimonial_AXQxwC": {
           "type": "testimonial",
           "settings": {
-            "author": "Jane Doe",
+            "author": "Ayush Gupta",
             "quote": "",
             "rating_score": 4,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a"
