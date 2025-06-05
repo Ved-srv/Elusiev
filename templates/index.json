@@ -530,7 +530,7 @@
           "settings": {
             "author": "Jane Doe",
             "quote": "<p>“I absolutely love the quality of my Leo Bikini Bottoms.”</p>",
-            "rating_score": 5,
+            "rating_score": 4,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a"
           }
         },
@@ -564,9 +564,9 @@
         "heading_size": "h3",
         "subheading": "",
         "rating_icon": "star",
-        "layout": "horizontal-w-media",
+        "layout": "carousel-none-media",
         "slider_autoplay": 3,
-        "image": "shopify://shop_images/IMG_2683.heic",
+        "image": "shopify://shop_images/IMG_2680.heic",
         "image_position": "image-start",
         "image_aspect_ratio": "1/1",
         "media_show_on": "desktop",
