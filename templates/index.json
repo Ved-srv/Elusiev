@@ -551,12 +551,22 @@
             "rating_score": 5,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a"
           }
+        },
+        "testimonial_CGxiga": {
+          "type": "testimonial",
+          "settings": {
+            "author": "Vanshita",
+            "quote": "<p><strong>Flowerbomb</strong><br/>“Gorgeous fragrance that lasts hours. Gets so many compliments. Will definitely buy again!”</p>",
+            "rating_score": 5,
+            "color_scheme": "scheme-1"
+          }
         }
       },
       "block_order": [
         "testimonial_wMJj8m",
         "testimonial_AXQxwC",
-        "testimonial_wHBEn9"
+        "testimonial_wHBEn9",
+        "testimonial_CGxiga"
       ],
       "name": "t:sections.testimonials.name",
       "settings": {
