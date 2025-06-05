@@ -166,35 +166,35 @@
           {% endif %}
         >
           <span>
-  {%- if product_preorder -%}
-    {{ 'product.preorder' | t }}
-  {%- elsif product.selected_or_first_available_variant == nil -%}
-    {{ 'product.unavailable' | t }}
-  {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
-    {{ 'product.sold_out' | t }}
-  {%- else -%}
-    Add to Bag
-  {%- endif -%}
-</span>
+            {%- if product_preorder -%}
+            {{ 'product.preorder' | t }}
+            {%- elsif product.selected_or_first_available_variant == nil -%}
+            {{ 'product.unavailable' | t }}
+            {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+            {{ 'product.sold_out' | t }}
+            {%- else -%}
+            Add to Bag
+            {%- endif -%}
+          </span>
           <div class="loading__spinner hidden">
             {%- render 'loading-spinner' -%}
           </div>
         </button>
 {%- if show_dynamic_checkout and product_preorder == false -%}
-  <button 
-    type="button"
-    class="button button--luxury-own-it button--filled button--full uppercase"
-    style="width: 100%; min-height: 5rem; margin-top: 0.8rem;"
-    onclick="ownItLuxuryCheckout()"
-  >
-    <span>Own it</span>
-  </button>
-  
-  <!-- Luxury loading transition -->
-  <div id="luxury-transition" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); z-index: 9999; opacity: 0; transition: opacity 0.5s ease;">
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
-      <div style="width: 2px; height: 40px; background: white; margin: 0 auto 20px; animation: luxuryPulse 1.5s ease-in-out infinite;"></div>
-      <p style="margin: 0; font-family: var(--font-body-family); font-size: 16px; letter-spacing: 2px; text-transform: uppercase;">Preparing your order</p>
+<button type="button" class="button button--luxury-own-it button--filled button--full uppercase"
+  style="width: 100%; min-height: 5rem; margin-top: 0.8rem;" onclick="ownItLuxuryCheckout()">
+  <span>Own it</span>
+</button>
+
+<!-- Luxury loading transition -->
+<div id="luxury-transition"
+  style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%); z-index: 9999; opacity: 0; transition: opacity 0.5s ease;">
+  <div
+    style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+    <div
+      style="width: 2px; height: 40px; background: white; margin: 0 auto 20px; animation: luxuryPulse 1.5s ease-in-out infinite;">
+    </div>
+    <p style="margin: 0; font-family: var(--font-body-family); font-size: 16px; letter-spacing: 2px; text-transform: uppercase;">Preparing your order</p>
     </div>
   </div>
   
