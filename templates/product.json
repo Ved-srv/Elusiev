@@ -32,6 +32,7 @@
         },
         "judge_me_reviews_preview_badge_H8kaR7": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "disabled": true,
           "settings": {}
         },
         "price_gDfxBd": {
@@ -167,50 +168,6 @@
         "judge_me_reviews_review_widget_343jGH"
       ],
       "settings": {}
-    },
-    "testimonials_6Bzypc": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial_hyeH9p": {
-          "type": "testimonial",
-          "settings": {
-            "author": "Jane Doe",
-            "quote": "<p>“I absolutely love the quality of my Leo Bikini Bottoms.”</p>",
-            "rating_score": 5,
-            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a"
-          }
-        },
-        "testimonial_3JLcLR": {
-          "type": "testimonial",
-          "settings": {
-            "author": "Jane Doe",
-            "quote": "<p>“I absolutely love the quality of my Leo Bikini Bottoms.”</p>",
-            "rating_score": 5,
-            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_hyeH9p",
-        "testimonial_3JLcLR"
-      ],
-      "name": "t:sections.testimonials.name",
-      "settings": {
-        "heading": "Testimonials",
-        "heading_size": "h3",
-        "subheading": "",
-        "rating_icon": "star",
-        "layout": "horizontal-w-media",
-        "slider_autoplay": 3,
-        "image_position": "image-start",
-        "image_aspect_ratio": "1/1",
-        "media_show_on": "desktop",
-        "spacing_inner": "2",
-        "section_width": "max-w-page",
-        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "spacing_top": "2",
-        "spacing_bottom": "2"
-      }
     },
     "product_recommendations_hXz6rk": {
       "type": "product-recommendations",
@@ -362,7 +319,6 @@
   "order": [
     "main",
     "1720277631cea22aba",
-    "testimonials_6Bzypc",
     "product_recommendations_hXz6rk",
     "complete_the_set_LAN4cq",
     "multitile_ybjXjD"
