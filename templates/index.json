@@ -550,7 +550,7 @@
       ],
       "name": "t:sections.testimonials.name",
       "settings": {
-        "heading": "Testimonials",
+        "heading": "Word On the street",
         "heading_size": "h3",
         "subheading": "",
         "rating_icon": "star",
