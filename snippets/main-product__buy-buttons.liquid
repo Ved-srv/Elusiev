@@ -166,16 +166,16 @@
           {% endif %}
         >
           <span>
-            {%- if product_preorder -%}
-              {{ 'product.preorder' | t }}
-            {%- elsif product.selected_or_first_available_variant == nil -%}
-              {{ 'product.unavailable' | t }}
-            {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
-              {{ 'product.sold_out' | t }}
-            {%- else -%}
-              {{ 'theme.actions.add_to_cart' | t }}
-            {%- endif -%}
-          </span>
+  {%- if product_preorder -%}
+    {{ 'product.preorder' | t }}
+  {%- elsif product.selected_or_first_available_variant == nil -%}
+    {{ 'product.unavailable' | t }}
+  {%- elsif product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+    {{ 'product.sold_out' | t }}
+  {%- else -%}
+    Add to Bag
+  {%- endif -%}
+</span>
           <div class="loading__spinner hidden">
             {%- render 'loading-spinner' -%}
           </div>
