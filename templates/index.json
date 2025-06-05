@@ -529,7 +529,7 @@
           "type": "testimonial",
           "settings": {
             "author": "Devansh Agarwal",
-            "quote": "<p><strong>Acqua di Giò Profondo</strong><br/>I usually wear Tom ford but this smells so much better. Lasts all day and gets lots of compliments!</p>",
+            "quote": "<p><strong>Acqua di Giò Profondo</strong><br/>\"I usually wear Tom ford but this smells so much better. Lasts all day and gets lots of compliments!\"</p>",
             "rating_score": 5,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a"
           }
@@ -538,7 +538,7 @@
           "type": "testimonial",
           "settings": {
             "author": "Ayush Gupta",
-            "quote": "<p><strong>Tom Ford Tobacco Vanille</strong><br/>Amazing scent! Lasts all day and I get compliments everywhere I go. Worth every penny.</p>",
+            "quote": "<p><strong>Tom Ford Tobacco Vanille</strong><br/>\"Amazing scent! Lasts all day and I get compliments everywhere I go. Worth every penny.\"</p>",
             "rating_score": 4,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a"
           }
@@ -547,7 +547,7 @@
           "type": "testimonial",
           "settings": {
             "author": "Jane Doe",
-            "quote": "<p>“I absolutely love the quality of my Leo Bikini Bottoms.”</p>",
+            "quote": "<p>\"Love this fragrance. Smells expensive and sophisticated. Great for special occasions.\"</p>",
             "rating_score": 5,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a"
           }
