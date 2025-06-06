@@ -686,7 +686,7 @@
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "section_width": "max-w-full",
         "spacing_top": "2",
-        "spacing_bottom": "2"
+        "spacing_bottom": "0"
       }
     },
     "marquees_h4dJXQ": {
@@ -695,7 +695,7 @@
         "item_8k9xBT": {
           "type": "item",
           "settings": {
-            "icon": "theme-box",
+            "icon": "option-world",
             "title": "Store Specification 1",
             "link": ""
           }
@@ -707,37 +707,57 @@
             "title": "Store Specification 2",
             "link": ""
           }
-        },
-        "item_WJEMnz": {
-          "type": "item",
-          "settings": {
-            "icon": "theme-box",
-            "title": "Store Specification 3",
-            "link": ""
-          }
-        },
-        "item_imNdVD": {
-          "type": "item",
-          "settings": {
-            "icon": "theme-box",
-            "title": "Store Specification 4",
-            "link": ""
-          }
         }
       },
       "block_order": [
         "item_8k9xBT",
-        "item_twHRqN",
-        "item_WJEMnz",
-        "item_imNdVD"
+        "item_twHRqN"
       ],
       "name": "t:sections.marquees.name",
       "settings": {
         "enable_animation": true,
         "marquee_duration_rate": 5,
         "marquee_font_size": 1,
-        "marquee_items_spacing": 4.8,
+        "marquee_items_spacing": 1.2,
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "spacing_top": "0",
+        "spacing_bottom": "0"
+      }
+    },
+    "mixed_text_FYXtrB": {
+      "type": "mixed-text",
+      "blocks": {
+        "tile_Ce3z7q": {
+          "type": "tile",
+          "settings": {
+            "text": "We offer sustainable"
+          }
+        },
+        "image_UtyL9t": {
+          "type": "image",
+          "settings": {}
+        },
+        "tile_w6BeLN": {
+          "type": "tile",
+          "settings": {
+            "text": "Offer item"
+          }
+        }
+      },
+      "block_order": [
+        "tile_Ce3z7q",
+        "image_UtyL9t",
+        "tile_w6BeLN"
+      ],
+      "name": "t:sections.mixed-text.name",
+      "settings": {
+        "content_width": 100,
+        "content_alignment": "align-start text-start justify-start",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "button--outlined",
+        "section_width": "max-w-fluid",
+        "color_scheme": "",
         "spacing_top": "0",
         "spacing_bottom": "0"
       }
@@ -788,6 +808,7 @@
     "testimonials_TYHVyW",
     "multitile_8FTYPN",
     "marquees_h4dJXQ",
+    "mixed_text_FYXtrB",
     "accordions_n4BT4M"
   ]
 }
