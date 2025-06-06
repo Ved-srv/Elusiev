@@ -378,7 +378,7 @@
         "text": "<p>10% off signature scents for a limited period.</p>",
         "action_preference": "button",
         "button_label": "Shop Now",
-        "button_link": "shopify://collections/on-sale",
+        "button_link": "shopify://collections/all",
         "newsletter_button_label": "Submit",
         "button_style": "button--filled",
         "show_timer": true,
