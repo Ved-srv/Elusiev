@@ -746,8 +746,8 @@
         "item_RWXEHA": {
           "type": "item",
           "settings": {
-            "icon": "theme-box",
-            "title": "Store Specification 3",
+            "icon": "brand-instagram",
+            "title": "",
             "link": ""
           }
         },
@@ -769,9 +769,9 @@
       "name": "t:sections.marquees.name",
       "settings": {
         "enable_animation": true,
-        "marquee_duration_rate": 5,
-        "marquee_font_size": 1,
-        "marquee_items_spacing": 4.8,
+        "marquee_duration_rate": 2,
+        "marquee_font_size": 2,
+        "marquee_items_spacing": 2,
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "spacing_top": "0",
         "spacing_bottom": "0"
