@@ -687,9 +687,10 @@
             "heading": "",
             "heading_size": "h3",
             "text": "",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "button--filled",
+            "button_label": "OWN IT",
+            "button_link": "shopify://products/yves-saint-laurent-libre-eau-de-parfum-for-her",
+            "button_style": "button--text",
+            "image": "shopify://shop_images/SL-3.jpg",
             "show_controls_on_video": false,
             "show_controls_on_video_mobile": false,
             "spacing_inner": "2"
@@ -705,7 +706,7 @@
         "heading": "",
         "heading_size": "h3",
         "heading_alignment": "start",
-        "color_scheme": "",
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "section_width": "max-w-page",
         "spacing_top": "2",
         "spacing_bottom": "2"
