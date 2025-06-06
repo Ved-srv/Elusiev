@@ -703,8 +703,8 @@
         "item_twHRqN": {
           "type": "item",
           "settings": {
-            "icon": "theme-box",
-            "title": "Store Specification 2",
+            "icon": "option-world",
+            "title": "Shipping Worldwide",
             "link": ""
           }
         }
