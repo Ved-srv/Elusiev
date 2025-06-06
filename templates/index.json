@@ -373,7 +373,7 @@
         "section_layout": "vertical",
         "media_position": "full",
         "subheading": "",
-        "heading": "L’Essence",
+        "heading": "Essence",
         "heading_size": "h3",
         "text": "<p>10% off signature scents for a limited period.</p>",
         "action_preference": "button",
@@ -640,7 +640,7 @@
           "type": "item",
           "settings": {
             "icon": "theme-heart-filled",
-            "title": "L’Essence sale is now live",
+            "title": "Essence sale is now live",
             "link": ""
           }
         },
