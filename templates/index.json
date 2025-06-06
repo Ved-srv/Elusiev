@@ -769,6 +769,7 @@
             "button_label": "",
             "button_link": "",
             "button_style": "button--filled",
+            "image": "shopify://shop_images/bad_boi.jpg",
             "video_external": "",
             "show_controls_on_video": false,
             "video_external_mobile": "",
