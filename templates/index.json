@@ -788,9 +788,9 @@
         "heading_size": "h3",
         "heading_alignment": "start",
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "section_width": "max-w-page",
-        "spacing_top": "2",
-        "spacing_bottom": "2"
+        "section_width": "max-w-full",
+        "spacing_top": "0",
+        "spacing_bottom": "0"
       }
     },
     "accordions_n4BT4M": {
