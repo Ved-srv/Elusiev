@@ -726,8 +726,8 @@
         "item_pCgXXE": {
           "type": "item",
           "settings": {
-            "icon": "100% genuine fragrances",
-            "title": "Store Specification 4",
+            "icon": "theme-check-small",
+            "title": "100% genuine fragrances",
             "link": ""
           }
         }
