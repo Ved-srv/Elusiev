@@ -121,40 +121,6 @@
         "floating_bar": false
       }
     },
-    "callout_banner_rVDLqh": {
-      "type": "callout-banner",
-      "settings": {
-        "section_layout": "vertical",
-        "media_position": "full",
-        "subheading": "",
-        "heading": "L’Essence",
-        "heading_size": "h3",
-        "text": "<p>10% off signature scents for a limited period.</p>",
-        "action_preference": "button",
-        "button_label": "Shop Now",
-        "button_link": "shopify://collections/on-sale",
-        "newsletter_button_label": "Submit",
-        "button_style": "button--filled",
-        "show_timer": true,
-        "timer_layout": "2",
-        "timer_size": "h1",
-        "timer_year": 2025,
-        "timer_month": "06",
-        "timer_day": 30,
-        "timer_hour": 11,
-        "timer_minute": 42,
-        "timer_end_message": "",
-        "show_timer_days": true,
-        "show_timer_hours": true,
-        "show_timer_minutes": true,
-        "show_timer_seconds": true,
-        "section_width": "max-w-full",
-        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "color_scheme_for_content": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "spacing_top": "0",
-        "spacing_bottom": "0"
-      }
-    },
     "marquees_TFD63r": {
       "type": "marquees",
       "blocks": {
@@ -397,6 +363,40 @@
         "marquee_font_size": 3,
         "marquee_items_spacing": 0,
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "spacing_top": "0",
+        "spacing_bottom": "0"
+      }
+    },
+    "callout_banner_rVDLqh": {
+      "type": "callout-banner",
+      "settings": {
+        "section_layout": "vertical",
+        "media_position": "full",
+        "subheading": "",
+        "heading": "L’Essence",
+        "heading_size": "h3",
+        "text": "<p>10% off signature scents for a limited period.</p>",
+        "action_preference": "button",
+        "button_label": "Shop Now",
+        "button_link": "shopify://collections/on-sale",
+        "newsletter_button_label": "Submit",
+        "button_style": "button--filled",
+        "show_timer": true,
+        "timer_layout": "2",
+        "timer_size": "h1",
+        "timer_year": 2025,
+        "timer_month": "06",
+        "timer_day": 30,
+        "timer_hour": 11,
+        "timer_minute": 42,
+        "timer_end_message": "",
+        "show_timer_days": true,
+        "show_timer_hours": true,
+        "show_timer_minutes": true,
+        "show_timer_seconds": true,
+        "section_width": "max-w-full",
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "color_scheme_for_content": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "spacing_top": "0",
         "spacing_bottom": "0"
       }
@@ -800,8 +800,8 @@
   },
   "order": [
     "1658995208ad05f95f",
-    "callout_banner_rVDLqh",
     "marquees_TFD63r",
+    "callout_banner_rVDLqh",
     "featured_products_4eL4yE",
     "featured_products_gQDpqX",
     "1720280765e75f05ad",
