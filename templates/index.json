@@ -52,7 +52,7 @@
             "subheading": "Discover Gabrielle Chanel.",
             "subheading_link": "",
             "text": "",
-            "button_link_1": "/",
+            "button_link_1": "shopify://collections/all",
             "button_link_1_type": "button",
             "button_label_1": "Explore",
             "button_style_1": "button--filled",
