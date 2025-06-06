@@ -1,5 +1,13 @@
 /* Release Theme - v1.1.0 */
 
+/* @font-face {
+  font-family: 'The Seasons';
+  src: url('{{ "theseasons-bd.450e1feaf5d4cc0b12d6628af4.29cffad9325eb008e59a56fc143cbea6.otf" | asset_url }}') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */
+
 *,
 *::before,
 *::after {

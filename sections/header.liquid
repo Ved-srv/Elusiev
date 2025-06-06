@@ -374,65 +374,11 @@
         endif
       -%}
 
-      <div class="header__logo {{ header_logo_text_class }}">
+      <div class="header__logo header__logo-text">
         <a href="{{- routes.root_url -}}" class="full-unstyled-link">
-          {%- if section.settings.logo_svg_code != blank -%}
-            {{- section.settings.logo_svg_code -}}
-          {%- elsif section.settings.logo != blank -%}
-            {% liquid
-              assign logo_image_size_double = section.settings.logo_width | times: 2 | at_most: 5760
-              capture logo_srcset
-                assign logo_srcset = section.settings.logo | image_url: width: section.settings.logo_width
-                assign logo_srcset_double = section.settings.logo | image_url: width: logo_image_size_double
-                echo logo_srcset | append: ' 1x' | append: ', ' | append: logo_srcset_double | append: ' 2x'
-              endcapture
-              assign logo_alt = section.settings.logo.alt | default: shop.name | escape
-            %}
-
-            {{ section.settings.logo
-              | image_url: width: section.settings.logo_width
-              | image_tag:
-                class: 'header__logo-image new',
-                width: section.settings.logo.width,
-                height: section.settings.logo.height,
-                srcset: logo_srcset,
-                alt: logo_alt,
-                preload: true
-            }}
-
-            {% liquid
-              assign logo_transparent_image_size_double = section.settings.logo_width | times: 2 | at_most: 5760
-
-              if section.settings.logo_transparent
-                assign logo_transparent_image = section.settings.logo_transparent
-              else
-                assign logo_transparent_image = section.settings.logo
-              endif
-
-              capture logo_transparent_srcset
-                assign logo_srcset = logo_transparent_image | image_url: width: section.settings.logo_width
-                assign logo_srcset_double = logo_transparent_image | image_url: width: logo_transparent_image_size_double
-                echo logo_srcset | append: ' 1x' | append: ', ' | append: logo_srcset_double | append: ' 2x'
-              endcapture
-              assign logo_transparent_alt = logo_transparent_image.alt | default: shop.name | escape
-            %}
-
-            {{ logo_transparent_image
-              | image_url: width: section.settings.logo_width
-              | image_tag:
-                class: 'header__logo-image-transparent new',
-                width: section.settings.logo.width,
-                height: section.settings.logo.height,
-                srcset: logo_transparent_srcset,
-                alt: logo_transparent_alt,
-                preload: true
-            }}
-
-          {%- else -%}
-            <span class="h4">{{- shop.name | escape -}}</span>
-          {%- endif -%}
+      <span class="elusiev-logo">ELUSIEV</span>
         </a>
-      </div>
+    </div>
     {%- endcapture -%}
 
       {%- capture header_utils -%}
@@ -531,17 +477,35 @@
 </div>
 
 {% style %}
+  @font-face {
+    font-family: 'The Seasons';
+    src: url('{{ "theseasons-bd.450e1feaf5d4cc0b12d6628af4.29cffad9325eb008e59a56fc143cbea6.otf" | asset_url }}') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .elusiev-logo {
+    font-family: 'The Seasons', serif;
+    font-weight: normal;
+    color: rgb(var(--color-heading-text));
+    letter-spacing: 0.1em;
+    text-transform: none;
+    line-height: 1.2;
+    font-display: swap;
+  }
+
   .header__logo {
     width: {{ section.settings.logo_width_mobile | divided_by: 10.0 }}rem;
   }
-  .header__logo.header__logo-text .h4 {
+  .header__logo.header__logo-text .elusiev-logo {
     font-size: calc(var(--font-heading-scale) * 1.6rem * {{ section.settings.logo_font_size }});
   }
   @media screen and (min-width: 750px) {
     .header__logo {
       width: {{ section.settings.logo_width | divided_by: 10.0 }}rem;
     }
-    .header__logo.header__logo-text .h4 {
+    .header__logo.header__logo-text .elusiev-logo {
       font-size: calc(var(--font-heading-scale) * 1.8rem * {{ section.settings.logo_font_size }});
     }
   }
