@@ -724,6 +724,41 @@
         "spacing_bottom": "0"
       }
     },
+    "accordions_n4BT4M": {
+      "type": "accordions",
+      "blocks": {
+        "topic_8rMhpm": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Refund details",
+            "text": "",
+            "page": "refund-returns-policy"
+          }
+        },
+        "topic_6DAHj6": {
+          "type": "topic",
+          "settings": {
+            "is_open": false,
+            "title": "Customer Queries",
+            "text": "",
+            "page": "faq"
+          }
+        }
+      },
+      "block_order": [
+        "topic_8rMhpm",
+        "topic_6DAHj6"
+      ],
+      "settings": {
+        "heading": "Frequently asked questions",
+        "heading_size": "h3",
+        "section_width": "max-w-narrower",
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "spacing_top": "2",
+        "spacing_bottom": "2"
+      }
+    },
     "marquees_kBJmCz": {
       "type": "marquees",
       "blocks": {
@@ -768,87 +803,13 @@
       ],
       "name": "t:sections.marquees.name",
       "settings": {
-        "enable_animation": true,
-        "marquee_duration_rate": 2,
+        "enable_animation": false,
+        "marquee_duration_rate": 1,
         "marquee_font_size": 2,
         "marquee_items_spacing": 2,
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "spacing_top": "0",
         "spacing_bottom": "0"
-      }
-    },
-    "mixed_text_FYXtrB": {
-      "type": "mixed-text",
-      "blocks": {
-        "tile_Ce3z7q": {
-          "type": "tile",
-          "settings": {
-            "text": "We offer sustainable"
-          }
-        },
-        "image_UtyL9t": {
-          "type": "image",
-          "settings": {}
-        },
-        "tile_w6BeLN": {
-          "type": "tile",
-          "settings": {
-            "text": "Offer item"
-          }
-        }
-      },
-      "block_order": [
-        "tile_Ce3z7q",
-        "image_UtyL9t",
-        "tile_w6BeLN"
-      ],
-      "disabled": true,
-      "name": "t:sections.mixed-text.name",
-      "settings": {
-        "content_width": 100,
-        "content_alignment": "align-start text-start justify-start",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "button--outlined",
-        "section_width": "max-w-fluid",
-        "color_scheme": "",
-        "spacing_top": "0",
-        "spacing_bottom": "0"
-      }
-    },
-    "accordions_n4BT4M": {
-      "type": "accordions",
-      "blocks": {
-        "topic_8rMhpm": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "Refund details",
-            "text": "",
-            "page": "refund-returns-policy"
-          }
-        },
-        "topic_6DAHj6": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "Customer Queries",
-            "text": "",
-            "page": "faq"
-          }
-        }
-      },
-      "block_order": [
-        "topic_8rMhpm",
-        "topic_6DAHj6"
-      ],
-      "settings": {
-        "heading": "Frequently asked questions",
-        "heading_size": "h3",
-        "section_width": "max-w-narrower",
-        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "spacing_top": "2",
-        "spacing_bottom": "2"
       }
     }
   },
@@ -862,8 +823,7 @@
     "testimonials_TYHVyW",
     "multitile_8FTYPN",
     "marquees_h4dJXQ",
-    "marquees_kBJmCz",
-    "mixed_text_FYXtrB",
-    "accordions_n4BT4M"
+    "accordions_n4BT4M",
+    "marquees_kBJmCz"
   ]
 }
