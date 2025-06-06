@@ -70,7 +70,7 @@
         "logo_svg_code": "",
         "logo_width": 100,
         "logo_width_mobile": 100,
-        "logo_font_size": 1,
+        "logo_font_size": 1.5,
         "transparent_header_bottom_border": true,
         "country_drawer_header": true,
         "country_drawer_navigation_menu": true,
