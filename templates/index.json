@@ -689,6 +689,59 @@
         "spacing_bottom": "2"
       }
     },
+    "marquees_h4dJXQ": {
+      "type": "marquees",
+      "blocks": {
+        "item_8k9xBT": {
+          "type": "item",
+          "settings": {
+            "icon": "theme-box",
+            "title": "Store Specification 1",
+            "link": ""
+          }
+        },
+        "item_twHRqN": {
+          "type": "item",
+          "settings": {
+            "icon": "theme-box",
+            "title": "Store Specification 2",
+            "link": ""
+          }
+        },
+        "item_WJEMnz": {
+          "type": "item",
+          "settings": {
+            "icon": "theme-box",
+            "title": "Store Specification 3",
+            "link": ""
+          }
+        },
+        "item_imNdVD": {
+          "type": "item",
+          "settings": {
+            "icon": "theme-box",
+            "title": "Store Specification 4",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_8k9xBT",
+        "item_twHRqN",
+        "item_WJEMnz",
+        "item_imNdVD"
+      ],
+      "name": "t:sections.marquees.name",
+      "settings": {
+        "enable_animation": true,
+        "marquee_duration_rate": 5,
+        "marquee_font_size": 1,
+        "marquee_items_spacing": 4.8,
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "spacing_top": "0",
+        "spacing_bottom": "0"
+      }
+    },
     "accordions_n4BT4M": {
       "type": "accordions",
       "blocks": {
@@ -734,6 +787,7 @@
     "1720280765e75f05ad",
     "testimonials_TYHVyW",
     "multitile_8FTYPN",
+    "marquees_h4dJXQ",
     "accordions_n4BT4M"
   ]
 }
