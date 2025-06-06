@@ -15,7 +15,7 @@
         "slide_WDUByx": {
           "type": "slide",
           "settings": {
-            "banner_layout": "hero-banner--30-70",
+            "banner_layout": "hero-banner--70-30",
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
             "header_menu_text_color": "#ffffff",
             "heading": "<h5>A Radiant Edge</h5>",
@@ -45,7 +45,7 @@
         "slide_yYrjFh": {
           "type": "slide",
           "settings": {
-            "banner_layout": "hero-banner--30-70",
+            "banner_layout": "hero-banner--70-30",
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
             "header_menu_text_color": "#ffffff",
             "heading": "<h5>Unleash Radiance </h5>",
@@ -75,7 +75,7 @@
         "slide_qkeVfg": {
           "type": "slide",
           "settings": {
-            "banner_layout": "hero-banner--30-70",
+            "banner_layout": "hero-banner--70-30",
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
             "header_menu_text_color": "#ffffff",
             "heading": "<h5><strong>Elemental Calm</strong></h5>",
