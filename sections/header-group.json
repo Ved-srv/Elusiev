@@ -14,29 +14,29 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "text_slide_CqbKaQ": {
+          "type": "text-slide",
+          "settings": {
+            "content": "<p>Welcome to ELUSIEV</p>",
+            "icon": ""
+          }
+        },
         "text_slide_PqACbj": {
           "type": "text-slide",
           "settings": {
             "content": "<p>10% Off Your First Elusive experience</p>",
             "icon": "option-star"
           }
-        },
-        "text_slide_CqbKaQ": {
-          "type": "text-slide",
-          "settings": {
-            "content": "<p>Welcome to our store</p>",
-            "icon": "theme-box"
-          }
         }
       },
       "block_order": [
-        "text_slide_PqACbj",
-        "text_slide_CqbKaQ"
+        "text_slide_CqbKaQ",
+        "text_slide_PqACbj"
       ],
       "settings": {
-        "text_block_behaviour": "marquee",
+        "text_block_behaviour": "slider",
         "slider_autoplay_interval": 3,
-        "font_weight": "700",
+        "font_weight": "500",
         "section_width": "max-w-fluid",
         "color_scheme": "scheme-8"
       }
