@@ -35,7 +35,7 @@
       ],
       "settings": {
         "text_block_behaviour": "slider",
-        "slider_autoplay_interval": 1,
+        "slider_autoplay_interval": 2,
         "font_weight": "500",
         "section_width": "max-w-fluid",
         "color_scheme": "scheme-8"
