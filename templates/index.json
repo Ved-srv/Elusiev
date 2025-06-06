@@ -758,59 +758,6 @@
         "spacing_top": "2",
         "spacing_bottom": "2"
       }
-    },
-    "marquees_kBJmCz": {
-      "type": "marquees",
-      "blocks": {
-        "item_V8Jmmi": {
-          "type": "item",
-          "settings": {
-            "icon": "brand-pinterest",
-            "title": "",
-            "link": ""
-          }
-        },
-        "item_6GPtFh": {
-          "type": "item",
-          "settings": {
-            "icon": "brand-whatsapp",
-            "title": "",
-            "link": ""
-          }
-        },
-        "item_RWXEHA": {
-          "type": "item",
-          "settings": {
-            "icon": "brand-instagram",
-            "title": "",
-            "link": ""
-          }
-        },
-        "item_AEJQ4R": {
-          "type": "item",
-          "settings": {
-            "icon": "brand-facebook",
-            "title": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_V8Jmmi",
-        "item_6GPtFh",
-        "item_RWXEHA",
-        "item_AEJQ4R"
-      ],
-      "name": "t:sections.marquees.name",
-      "settings": {
-        "enable_animation": false,
-        "marquee_duration_rate": 1,
-        "marquee_font_size": 2,
-        "marquee_items_spacing": 2,
-        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "spacing_top": "0",
-        "spacing_bottom": "0"
-      }
     }
   },
   "order": [
@@ -823,7 +770,6 @@
     "testimonials_TYHVyW",
     "multitile_8FTYPN",
     "marquees_h4dJXQ",
-    "accordions_n4BT4M",
-    "marquees_kBJmCz"
+    "accordions_n4BT4M"
   ]
 }
