@@ -747,6 +747,51 @@
         "spacing_bottom": "2"
       }
     },
+    "multitile_Erc8Yx": {
+      "type": "multitile",
+      "blocks": {
+        "tile_wtQzRb": {
+          "type": "tile",
+          "settings": {
+            "show_on": "both",
+            "column_factor": 1,
+            "row_factor": 1,
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "gradient_background_color": "",
+            "tile_aspect_ratio": "auto",
+            "content_position_vertical": "justify-center",
+            "content_alignment": "align-center text-center",
+            "content_alignment_for_mobile": "align-start--mobile text-start--mobile",
+            "media_position": "background",
+            "heading": "",
+            "heading_size": "h3",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "button--filled",
+            "video_external": "",
+            "show_controls_on_video": false,
+            "video_external_mobile": "",
+            "show_controls_on_video_mobile": false,
+            "spacing_inner": "2"
+          }
+        }
+      },
+      "block_order": [
+        "tile_wtQzRb"
+      ],
+      "name": "t:sections.multitile.name",
+      "settings": {
+        "block_order_mobile": false,
+        "heading": "",
+        "heading_size": "h3",
+        "heading_alignment": "start",
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "section_width": "max-w-page",
+        "spacing_top": "2",
+        "spacing_bottom": "2"
+      }
+    },
     "accordions_n4BT4M": {
       "type": "accordions",
       "blocks": {
@@ -795,6 +840,7 @@
     "marquees_h4dJXQ",
     "multitile_wycQJD",
     "marquees_fLdnnt",
+    "multitile_Erc8Yx",
     "accordions_n4BT4M"
   ]
 }
