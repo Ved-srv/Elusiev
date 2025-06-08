@@ -106,40 +106,49 @@ class PerfumeScene {
   loadModel() {
     // Show loading state
     this.showLoading(true);
-    
-    const loader = new THREE.OBJLoader();
-    
+
     // Get model path from data attribute
-    const sectionContainer = document.getElementById('perfume-3d-container');
+    const sectionContainer = document.getElementById("perfume-3d-container");
     const modelPath = sectionContainer?.dataset.modelPath;
-    
-    console.log('Attempting to load model from:', modelPath);
-    
-    if (!modelPath) {
-      console.error('No model path specified');
+    const usePlaceholder = sectionContainer?.dataset.usePlaceholder === "true";
+
+    console.log("3D Section Debug Info:");
+    console.log("- Container found:", !!sectionContainer);
+    console.log("- Model path:", modelPath);
+    console.log("- Use placeholder:", usePlaceholder);
+
+    // For testing, always use placeholder first
+    if (usePlaceholder || !modelPath) {
+      console.log("Using placeholder model for testing");
+      this.createPlaceholderModel();
       this.showLoading(false);
-      this.showError('No 3D model file specified in section settings');
       return;
     }
-    
+
+    const loader = new THREE.OBJLoader();
+
+    console.log("Attempting to load model from:", modelPath);
+
     loader.load(
       modelPath,
       (object) => {
-        console.log('Model loaded successfully');
+        console.log("Model loaded successfully");
         this.setupModel(object);
         this.showLoading(false);
         this.isLoaded = true;
       },
       (progress) => {
-        const percent = progress.total > 0 ? (progress.loaded / progress.total) * 100 : 0;
+        const percent =
+          progress.total > 0 ? (progress.loaded / progress.total) * 100 : 0;
         this.updateLoadingProgress(percent);
-        console.log('Loading progress:', percent.toFixed(1) + '%');
+        console.log("Loading progress:", percent.toFixed(1) + "%");
       },
       (error) => {
-        console.error('Error loading 3D model:', error);
-        console.log('Model path attempted:', modelPath);
+        console.error("Error loading 3D model:", error);
+        console.log("Model path attempted:", modelPath);
+        console.log("Falling back to placeholder model");
+        this.createPlaceholderModel();
         this.showLoading(false);
-        this.showError(`Could not load 3D model: ${modelPath.split('/').pop()}`);
       }
     );
   }
