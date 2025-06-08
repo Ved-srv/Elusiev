@@ -1,0 +1,139 @@
+{{- 'section-3d-perfume.css' | asset_url | stylesheet_tag -}}
+
+<section class="section section-3d-perfume color-{{ section.settings.color_scheme }} gradient">
+  <div class="container max-w-full">
+    <div class="section-3d-perfume__wrapper" id="perfume-3d-container" 
+         data-model-path="{{ section.settings.model_filename | default: 'perfume-model.obj' | asset_url }}">
+      <!-- 3D Canvas will be inserted here -->
+      <canvas id="perfume-canvas"></canvas>
+      
+      <!-- Content overlay -->
+      <div class="section-3d-perfume__content">
+        {%- if section.settings.heading != blank -%}
+          <h2 class="section-3d-perfume__heading h2">{{ section.settings.heading }}</h2>
+        {%- endif -%}
+        
+        {%- if section.settings.subtext != blank -%}
+          <div class="section-3d-perfume__text">
+            {{ section.settings.subtext }}
+          </div>
+        {%- endif -%}
+        
+        {%- if section.settings.button_label != blank and section.settings.button_link != blank -%}
+          <div class="section-3d-perfume__button">
+            {%- render 'button',
+              type: 'link',
+              class: 'button',
+              button_style: section.settings.button_style,
+              value: section.settings.button_label,
+              href: section.settings.button_link
+            -%}
+          </div>
+        {%- endif -%}
+      </div>
+      
+      <!-- Scroll indicator -->
+      <div class="section-3d-perfume__scroll-indicator">
+        <div class="scroll-indicator">
+          <span>Scroll to explore</span>
+          <div class="scroll-arrow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script src="{{ '3d-perfume-scene.js' | asset_url }}" defer></script>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-height: {{ section.settings.section_height }}vh;
+    --perfume-model-path: {{ section.settings.perfume_model | asset_url | json }};
+  }
+</style>
+
+{% schema %}
+{
+  "name": "3D Perfume Display",
+  "tag": "section",
+  "class": "section-3d-perfume",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "range",
+      "id": "section_height",
+      "min": 50,
+      "max": 150,
+      "step": 10,
+      "unit": "%",
+      "label": "Section height",
+      "default": 100
+    },
+    {
+      "type": "text",
+      "id": "model_filename",
+      "label": "3D Model filename (in assets folder)",
+      "default": "perfume-model.obj",
+      "info": "Upload your .obj file to the assets folder and enter the filename here"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Experience Our Signature Scent"
+    },
+    {
+      "type": "richtext",
+      "id": "subtext",
+      "label": "Description",
+      "default": "<p>Discover the intricate details of our masterfully crafted perfume bottle</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "label": "Button style",
+      "options": [
+        {
+          "value": "button--filled",
+          "label": "Filled"
+        },
+        {
+          "value": "button--outlined",
+          "label": "Outlined"
+        },
+        {
+          "value": "button--text",
+          "label": "Text"
+        }
+      ],
+      "default": "button--outlined"
+    }
+  ],
+  "presets": [
+    {
+      "name": "3D Perfume Display"
+    }
+  ]
+}
+{% endschema %}
