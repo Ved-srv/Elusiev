@@ -691,7 +691,9 @@
             "button_link": "shopify://products/yves-saint-laurent-libre-eau-de-parfum-for-her",
             "button_style": "button--text",
             "image": "shopify://shop_images/SL-3.jpg",
+            "video_external": "",
             "show_controls_on_video": false,
+            "video_external_mobile": "",
             "show_controls_on_video_mobile": false,
             "spacing_inner": "2"
           }
@@ -827,6 +829,20 @@
         "spacing_top": "2",
         "spacing_bottom": "2"
       }
+    },
+    "section_3d_perfume_qTc7Ky": {
+      "type": "section-3d-perfume",
+      "name": "3D Perfume Display",
+      "settings": {
+        "color_scheme": "",
+        "section_height": 100,
+        "model_filename": "perfume-model.glb",
+        "heading": "Experience Our Signature Scent",
+        "subtext": "<p>Discover the intricate details of our masterfully crafted perfume bottle</p>",
+        "button_label": "Shop Now",
+        "button_link": "",
+        "button_style": "button--outlined"
+      }
     }
   },
   "order": [
@@ -842,6 +858,7 @@
     "multitile_wycQJD",
     "marquees_fLdnnt",
     "multitile_Erc8Yx",
-    "accordions_n4BT4M"
+    "accordions_n4BT4M",
+    "section_3d_perfume_qTc7Ky"
   ]
 }
