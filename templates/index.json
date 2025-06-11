@@ -834,7 +834,7 @@
       "type": "section-3d-perfume",
       "name": "3D Perfume Display",
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "section_height": 100,
         "model_filename": "perfume-bottle.glb",
         "heading": "Experience Our Signature Scent",
