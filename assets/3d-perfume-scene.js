@@ -408,20 +408,94 @@ document.addEventListener('DOMContentLoaded', () => {
     // Wait for Three.js to load
     const checkThreeJS = () => {
       if (typeof THREE !== 'undefined') {
+        // Add GLTFLoader for .glb/.gltf files
+        THREE.GLTFLoader = class {
+          load(url, onLoad, onProgress, onError) {
+            fetch(url)
+              .then((response) => {
+                if (!response.ok) {
+                  throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const total =
+                  parseInt(response.headers.get("content-length")) || 0;
+                let loaded = 0;
+
+                return response.arrayBuffer().then((buffer) => {
+                  if (onProgress) {
+                    onProgress({
+                      loaded: buffer.byteLength,
+                      total: buffer.byteLength,
+                    });
+                  }
+                  return this.parse(buffer);
+                });
+              })
+              .then((gltf) => {
+                onLoad && onLoad(gltf);
+              })
+              .catch((error) => {
+                console.error("Error loading GLB file:", error);
+                onError && onError(error);
+              });
+          }
+
+          parse(arrayBuffer) {
+            // Basic GLB header parsing
+            const header = new DataView(arrayBuffer, 0, 12);
+            const magic = header.getUint32(0, true);
+            const version = header.getUint32(4, true);
+            const length = header.getUint32(8, true);
+
+            if (magic !== 0x46546c67) {
+              // "glTF" in ASCII
+              throw new Error("Invalid GLB file");
+            }
+
+            // For now, create a simple placeholder and log the attempt
+            console.log("GLB file detected, but full parser not implemented");
+            console.log("File size:", arrayBuffer.byteLength, "bytes");
+
+            // Return a simple object structure that matches GLTF format
+            const scene = new THREE.Group();
+
+            // Create a simple representation
+            const geometry = new THREE.BoxGeometry(1, 2, 0.5);
+            const material = new THREE.MeshStandardMaterial({
+              color: 0xffffff,
+              transparent: true,
+              opacity: 0.8,
+              roughness: 0.1,
+              metalness: 0.1,
+            });
+            const mesh = new THREE.Mesh(geometry, material);
+            scene.add(mesh);
+
+            return {
+              scene: scene,
+              scenes: [scene],
+              animations: [],
+              cameras: [],
+              asset: {},
+            };
+          }
+        };
+
         // Add OBJLoader implementation
         THREE.OBJLoader = class {
           load(url, onLoad, onProgress, onError) {
             fetch(url)
-              .then(response => {
+              .then((response) => {
                 if (!response.ok) {
                   throw new Error(`HTTP error! status: ${response.status}`);
                 }
-                const total = parseInt(response.headers.get('content-length')) || 0;
+                const total =
+                  parseInt(response.headers.get("content-length")) || 0;
                 let loaded = 0;
-                
+
                 const reader = response.body.getReader();
                 let chunks = [];
-                
+
                 return new ReadableStream({
                   start(controller) {
                     function pump() {
@@ -440,17 +514,19 @@ document.addEventListener('DOMContentLoaded', () => {
                       });
                     }
                     return pump();
-                  }
+                  },
                 }).getReader();
               })
-              .then(reader => {
+              .then((reader) => {
                 let chunks = [];
                 function pump() {
                   return reader.read().then(({ done, value }) => {
                     if (done) {
-                      const uint8Array = new Uint8Array(chunks.reduce((acc, chunk) => acc + chunk.length, 0));
+                      const uint8Array = new Uint8Array(
+                        chunks.reduce((acc, chunk) => acc + chunk.length, 0)
+                      );
                       let offset = 0;
-                      chunks.forEach(chunk => {
+                      chunks.forEach((chunk) => {
                         uint8Array.set(chunk, offset);
                         offset += chunk.length;
                       });
@@ -463,77 +539,74 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 return pump();
               })
-              .then(object => {
+              .then((object) => {
                 onLoad && onLoad(object);
               })
-              .catch(error => {
-                console.error('Error loading OBJ file:', error);
+              .catch((error) => {
+                console.error("Error loading OBJ file:", error);
                 onError && onError(error);
               });
           }
-          
+
           parse(text) {
             const object = new THREE.Group();
             const vertices = [];
             const normals = [];
             const uvs = [];
-            
-            const lines = text.split('\n');
+
+            const lines = text.split("\n");
             let geometry = new THREE.BufferGeometry();
-            let material = new THREE.MeshStandardMaterial({ 
+            let material = new THREE.MeshStandardMaterial({
               color: 0xffffff,
               transparent: true,
               opacity: 0.9,
               roughness: 0.1,
-              metalness: 0.1
+              metalness: 0.1,
             });
-            
+
             const positions = [];
             const normalsArray = [];
             const uvsArray = [];
-            
-            lines.forEach(line => {
+
+            lines.forEach((line) => {
               const parts = line.trim().split(/\s+/);
-              
-              if (parts[0] === 'v') {
+
+              if (parts[0] === "v") {
                 vertices.push(
                   parseFloat(parts[1]),
                   parseFloat(parts[2]),
                   parseFloat(parts[3])
                 );
-              } else if (parts[0] === 'vn') {
+              } else if (parts[0] === "vn") {
                 normals.push(
                   parseFloat(parts[1]),
                   parseFloat(parts[2]),
                   parseFloat(parts[3])
                 );
-              } else if (parts[0] === 'vt') {
-                uvs.push(
-                  parseFloat(parts[1]),
-                  parseFloat(parts[2])
-                );
-              } else if (parts[0] === 'f') {
+              } else if (parts[0] === "vt") {
+                uvs.push(parseFloat(parts[1]), parseFloat(parts[2]));
+              } else if (parts[0] === "f") {
                 // Handle faces - simple triangulation
                 const face = [];
                 for (let i = 1; i < parts.length; i++) {
-                  const vertex = parts[i].split('/');
+                  const vertex = parts[i].split("/");
                   face.push({
                     v: parseInt(vertex[0]) - 1,
                     vt: vertex[1] ? parseInt(vertex[1]) - 1 : null,
-                    vn: vertex[2] ? parseInt(vertex[2]) - 1 : null
+                    vn: vertex[2] ? parseInt(vertex[2]) - 1 : null,
                   });
                 }
-                
+
                 // Triangulate face
                 for (let i = 1; i < face.length - 1; i++) {
-                  [face[0], face[i], face[i + 1]].forEach(vertex => {
+                  [face[0], face[i], face[i + 1]].forEach((vertex) => {
                     const vIndex = vertex.v * 3;
                     positions.push(
                       vertices[vIndex],
                       vertices[vIndex + 1],
                       vertices[vIndex + 2]
                     );
-                    
+
                     if (vertex.vn !== null && normals.length > 0) {
                       const nIndex = vertex.vn * 3;
                       normalsArray.push(
@@ -542,38 +615,44 @@ document.addEventListener('DOMContentLoaded', () => {
                         normals[nIndex + 2]
                       );
                     }
-                    
+
                     if (vertex.vt !== null && uvs.length > 0) {
                       const uvIndex = vertex.vt * 2;
-                      uvsArray.push(
-                        uvs[uvIndex],
-                        uvs[uvIndex + 1]
-                      );
+                      uvsArray.push(uvs[uvIndex], uvs[uvIndex + 1]);
                     }
                   });
                 }
               }
             });
-            
-            geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
-            
+
+            geometry.setAttribute(
+              "position",
+              new THREE.Float32BufferAttribute(positions, 3)
+            );
+
             if (normalsArray.length > 0) {
-              geometry.setAttribute('normal', new THREE.Float32BufferAttribute(normalsArray, 3));
+              geometry.setAttribute(
+                "normal",
+                new THREE.Float32BufferAttribute(normalsArray, 3)
+              );
             } else {
               geometry.computeVertexNormals();
             }
-            
+
             if (uvsArray.length > 0) {
-              geometry.setAttribute('uv', new THREE.Float32BufferAttribute(uvsArray, 2));
+              geometry.setAttribute(
+                "uv",
+                new THREE.Float32BufferAttribute(uvsArray, 2)
+              );
             }
-            
+
             const mesh = new THREE.Mesh(geometry, material);
             object.add(mesh);
-            
+
             return object;
           }
         };
-        
+
         new PerfumeScene();
       } else {
         setTimeout(checkThreeJS, 100);

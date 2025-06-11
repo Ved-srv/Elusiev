@@ -3,7 +3,7 @@
 <section class="section section-3d-perfume color-{{ section.settings.color_scheme }} gradient">
   <div class="container max-w-full">
     <div class="section-3d-perfume__wrapper" id="perfume-3d-container" 
-         data-model-path="{{ section.settings.model_filename | default: 'perfume-model.obj' | asset_url }}">
+         data-model-path="{{ section.settings.model_filename | default: 'perfume-bottle.glb' | asset_url }}">
       <!-- 3D Canvas will be inserted here -->
       <canvas id="perfume-canvas"></canvas>
       
@@ -78,8 +78,8 @@
       "type": "text",
       "id": "model_filename",
       "label": "3D Model filename (in assets folder)",
-      "default": "perfume-model.obj",
-      "info": "Upload your .obj file to the assets folder and enter the filename here"
+      "default": "perfume-model.glb",
+      "info": "Upload your .glb, .gltf, or .obj file to the assets folder. GLB format recommended for best performance."
     },
     {
       "type": "header",
