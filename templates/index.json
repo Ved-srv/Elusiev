@@ -829,20 +829,6 @@
         "spacing_top": "2",
         "spacing_bottom": "2"
       }
-    },
-    "section_3d_perfume_qTc7Ky": {
-      "type": "section-3d-perfume",
-      "name": "3D Perfume Display",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "section_height": 100,
-        "model_filename": "perfume-bottle.glb",
-        "heading": "Experience Our Signature Scent",
-        "subtext": "<p>Discover the intricate details of our masterfully crafted perfume bottle</p>",
-        "button_label": "Shop Now",
-        "button_link": "",
-        "button_style": "button--outlined"
-      }
     }
   },
   "order": [
@@ -858,7 +844,6 @@
     "multitile_wycQJD",
     "marquees_fLdnnt",
     "multitile_Erc8Yx",
-    "accordions_n4BT4M",
-    "section_3d_perfume_qTc7Ky"
+    "accordions_n4BT4M"
   ]
 }
