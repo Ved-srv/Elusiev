@@ -462,50 +462,6 @@
         "spacing_bottom": "4"
       }
     },
-    "featured_products_gQDpqX": {
-      "type": "featured-products",
-      "blocks": {
-        "collection_hxB39c": {
-          "type": "collection",
-          "settings": {
-            "title": "",
-            "collection": "",
-            "products": [],
-            "vendor": "",
-            "collection_of_products": "",
-            "show_unavailable_products": false,
-            "card_text_heading": "",
-            "card_text_button_label": "",
-            "card_text_button_style": "button--filled",
-            "card_text_button_link": "",
-            "content_position": "center",
-            "content_alignment": "center"
-          }
-        }
-      },
-      "block_order": [
-        "collection_hxB39c"
-      ],
-      "disabled": true,
-      "settings": {
-        "layout": "layout-1",
-        "heading": "Best Sellers",
-        "heading_size": "h3",
-        "subheading": "",
-        "button_label": "View all",
-        "button_link": "shopify://collections/best-sellers",
-        "button_style": "button--text",
-        "max_products": 8,
-        "enable_slideshow_overflow": false,
-        "show_navigation_arrows": true,
-        "slideshow_autoplay_interval": 2,
-        "tab_button_style": "button--filled",
-        "section_width": "max-w-page",
-        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "spacing_top": "4",
-        "spacing_bottom": "2"
-      }
-    },
     "1720280765e75f05ad": {
       "type": "apps",
       "blocks": {
@@ -836,7 +792,6 @@
     "marquees_TFD63r",
     "callout_banner_rVDLqh",
     "featured_products_4eL4yE",
-    "featured_products_gQDpqX",
     "1720280765e75f05ad",
     "testimonials_TYHVyW",
     "multitile_8FTYPN",
