@@ -142,6 +142,11 @@
   }
 }
 
+.main-product__media .swiper--product-gallery .swiper-slide .media.no-shadow {
+  box-shadow: none !important;
+  background: none !important;
+}
+
 /* Product image fade-in animation */
 .main-product__media .swiper-slide .media img {
   opacity: 0;

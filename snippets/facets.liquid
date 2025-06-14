@@ -120,28 +120,35 @@
                           {%- render 'icon', icon_name: 'theme-chevron-down' -%}
                         {%- endcapture -%}
 
-                        <custom-select
-                          class="custom-select facets__custom-select"
-                          data-dropdown-id="SortByDropdown"
-                          data-label="{{- 'collection.sort_by' | t -}}"
-                          data-icon-chevron-down='{{- icon_chevron_down -}}'
-                        >
-                          <div class="facets__sort no-js">
-                            <select class="facets__sort-input facets__actions-button focus-inset"
-                              name="sort_by"
-                              id="SortBy"
-                              aria-describedby="a11y-refresh-page-message"
-                            >
-                              {%- for option in results.sort_options -%}
-                                <option value="{{- option.value | escape -}}"
-                                  {% if option.value == sort_by %}selected="selected"{% endif %}
-                                >
-                                  {{- option.name | escape -}}
-                                </option>
-                              {%- endfor -%}
-                            </select>
-                          </div>
-                        </custom-select>
+                       <custom-select
+  class="custom-select facets__custom-select"
+  data-dropdown-id="SortByDropdown"
+  data-label="{{- 'collection.sort_by' | t -}}"
+  data-icon-chevron-down='{{- icon_chevron_down -}}'
+>
+  <div class="facets__sort no-js">
+    <select class="facets__sort-input facets__actions-button focus-inset"
+      name="sort_by"
+      id="SortBy"
+      aria-describedby="a11y-refresh-page-message"
+    >
+      {%- comment -%}
+        Define excluded sort options FIRST
+      {%- endcomment -%}
+      {%- assign excluded_sort_options = 'manual,title-ascending,title-descending,created-ascending,created-descending' | split: ',' -%}
+      
+      {%- for option in results.sort_options -%}
+        {%- unless excluded_sort_options contains option.value -%}
+          <option value="{{- option.value | escape -}}"
+            {% if option.value == 'best-selling' and excluded_sort_options contains sort_by %}selected="selected"{% elsif option.value == sort_by %}selected="selected"{% endif %}
+          >
+            {{- option.name | escape -}}
+          </option>
+        {%- endunless -%}
+      {%- endfor -%}
+    </select>
+  </div>
+</custom-select>
                       </li>
                     </ul>
                   </form>
