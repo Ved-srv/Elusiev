@@ -829,22 +829,6 @@
         "spacing_top": "2",
         "spacing_bottom": "2"
       }
-    },
-    "main_list_collections_dkCnQa": {
-      "type": "main-list-collections",
-      "name": "t:sections.main-list-collections.name",
-      "settings": {
-        "collections_to_show": "all",
-        "card_title_style": "card-single-text",
-        "collection_product_count": "show",
-        "collections_per_page": 12,
-        "pagination_style": "default",
-        "enable_infinity_scroll": false,
-        "section_width": "max-w-page",
-        "color_scheme": "",
-        "spacing_top": "2",
-        "spacing_bottom": "2"
-      }
     }
   },
   "order": [
@@ -860,7 +844,6 @@
     "multitile_wycQJD",
     "marquees_fLdnnt",
     "multitile_Erc8Yx",
-    "accordions_n4BT4M",
-    "main_list_collections_dkCnQa"
+    "accordions_n4BT4M"
   ]
 }
