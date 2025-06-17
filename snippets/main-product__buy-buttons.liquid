@@ -144,7 +144,7 @@
           </div>
         {% endif %}
 
-        {%- liquid
+       {%- liquid
           assign check_against_inventory = true
           if product.selected_or_first_available_variant.inventory_management != 'shopify' or product.selected_or_first_available_variant.inventory_policy == 'continue'
             assign check_against_inventory = false
@@ -153,6 +153,7 @@
             assign quantity_rule_soldout = true
           endif
         -%}
+        
         <button
           id="ProductSubmitButton-{{ section_id }}"
           type="submit"
@@ -180,7 +181,11 @@
             {%- render 'loading-spinner' -%}
           </div>
         </button>
-{%- if show_dynamic_checkout and product_preorder == false -%}
+
+{%- if show_dynamic_checkout and product_preorder == false 
+  and product.selected_or_first_available_variant.available == true
+  and quantity_rule_soldout != true
+  and product.selected_or_first_available_variant != nil -%}
 <button type="button" class="button button--luxury-own-it button--filled button--full uppercase"
   style="width: 100%; min-height: 5rem; margin-top: 0.8rem;" onclick="ownItLuxuryCheckout()">
   <span>Own it</span>

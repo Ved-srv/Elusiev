@@ -1560,7 +1560,7 @@ deferred-media {
 .button[disabled] {
   /* digi-note--kk - is this transformed to a variable? -- start */
   --color-button-text: rgb(255, 255, 255);
-  --color-button-background: rgb(224, 224, 224);
+  --color-button-background: rgb(0, 0, 0);
   --color-button-outline: rgb(224, 224, 224);
   /* opacity: 0.7; */
   /* digi-note--kk - is this transformed to a variable? -- end */
