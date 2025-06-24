@@ -91,6 +91,7 @@
         "template--16809880650043__90f0172d-db82-4963-95c4-6a1724783cd8-16677286337545964d-1",
         "template--16809880650043__90f0172d-db82-4963-95c4-6a1724783cd8-16677286337545964d-2"
       ],
+      "disabled": true,
       "settings": {
         "swipe_on_mobile": true,
         "slideshow_autoplay_interval": 3,
