@@ -56,7 +56,7 @@
     letter-spacing: 2px;
   }
   
-  .gender-selection__button {
+  /* .gender-selection__button {
     display: inline-block;
     padding: 1rem 2rem;
     background-color: rgba(255, 255, 255, 0.9);
@@ -68,13 +68,13 @@
     border-radius: 0;
     transition: all 0.3s ease;
     border: 2px solid transparent;
-  }
+  } */
   
-  .gender-selection__button:hover {
+  /* .gender-selection__button:hover {
     background-color: transparent;
     color: white;
     border-color: white;
-  }
+  } */
   
   .gender-selection__item:hover .gender-selection__overlay {
     background: rgba(0, 0, 0, 0.5);
@@ -97,10 +97,10 @@
       margin-bottom: 1rem;
     }
     
-    .gender-selection__button {
+    /* .gender-selection__button {
       padding: 0.6rem 1.2rem;
       font-size: 0.8rem;
-    }
+    } */
   }
 {%- endstyle -%}
 
@@ -129,8 +129,9 @@
           {%- endif -%}
           
           {%- if section.settings.button_label_for_her != blank -%}
-            <a href="{{ section.settings.link_for_her | default: '/collections/for-her' }}" 
-               class="gender-selection__button">
+            <a href="{{ section.settings.link_for_her | default: '/collections/for-her' }}"
+            style="top: 5rem;" 
+               class="button button--filled uppercase">
               {{ section.settings.button_label_for_her }}
             </a>
           {%- endif -%}
@@ -158,8 +159,9 @@
           {%- endif -%}
           
           {%- if section.settings.button_label_for_him != blank -%}
-            <a href="{{ section.settings.link_for_him | default: '/collections/for-him' }}" 
-               class="gender-selection__button">
+            <a href="{{ section.settings.link_for_him | default: '/collections/for-men' }}"
+            style="top: 5rem;" 
+               class="button button--filled uppercase">
               {{ section.settings.button_label_for_him }}
             </a>
           {%- endif -%}
