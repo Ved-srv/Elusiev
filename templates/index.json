@@ -370,6 +370,24 @@
         "spacing_bottom": "1"
       }
     },
+    "gender_selection_AYBdEH": {
+      "type": "gender-selection",
+      "name": "Gender Selection",
+      "settings": {
+        "image_for_her": "shopify://shop_images/for_her.jpg",
+        "title_for_her": "",
+        "button_label_for_her": "For her",
+        "link_for_her": "shopify://collections/for-her",
+        "image_for_him": "shopify://shop_images/for_him.png",
+        "title_for_him": "",
+        "button_label_for_him": "For Him",
+        "link_for_him": "",
+        "section_width": "max-w-full",
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "spacing_top": "0",
+        "spacing_bottom": "0"
+      }
+    },
     "callout_banner_rVDLqh": {
       "type": "callout-banner",
       "settings": {
@@ -400,24 +418,6 @@
         "section_width": "max-w-full",
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "color_scheme_for_content": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "spacing_top": "0",
-        "spacing_bottom": "0"
-      }
-    },
-    "gender_selection_AYBdEH": {
-      "type": "gender-selection",
-      "name": "Gender Selection",
-      "settings": {
-        "image_for_her": "shopify://shop_images/for_her.jpg",
-        "title_for_her": "",
-        "button_label_for_her": "For her",
-        "link_for_her": "shopify://collections/for-her",
-        "image_for_him": "shopify://shop_images/for_him.png",
-        "title_for_him": "",
-        "button_label_for_him": "For Him",
-        "link_for_him": "",
-        "section_width": "max-w-full",
-        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "spacing_top": "0",
         "spacing_bottom": "0"
       }
