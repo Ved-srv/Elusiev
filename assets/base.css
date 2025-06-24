@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* Release Theme - v1.1.0 */
 
-@font-face {
+/* @font-face {
   font-family: 'The Seasons';
   src: url('{{ "theseasons-bd.450e1feaf5d4cc0b12d6628af4.29cffad9325eb008e59a56fc143cbea6.otf" | asset_url }}') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-}
+} */
 
 *,
 *::before,
@@ -30,10 +32,10 @@
   --spacing-9: calc(var(--spacing-unit) * 6); /* 9.6rem */
   --spacing-10: calc(var(--spacing-unit) * 8); /* 12.8rem */
   --spacing-11: calc(var(--spacing-unit) * 10); /* 16rem */
-    --font-heading-family: 'The Seasons', serif !important;
-  --font-body-family: 'The Seasons', serif !important;
-  --font-italic-family: 'The Seasons', serif !important;
-  --font-button-family: 'The Seasons', serif !important;
+  --font-heading-family: 'Tinos', serif !important;
+  --font-body-family: 'Tinos', serif !important;
+  --font-italic-family: 'Tinos', serif !important;
+  --font-button-family: 'Tinos', serif !important;
 }
 
 html {
@@ -67,7 +69,7 @@ h1, h2, h3, h4, h5, h6,
 p, span, div, a, li,
 button, .button,
 input, textarea, select {
-  font-family: 'The Seasons', serif !important;
+  font-family: 'Tinos', serif !important;
 }
 
 .no-js:not(html) {
