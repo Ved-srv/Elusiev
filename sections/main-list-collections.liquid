@@ -7,12 +7,39 @@
     padding-block-end: calc(var(--section-spacing-unit-size) * {{ section.settings.spacing_bottom }});
   }
   .main-list-collections__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     column-gap: calc(var(--grid-spacing) * 1);
     row-gap: calc(var(--grid-spacing) * 3);
   }
 
+  @media screen and (max-width: 749px) {
+    .main-list-collections__grid {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: calc(var(--grid-spacing) * 0.5);
+      row-gap: calc(var(--grid-spacing) * 2);
+    }
+    
+    /* Make collection cards smaller on mobile */
+    .main-list-collections .card-collection {
+      font-size: 0.85rem;
+    }
+    
+    .main-list-collections .card-collection__title {
+      font-size: 0.9rem;
+      line-height: 1.2;
+    }
+    
+    /* Reduce image size on mobile if needed */
+    .main-list-collections .card-collection__image {
+      height: auto;
+      min-height: 200px;
+    }
+  }
+
   @media screen and (min-width: 990px) {
     .main-list-collections__grid {
+      grid-template-columns: repeat(2, 1fr);
       column-gap: calc(var(--grid-spacing) * 1);
       row-gap: calc(var(--grid-spacing) * 5.33);
     }

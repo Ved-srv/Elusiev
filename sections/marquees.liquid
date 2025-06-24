@@ -58,6 +58,30 @@
     #shopify-section-{{ section.id }} .marquee {
       --gap: {{- marquee_items_spacing_mobile -}}rem;
     }
+    
+    /* Shop By Brand Button Styles */
+    .marquee__shop-by-brand {
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    /* .marquee__shop-by-brand .button {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      font-weight: 500;v 
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    } */
+    
+    @media screen and (max-width: 749px) {
+      .marquee__shop-by-brand {
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+     
+    }
+    
     @media screen and (min-width: 750px) {
       #shopify-section-{{ section.id }} > div {
         --marquee-duration: {{ marquee_duration }}s;
@@ -177,6 +201,15 @@
           {%- endfor %}
         </ul>
       </div>
+      
+      <!-- Shop By Brand Button -->
+      {%- if section.settings.show_shop_by_brand_button -%}
+        <div class="marquee__shop-by-brand">
+          <a href="{{ section.settings.shop_by_brand_link | default: '/collections' }}" class="button button--filled uppercase">
+            {{ section.settings.shop_by_brand_text | default: 'Shop By Brand' }}
+          </a>
+        </div>
+      {%- endif -%}
     </div>
   </div>
 
@@ -203,6 +236,28 @@
       "max": 10,
       "step": 1,
       "default": 5
+    },
+    {
+      "type": "header",
+      "content": "Shop By Brand Button"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_shop_by_brand_button",
+      "label": "Show Shop By Brand Button",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "shop_by_brand_text",
+      "label": "Button Text",
+      "default": "Shop By Brand"
+    },
+    {
+      "type": "url",
+      "id": "shop_by_brand_link",
+      "label": "Button Link",
+      "info": "Link to your brands/collections page"
     },
     {
       "type": "header",
