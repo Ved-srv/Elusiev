@@ -16,6 +16,21 @@
       --callout-banner-timer-text-font-size: var(--font-size-static-{{ section.settings.timer_size }});
     }
   }
+  
+  /* Two Buttons Side by Side Styles */
+  .callout-banner__buttons-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+  }
+  
+  @media screen and (max-width: 749px) {
+    .callout-banner__buttons-container {
+      gap: 3rem;
+    }
+  }
 {%- endstyle -%}
 
 {% comment %}
@@ -59,18 +74,7 @@
               </div>
             {%- endif -%}
           </div>
-          <div class="callout-banner__action">
-            {%- if section.settings.button_label != blank and section.settings.action_preference == 'button' -%}
-              <div class="callout-banner__button">
-                {% render 'button', type: 'link', class: 'button', button_style: section.settings.button_style, value: section.settings.button_label, href: section.settings.button_link %}
-              </div>
-            {%- endif -%}
-            {%- if section.settings.newsletter_button_label != blank and section.settings.action_preference == 'newsletter_form' -%}
-              <div class="callout-banner__newsletter-form">
-                {%- render 'newsletter-form', namespace: section.id, js_class: 'js-form', submit_button_text: section.settings.newsletter_button_label -%}
-              </div>
-            {%- endif -%}
-          </div>
+
 
             <div class="callout-banner__timer">
               {%- if section.settings.section_layout == 'horizontal' and section.settings.media_position != 'full' -%}
@@ -117,6 +121,23 @@
                   timer_layout: section.settings.timer_layout
                 -%}
               {%- endif -%}
+              
+              <!-- Two Side-by-Side Buttons -->
+               {% comment %} {%- if section.settings.show_dual_buttons -%}
+                <div class="callout-banner__buttons-container">
+                  {%- if section.settings.button_2_label != blank -%}
+                    <a href="{{ section.settings.button_2_link | default: '/collections/for-her' }}" class="button button--filled uppercase">
+                      {{ section.settings.button_2_label }}
+                    </a>
+                  {%- endif -%}
+                  {%- if section.settings.button_1_label != blank -%}
+                    <a href="{{ section.settings.button_1_link | default: '/collections/for-men' }}" class="button button--filled uppercase">
+                      {{ section.settings.button_1_label }}
+                    </a>
+                  {%- endif -%}
+                  
+                </div>
+              {%- endif -%} {% endcomment %}
             </div>
         </div>
       </div>
@@ -223,44 +244,63 @@
       "label": "t:sections.global.element.text.label",
       "default": "<p>Add descriptive text for your calldown here.</p>"
     },
+
     {
-      "type": "select",
-      "id": "action_preference",
-      "options": [
-        {
-          "value": "button",
-          "label": "t:sections.global.element.button.label"
-        },
-        {
-          "value": "newsletter_form",
-          "label": "t:sections.callout-banner.settings.newsletter_form.label"
-        }
-      ],
-      "default": "button",
-      "label": "t:sections.callout-banner.settings.action_preference.label"
+      "type": "header",
+      "content": "Dual Buttons (Below Timer)"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dual_buttons",
+      "label": "Show Two Buttons Below Timer",
+      "default": true
     },
     {
       "type": "text",
-      "id": "button_label",
-      "label": "t:sections.global.element.button_label.label",
-      "info": "t:sections.global.element.button_label.info",
-      "default": "Shop Sale"
+      "id": "button_1_label",
+      "label": "Button 1 Label",
+      "default": "For Him"
     },
     {
       "type": "url",
-      "id": "button_link",
-      "label": "t:sections.global.element.button.link.label"
-    },
-    {
-      "type": "text",
-      "id": "newsletter_button_label",
-      "label": "t:sections.callout-banner.settings.newsletter_button.label",
-      "default": "Submit"
+      "id": "button_1_link",
+      "label": "Button 1 Link"
     },
     {
       "type": "select",
-      "id": "button_style",
-      "label": "t:sections.global.element.button.style.label",
+      "id": "button_1_style",
+      "label": "Button 1 Style",
+      "options": [
+        {
+          "value": "button--filled",
+          "label": "t:sections.global.element.button.style.options.filled.label"
+        },
+        {
+          "value": "button--outlined",
+          "label": "t:sections.global.element.button.style.options.outlined.label"
+        },
+        {
+          "value": "default",
+          "label": "t:sections.global.element.button.style.options.default.label"
+        }
+      ],
+      "default": "button--filled"
+    },
+    {
+      "type": "text",
+      "id": "button_2_label",
+      "label": "Button 2 Label",
+      "default": "For Her"
+    },
+    {
+      "type": "url",
+      "id": "button_2_link",
+      "label": "Button 2 Link"
+    },
+    {
+      "type": "select",
+      "id": "button_2_style",
+      "label": "Button 2 Style",
       "options": [
         {
           "value": "button--filled",

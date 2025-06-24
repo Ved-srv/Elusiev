@@ -1,0 +1,325 @@
+{%- style -%}
+  #shopify-section-{{ section.id }} > div {
+    padding-block-start: calc(var(--section-spacing-unit-size) * {{ section.settings.spacing_top }});
+    padding-block-end: calc(var(--section-spacing-unit-size) * {{ section.settings.spacing_bottom }});
+  }
+  
+  /* Gender Selection Grid */
+  .gender-selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    min-height: 500px;
+  }
+  
+  .gender-selection__item {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+  }
+  
+  .gender-selection__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+  }
+  
+  .gender-selection__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    transition: background-color 0.3s ease;
+  }
+  
+  .gender-selection__content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: white;
+  }
+  
+  .gender-selection__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .gender-selection__button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 0;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  .gender-selection__button:hover {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+  }
+  
+  .gender-selection__item:hover .gender-selection__overlay {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Mobile responsive */
+  @media screen and (max-width: 749px) {
+    .gender-selection {
+      grid-template-columns: 1fr;
+      gap: 1px;
+    }
+    
+    .gender-selection__item {
+      min-height: 350px;
+    }
+    
+    .gender-selection__title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .gender-selection__button {
+      padding: 0.75rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="container {{ section.settings.section_width }}">
+    <div class="gender-selection js-animation-fade-in">
+      
+      <!-- For Her Section -->
+      <div class="gender-selection__item">
+        {%- if section.settings.image_for_her -%}
+          <img src="{{ section.settings.image_for_her | image_url: width: 800 }}" 
+               alt="{{ section.settings.title_for_her | default: 'For Her' }}" 
+               class="gender-selection__image"
+               width="800"
+               height="500"
+               loading="lazy">
+        {%- else -%}
+          <div class="gender-selection__image" style="background: linear-gradient(45deg, #ff6b6b, #ee5a52);"></div>
+        {%- endif -%}
+        
+        <div class="gender-selection__overlay"></div>
+        
+        <div class="gender-selection__content">
+          {%- if section.settings.title_for_her != blank -%}
+            <h3 class="gender-selection__title">{{ section.settings.title_for_her }}</h3>
+          {%- endif -%}
+          
+          {%- if section.settings.button_label_for_her != blank -%}
+            <a href="{{ section.settings.link_for_her | default: '/collections/for-her' }}" 
+               class="gender-selection__button">
+              {{ section.settings.button_label_for_her }}
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+      
+      <!-- For Him Section -->
+      <div class="gender-selection__item">
+        {%- if section.settings.image_for_him -%}
+          <img src="{{ section.settings.image_for_him | image_url: width: 800 }}" 
+               alt="{{ section.settings.title_for_him | default: 'For Him' }}" 
+               class="gender-selection__image"
+               width="800"
+               height="500"
+               loading="lazy">
+        {%- else -%}
+          <div class="gender-selection__image" style="background: linear-gradient(45deg, #4ecdc4, #44a08d);"></div>
+        {%- endif -%}
+        
+        <div class="gender-selection__overlay"></div>
+        
+        <div class="gender-selection__content">
+          {%- if section.settings.title_for_him != blank -%}
+            <h3 class="gender-selection__title">{{ section.settings.title_for_him }}</h3>
+          {%- endif -%}
+          
+          {%- if section.settings.button_label_for_him != blank -%}
+            <a href="{{ section.settings.link_for_him | default: '/collections/for-him' }}" 
+               class="gender-selection__button">
+              {{ section.settings.button_label_for_him }}
+            </a>
+          {%- endif -%}
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Gender Selection",
+  "tag": "section",
+  "class": "section-gender-selection",
+  "settings": [
+    {
+      "type": "header",
+      "content": "For Her Section"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_for_her",
+      "label": "Image for Her",
+      "info": "Upload an image of a woman. Recommended size: 800x500px or larger"
+    },
+    {
+      "type": "text",
+      "id": "title_for_her",
+      "label": "Title for Her",
+      "default": "For Her"
+    },
+    {
+      "type": "text",
+      "id": "button_label_for_her",
+      "label": "Button Label for Her",
+      "default": "Shop Women"
+    },
+    {
+      "type": "url",
+      "id": "link_for_her",
+      "label": "Link for Her",
+      "info": "Link to women's collection. Example: /collections/women"
+    },
+    {
+      "type": "header",
+      "content": "For Him Section"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_for_him",
+      "label": "Image for Him",
+      "info": "Upload an image of a man. Recommended size: 800x500px or larger"
+    },
+    {
+      "type": "text",
+      "id": "title_for_him",
+      "label": "Title for Him",
+      "default": "For Him"
+    },
+    {
+      "type": "text",
+      "id": "button_label_for_him",
+      "label": "Button Label for Him",
+      "default": "Shop Men"
+    },
+    {
+      "type": "url",
+      "id": "link_for_him",
+      "label": "Link for Him",
+      "info": "Link to men's collection. Example: /collections/men"
+    },
+    {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
+      "type": "select",
+      "id": "section_width",
+      "label": "Section Width",
+      "options": [
+        {
+          "value": "max-w-page",
+          "label": "Page Width"
+        },
+        {
+          "value": "max-w-fluid",
+          "label": "Fluid Width"
+        },
+        {
+          "value": "max-w-full",
+          "label": "Full Width"
+        }
+      ],
+      "default": "max-w-full"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "Color Scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "select",
+      "id": "spacing_top",
+      "label": "Top Spacing",
+      "options": [
+        {
+          "value": "0",
+          "label": "None"
+        },
+        {
+          "value": "1",
+          "label": "S"
+        },
+        {
+          "value": "2",
+          "label": "M"
+        },
+        {
+          "value": "4",
+          "label": "L"
+        },
+        {
+          "value": "6",
+          "label": "XL"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "select",
+      "id": "spacing_bottom",
+      "label": "Bottom Spacing",
+      "options": [
+        {
+          "value": "0",
+          "label": "None"
+        },
+        {
+          "value": "1",
+          "label": "S"
+        },
+        {
+          "value": "2",
+          "label": "M"
+        },
+        {
+          "value": "4",
+          "label": "L"
+        },
+        {
+          "value": "6",
+          "label": "XL"
+        }
+      ],
+      "default": "2"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Gender Selection"
+    }
+  ]
+}
+{% endschema %}
