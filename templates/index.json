@@ -22,7 +22,7 @@
             "subheading": "Discover Good Girl",
             "subheading_link": "",
             "text": "",
-            "button_link_1": "shopify://collections/all",
+            "button_link_1": "shopify://collections/the-carolina-herrera-collection",
             "button_link_1_type": "button",
             "button_label_1": "Explore",
             "button_style_1": "button--filled",
@@ -785,6 +785,22 @@
         "spacing_top": "2",
         "spacing_bottom": "2"
       }
+    },
+    "main_list_collections_9VBepK": {
+      "type": "main-list-collections",
+      "name": "t:sections.main-list-collections.name",
+      "settings": {
+        "collections_to_show": "all",
+        "card_title_style": "card-single-text",
+        "collection_product_count": "show",
+        "collections_per_page": 12,
+        "pagination_style": "default",
+        "enable_infinity_scroll": false,
+        "section_width": "max-w-page",
+        "color_scheme": "",
+        "spacing_top": "2",
+        "spacing_bottom": "2"
+      }
     }
   },
   "order": [
@@ -799,6 +815,7 @@
     "multitile_wycQJD",
     "marquees_fLdnnt",
     "multitile_Erc8Yx",
-    "accordions_n4BT4M"
+    "accordions_n4BT4M",
+    "main_list_collections_9VBepK"
   ]
 }
