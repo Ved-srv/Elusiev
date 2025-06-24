@@ -13,7 +13,7 @@
       "type": "page-banner",
       "settings": {
         "enable_transparent_header": true,
-        "heading": "",
+        "heading": "Brand Collections",
         "heading_size": "h3",
         "text": "",
         "show_default_description": true,
@@ -32,7 +32,7 @@
         "show_controls_on_video_mobile": false,
         "section_width": "max-w-narrow",
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "color_scheme_for_media": "",
+        "color_scheme_for_media": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "spacing_top": "0",
         "spacing_bottom": "0"
       }
