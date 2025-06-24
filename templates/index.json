@@ -12,13 +12,44 @@
     "1658995208ad05f95f": {
       "type": "hero-banner",
       "blocks": {
+        "slide_qkeVfg": {
+          "type": "slide",
+          "settings": {
+            "banner_layout": "hero-banner--full",
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "header_menu_text_color": "#ffffff",
+            "heading": "<h4><strong>Floral, Fierce, Fearless</strong></h4>",
+            "subheading": "Discover Good Girl",
+            "subheading_link": "",
+            "text": "",
+            "button_link_1": "shopify://collections/all",
+            "button_link_1_type": "button",
+            "button_label_1": "Explore",
+            "button_style_1": "button--filled",
+            "button_link_2": "/",
+            "button_label_2": "",
+            "button_style_2": "button--outlined",
+            "content_position": "center",
+            "content_alignment": "center",
+            "image": "shopify://shop_images/GGB-4.jpg",
+            "video_external": "",
+            "show_controls_on_video": false,
+            "enable_media_overlay_desktop": true,
+            "content_position_mobile": "end",
+            "content_alignment_mobile": "center",
+            "image_mobile": "shopify://shop_images/GGB-4.jpg",
+            "video_external_mobile": "",
+            "show_controls_on_video_mobile": false,
+            "enable_media_overlay_mobile": true
+          }
+        },
         "slide_WDUByx": {
           "type": "slide",
           "settings": {
             "banner_layout": "hero-banner--full",
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
             "header_menu_text_color": "#ffffff",
-            "heading": "<h5>A Radiant Edge</h5>",
+            "heading": "<h4>A Radiant Edge</h4>",
             "subheading": "Discover Valentino",
             "subheading_link": "",
             "text": "",
@@ -71,43 +102,12 @@
             "show_controls_on_video_mobile": false,
             "enable_media_overlay_mobile": true
           }
-        },
-        "slide_qkeVfg": {
-          "type": "slide",
-          "settings": {
-            "banner_layout": "hero-banner--full",
-            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-            "header_menu_text_color": "#ffffff",
-            "heading": "<h5><strong>Elemental Calm</strong></h5>",
-            "subheading": "Discover ACQUA DI GIÒ",
-            "subheading_link": "",
-            "text": "",
-            "button_link_1": "shopify://collections/all",
-            "button_link_1_type": "button",
-            "button_label_1": "Explore",
-            "button_style_1": "button--filled",
-            "button_link_2": "/",
-            "button_label_2": "",
-            "button_style_2": "button--outlined",
-            "content_position": "center",
-            "content_alignment": "center",
-            "image": "shopify://shop_images/GGB-4.jpg",
-            "video_external": "",
-            "show_controls_on_video": false,
-            "enable_media_overlay_desktop": true,
-            "content_position_mobile": "end",
-            "content_alignment_mobile": "center",
-            "image_mobile": "shopify://shop_images/GGB-4.jpg",
-            "video_external_mobile": "",
-            "show_controls_on_video_mobile": false,
-            "enable_media_overlay_mobile": true
-          }
         }
       },
       "block_order": [
+        "slide_qkeVfg",
         "slide_WDUByx",
-        "slide_yYrjFh",
-        "slide_qkeVfg"
+        "slide_yYrjFh"
       ],
       "settings": {
         "enable_transparent_header": true,
