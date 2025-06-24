@@ -10,6 +10,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 0;
     min-height: 500px;
+    width: 100%;
   }
   
   .gender-selection__item {
@@ -19,6 +20,7 @@
     align-items: center;
     justify-content: center;
     min-height: 500px;
+    width: 100%;
   }
   
   .gender-selection__image {
@@ -81,22 +83,23 @@
   /* Mobile responsive */
   @media screen and (max-width: 749px) {
     .gender-selection {
-      grid-template-columns: 1fr;
-      gap: 1px;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px;
+      min-height: 400px;
     }
     
     .gender-selection__item {
-      min-height: 350px;
+      min-height: 400px;
     }
     
     .gender-selection__title {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-bottom: 1rem;
     }
     
     .gender-selection__button {
-      padding: 0.75rem 1.5rem;
-      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.8rem;
     }
   }
 {%- endstyle -%}
