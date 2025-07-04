@@ -528,3 +528,98 @@ if (!customElements.get('product-media-info')) {
 }
 
 
+// Swiper Slide Centering Fix
+// Swiper Slide Centering Fix - Improved Version
+class SwiperSlideCenteringFix {
+  constructor() {
+    this.init();
+  }
+
+  init() {
+    // Wait for swiper instances to be ready
+    setTimeout(() => {
+      this.centerActiveSlide();
+      this.setupObservers();
+    }, 200);
+  }
+
+  centerActiveSlide() {
+    const slides = document.querySelectorAll('.swiper--product-gallery .swiper-slide');
+    const swiperWrapper = document.querySelector('.swiper--product-gallery .swiper-wrapper');
+    
+    if (!slides.length || !swiperWrapper) return;
+
+    // Find the active slide index
+    let activeIndex = 0;
+    slides.forEach((slide, index) => {
+      if (slide.classList.contains('swiper-slide-active') || slide.hasAttribute('data-selected')) {
+        activeIndex = index;
+      }
+    });
+
+    slides.forEach((slide, index) => {
+      // Reset all slides to default
+      slide.style.setProperty('width', '85vw', 'important');
+      slide.style.setProperty('margin-right', '10px', 'important');
+      slide.style.setProperty('transform', 'none', 'important');
+      
+      // Style active slide
+      if (index === activeIndex) {
+        slide.style.setProperty('width', '90vw', 'important');
+        slide.style.setProperty('margin-right', '10px', 'important');
+      }
+    });
+
+    // Center the entire wrapper based on active slide position
+    const slideWidth = window.innerWidth * 0.85; // 85vw in pixels
+    const activeSlideWidth = window.innerWidth * 0.90; // 90vw in pixels
+    const marginRight = 10;
+    
+    // Calculate offset to center the active slide
+    const totalWidthBeforeActive = activeIndex * (slideWidth + marginRight);
+    const centerOffset = (window.innerWidth - activeSlideWidth) / 2;
+    const wrapperTransform = centerOffset - totalWidthBeforeActive;
+    
+    // Apply transform to wrapper
+    swiperWrapper.style.setProperty('transform', `translate3d(${wrapperTransform}px, 0px, 0px)`, 'important');
+  }
+
+  setupObservers() {
+    // Watch for slide changes
+    const swiperContainer = document.querySelector('.swiper--product-gallery');
+    if (swiperContainer) {
+      const observer = new MutationObserver(() => {
+        setTimeout(() => this.centerActiveSlide(), 50);
+      });
+      
+      swiperContainer.querySelectorAll('.swiper-slide').forEach(slide => {
+        observer.observe(slide, { 
+          attributes: true, 
+          attributeFilter: ['class'] 
+        });
+      });
+    }
+
+    // Watch for window resize
+    window.addEventListener('resize', () => {
+      setTimeout(() => this.centerActiveSlide(), 100);
+    });
+  }
+}
+
+// Initialize the centering fix when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+  // Wait for swiper instances to initialize
+  setTimeout(() => {
+    new SwiperSlideCenteringFix();
+  }, 500);
+});
+
+// Also initialize on shopify design mode events
+if (typeof Shopify !== 'undefined' && Shopify.designMode) {
+  window.addEventListener("shopify:section:load", () => {
+    setTimeout(() => {
+      new SwiperSlideCenteringFix();
+    }, 500);
+  });
+}
