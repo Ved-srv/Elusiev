@@ -24,7 +24,7 @@
             "title": "Company",
             "title_url": "",
             "menu_link_opacity": 100,
-            "show_first_menu_on_mobile": true
+            "show_first_menu_on_mobile": false
           }
         }
       },
@@ -86,8 +86,11 @@
       "settings": {
         "enable_animation": false,
         "marquee_duration_rate": 5,
+        "show_shop_by_brand_button": false,
+        "shop_by_brand_text": "Shop By Brand",
+        "shop_by_brand_link": "",
         "marquee_font_size": 2,
-        "marquee_items_spacing": 2.8,
+        "marquee_items_spacing": 2.4,
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "spacing_top": "0",
         "spacing_bottom": "0"
