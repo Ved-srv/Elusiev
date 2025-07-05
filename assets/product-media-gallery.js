@@ -526,5 +526,3 @@ class ProductMediaInfo extends HTMLElement {
 if (!customElements.get('product-media-info')) {
   customElements.define('product-media-info', ProductMediaInfo);
 }
-
-
