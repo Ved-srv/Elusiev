@@ -264,45 +264,10 @@
             "show_controls_on_video_mobile": false,
             "spacing_inner": "2"
           }
-        },
-        "slideshow_GzYNNk": {
-          "type": "slideshow",
-          "settings": {
-            "show_on": "both",
-            "column_factor": 3,
-            "row_factor": 2,
-            "media_aspect_ratio": "9/16",
-            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-            "gradient_background_color": "",
-            "content_position_vertical": "justify-center",
-            "content_alignment": "align-center text-center",
-            "content_alignment_for_mobile": "start",
-            "slideshow_autoplay": 2,
-            "slideshow_actions_alignment": "start",
-            "show_slideshow_arrows": true,
-            "show_slideshow_bullets": true,
-            "show_slideshow_progress": true,
-            "source_of_slideshow": "manual",
-            "slideshow_1_heading": "",
-            "slideshow_1_text": "",
-            "slideshow_1_image": "shopify://shop_images/unisex-tee-mockup-of-a-woman-in-a-mall-parking-lot-23066.png",
-            "slideshow_2_heading": "",
-            "slideshow_2_text": "",
-            "slideshow_2_image": "shopify://shop_images/mockup-of-a-man-wearing-a-wide-t-shirt-at-a-studio-m26233.png",
-            "slideshow_3_heading": "",
-            "slideshow_3_text": "",
-            "slideshow_3_image": "shopify://shop_images/mockup-of-two-men-wearing-trendy-oversized-t-shirts-m26204_1346f2bf-8ebf-4336-90e0-75c13d1ca66f.png",
-            "slideshow_4_heading": "Slideshow 4",
-            "slideshow_4_text": "",
-            "slideshow_5_heading": "Slideshow 5",
-            "slideshow_5_text": "",
-            "spacing_inner": "2"
-          }
         }
       },
       "block_order": [
-        "tile_eXgtPf",
-        "slideshow_GzYNNk"
+        "tile_eXgtPf"
       ],
       "settings": {
         "block_order_mobile": false,
