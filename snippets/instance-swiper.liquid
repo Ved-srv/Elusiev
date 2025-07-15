@@ -302,7 +302,8 @@
                    alt="{{ media.alt | escape }}" 
                    class="media-image" 
                    data-media-id="{{ media.id }}"
-                   loading="lazy" />
+                   loading="lazy" height="" width=""/>
+                   <meta itemprop="image" content="{{ media | image_url: width: 800 }}">
           {% endcase %}
         </div>
       {% endfor %}
