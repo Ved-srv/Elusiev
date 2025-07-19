@@ -73,7 +73,7 @@
         "logo_font_size": 1,
         "transparent_header_bottom_border": true,
         "country_drawer_header": true,
-        "country_drawer_navigation_menu": true,
+        "country_drawer_navigation_menu": false,
         "utils_link_display": "text",
         "first_additional_link_title": "",
         "first_additional_link_url": "",
