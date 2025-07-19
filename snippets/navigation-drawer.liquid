@@ -208,7 +208,7 @@
       <div class="drawer__row drawer__row--bottom">
         <nav class="drawer__subs">
           <ul class="drawer__subs-items list-unstyled">
-            <li class="drawer__subs-item">
+            {% comment %} <li class="drawer__subs-item">
               <a
                 href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
                 class="drawer__subs-link"
@@ -216,7 +216,7 @@
               >
                 {{- 'customer.account.label' | t -}}
               </a>
-            </li>
+            </li> {% endcomment %}
             {%- if section.settings.country_drawer_navigation_menu -%}
               <li class="drawer__subs-item">
                 <menu-drawer class="drawer">
