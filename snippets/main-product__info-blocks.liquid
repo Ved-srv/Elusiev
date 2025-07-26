@@ -215,127 +215,255 @@
             {%- endform -%}
           </div>
         </div>
+<!-- DEBUG: Check collection metafields -->
+<div style="background: yellow; padding: 10px; margin: 10px 0;">
+  <strong>Debug Collection Info:</strong><br>
+  Product Collections: {{ product.collections | map: 'title' | join: ', ' }}<br>
+  {% for collection in product.collections %}
+    <br><strong>{{ collection.title }}:</strong><br>
+    - Season: {{ product.metafields.custom.season.value | json }}<br>
+    - Occasion: {{ category.metafields.custom.occasion.value | json }}<br>
+    - Target Gender: {{ collection.metafields.custom.target_gender.value | json }}<br>
+  {% endfor %}
+</div>
 
-
-        {%- when 'category_tags' -%}
+{%- when 'category_tags' -%}
   {%- assign product_block_class = 'product__category-tags' | append: ' ' | append: product_block_class -%}
-  <div class="{{ product_block_class }}" {{ block.shopify_attributes }}>
-    <div class="product__tags-container">
-      {%- comment -%} Season Tags {%- endcomment -%}
-      {%- if product.metafields.custom.season.value != blank -%}
-        <div class="product__tag-group">
-          <span class="product__tag-label">Season:</span>
-          <div class="product__tags-list">
-            {%- for season in product.metafields.custom.season.value -%}
-              <span class="product__tag product__tag--season">{{ season }}</span>
-            {%- endfor -%}
-          </div>
-        </div>
-      {%- endif -%}
-
-      {%- comment -%} Occasion Tags {%- endcomment -%}
-      {%- if product.metafields.custom.occasion.value != blank -%}
-        <div class="product__tag-group">
-          <span class="product__tag-label">Occasion:</span>
-          <div class="product__tags-list">
-            {%- for occasion in product.metafields.custom.occasion.value -%}
-              <span class="product__tag product__tag--occasion">{{ occasion }}</span>
-            {%- endfor -%}
-          </div>
-        </div>
-      {%- endif -%}
-
-      {%- comment -%} Target Gender Tags {%- endcomment -%}
-      {%- if product.metafields.custom.target_gender.value != blank -%}
-        <div class="product__tag-group">
-          <span class="product__tag-label">For:</span>
-          <div class="product__tags-list">
-            {%- for gender in product.metafields.custom.target_gender.value -%}
-              <span class="product__tag product__tag--gender">{{ gender }}</span>
-            {%- endfor -%}
-          </div>
-        </div>
-      {%- endif -%}
-    </div>
-
-    <style>
-      .product__category-tags {
-        margin: 1rem 0;
-        padding: 1rem;
-        background: rgba(var(--color-foreground), 0.02);
-        border-radius: 8px;
-        border: 1px solid rgba(var(--color-foreground), 0.08);
-      }
-
-      .product__tags-container {
-        display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
-      }
-
-      .product__tag-group {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        flex-wrap: wrap;
-      }
-
-      .product__tag-label {
-        font-weight: 600;
-        font-size: 0.875rem;
-        color: rgba(var(--color-foreground), 0.7);
-        min-width: fit-content;
-      }
-
-      .product__tags-list {
-        display: flex;
-        gap: 0.375rem;
-        flex-wrap: wrap;
-      }
-
-      .product__tag {
-        display: inline-block;
-        padding: 0.25rem 0.75rem;
-        font-size: 0.75rem;
-        font-weight: 500;
-        border-radius: 20px;
-        text-transform: capitalize;
-        transition: all 0.2s ease;
-      }
-
-      .product__tag--season {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-      }
-
-      .product__tag--occasion {
-        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-        color: white;
-      }
-
-      .product__tag--gender {
-        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-        color: white;
-      }
-
-      .product__tag:hover {
-        transform: translateY(-1px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-      }
-
-      @media screen and (max-width: 749px) {
-        .product__tag-group {
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 0.375rem;
-        }
+  {%- assign tags_style = block.settings.tags_style | default: 'gradient' -%}
+  
+  {%- comment -%} Extract category info from product tags {%- endcomment -%}
+  {%- liquid
+    assign seasons = blank
+    assign occasions = blank  
+    assign genders = blank
+    assign season_tags = array
+    assign occasion_tags = array
+    assign gender_tags = array
+    
+    for tag in product.tags
+      assign tag_lower = tag | downcase
+      
+      # Season tags
+      if tag_lower contains 'spring' or tag_lower contains 'summer' or tag_lower contains 'autumn' or tag_lower contains 'winter' or tag_lower contains 'fall'
+        assign season_tags = season_tags | append: tag
+      endif
+      
+      # Occasion tags  
+      if tag_lower contains 'office' or tag_lower contains 'party' or tag_lower contains 'casual' or tag_lower contains 'evening' or tag_lower contains 'everyday' or tag_lower contains 'date' or tag_lower contains 'work'
+        assign occasion_tags = occasion_tags | append: tag
+      endif
+      
+      # Gender tags
+      if tag_lower contains 'male' or tag_lower contains 'female' or tag_lower contains 'unisex' or tag_lower contains 'men' or tag_lower contains 'women'
+        assign gender_tags = gender_tags | append: tag
+      endif
+    endfor
+    
+    # Convert arrays to usable format
+    if season_tags.size > 0
+      assign seasons = season_tags
+    endif
+    if occasion_tags.size > 0
+      assign occasions = occasion_tags
+    endif
+    if gender_tags.size > 0
+      assign genders = gender_tags
+    endif
+  -%}
+  
+  {%- comment -%} Only show the block if we have any data {%- endcomment -%}
+  {%- if seasons != blank or occasions != blank or genders != blank -%}
+    <div class="{{ product_block_class }} product__category-tags--{{ tags_style }}" {{ block.shopify_attributes }}>
+      <div class="product__tags-container">
         
+        {%- comment -%} Season Tags {%- endcomment -%}
+        {%- if block.settings.show_seasons != false and seasons != blank -%}
+          <div class="product__tag-group">
+            <span class="product__tag-label">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L13.09 6.26L16 4L14.74 7.74L19 9L15.5 11.5L17 16L12 14L7 16L8.5 11.5L5 9L9.26 7.74L8 4L10.91 6.26L12 2Z"/>
+              </svg>
+              Season:
+            </span>
+            <div class="product__tags-list">
+              {%- for season in seasons -%}
+                <span class="product__tag product__tag--season">{{ season }}</span>
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- endif -%}
+
+        {%- comment -%} Occasion Tags {%- endcomment -%}
+        {%- if block.settings.show_occasions != false and occasions != blank -%}
+          <div class="product__tag-group">
+            <span class="product__tag-label">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 13.5C14.8 13.3 14.6 13.2 14.4 13.1L20.4 7.1C20.7 6.8 21 7 21 7.4V9H21Z"/>
+              </svg>
+              Occasion:
+            </span>
+            <div class="product__tags-list">
+              {%- for occasion in occasions -%}
+                <span class="product__tag product__tag--occasion">{{ occasion }}</span>
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- endif -%}
+
+        {%- comment -%} Target Gender Tags {%- endcomment -%}
+        {%- if block.settings.show_gender != false and genders != blank -%}
+          <div class="product__tag-group">
+            <span class="product__tag-label">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 4A4 4 0 0 1 16 8A4 4 0 0 1 12 12A4 4 0 0 1 8 8A4 4 0 0 1 12 4M12 14C16.42 14 20 15.79 20 18V20H4V18C4 15.79 7.58 14 12 14Z"/>
+              </svg>
+              For:
+            </span>
+            <div class="product__tags-list">
+              {%- for gender in genders -%}
+                <span class="product__tag product__tag--gender">{{ gender }}</span>
+              {%- endfor -%}
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+
+      <style>
         .product__category-tags {
-          padding: 0.75rem;
+          margin: 1.2rem 0;
+          padding: 1.2rem;
+          border-radius: 12px;
+          transition: all 0.3s ease;
         }
-      }
-    </style>
-  </div>
+
+        /* Gradient Style (default) */
+        .product__category-tags--gradient {
+          background: linear-gradient(135deg, rgba(102, 126, 234, 0.05) 0%, rgba(118, 75, 162, 0.05) 100%);
+          border: 1px solid rgba(var(--color-foreground), 0.08);
+        }
+
+        /* Minimal Style */
+        .product__category-tags--minimal {
+          background: rgba(var(--color-foreground), 0.02);
+          border-left: 3px solid rgb(var(--color-accent));
+        }
+
+        /* Outlined Style */
+        .product__category-tags--outlined {
+          background: transparent;
+          border: 2px dashed rgba(var(--color-foreground), 0.15);
+        }
+
+        .product__tags-container {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .product__tag-group {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          flex-wrap: wrap;
+        }
+
+        .product__tag-label {
+          display: flex;
+          align-items: center;
+          gap: 0.375rem;
+          font-weight: 600;
+          font-size: 0.875rem;
+          color: rgba(var(--color-foreground), 0.8);
+          min-width: fit-content;
+        }
+
+        .product__tag-label svg {
+          opacity: 0.7;
+        }
+
+        .product__tags-list {
+          display: flex;
+          gap: 0.5rem;
+          flex-wrap: wrap;
+        }
+
+        .product__tag {
+          display: inline-block;
+          padding: 0.375rem 1rem;
+          font-size: 0.813rem;
+          font-weight: 500;
+          border-radius: 25px;
+          text-transform: capitalize;
+          transition: all 0.3s ease;
+          position: relative;
+          overflow: hidden;
+        }
+
+        /* Gradient Tags */
+        .product__category-tags--gradient .product__tag--season {
+          background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+          color: white;
+          box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }
+
+        .product__category-tags--gradient .product__tag--occasion {
+          background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+          color: white;
+          box-shadow: 0 2px 8px rgba(240, 147, 251, 0.3);
+        }
+
+        .product__category-tags--gradient .product__tag--gender {
+          background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+          color: white;
+          box-shadow: 0 2px 8px rgba(79, 172, 254, 0.3);
+        }
+
+        /* Minimal Tags */
+        .product__category-tags--minimal .product__tag {
+          background: rgba(var(--color-foreground), 0.08);
+          color: rgb(var(--color-foreground));
+          border: 1px solid rgba(var(--color-foreground), 0.15);
+        }
+
+        /* Outlined Tags */
+        .product__category-tags--outlined .product__tag {
+          background: transparent;
+          color: rgb(var(--color-foreground));
+          border: 1.5px solid rgba(var(--color-foreground), 0.3);
+        }
+
+        .product__tag:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .product__category-tags--minimal .product__tag:hover,
+        .product__category-tags--outlined .product__tag:hover {
+          background: rgba(var(--color-accent), 0.1);
+          border-color: rgb(var(--color-accent));
+          color: rgb(var(--color-accent));
+        }
+
+        @media screen and (max-width: 749px) {
+          .product__tag-group {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+          }
+          
+          .product__category-tags {
+            padding: 1rem;
+            margin: 1rem 0;
+          }
+
+          .product__tag {
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem;
+          }
+        }
+      </style>
+    </div>
+  {%- endif -%}
 
 
 
