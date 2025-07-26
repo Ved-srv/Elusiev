@@ -27,7 +27,7 @@
             "link_to_resource": "none",
             "text_before_link": false,
             "heading_secondary": "",
-            "metafield_for_product_variant": "custom.season",
+            "metafield_for_product_variant": "{{ product.metafields.shopify.season | metafield_text: field: 'label' }}",
             "show_block_content": true
           }
         },
