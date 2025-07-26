@@ -18,6 +18,19 @@
             "spacing_bottom": "1"
           }
         },
+        "text_DwymHL": {
+          "type": "text",
+          "settings": {
+            "spacing_bottom": "1",
+            "heading": "",
+            "icon": "theme-check",
+            "link_to_resource": "none",
+            "text_before_link": false,
+            "heading_secondary": "",
+            "metafield_for_product_variant": "custom.season",
+            "show_block_content": true
+          }
+        },
         "description_kTH9Yi": {
           "type": "description",
           "settings": {
@@ -114,6 +127,7 @@
       },
       "block_order": [
         "1e0c79e9-7de0-4eee-b9c5-f27132635fb8",
+        "text_DwymHL",
         "description_kTH9Yi",
         "judge_me_reviews_preview_badge_H8kaR7",
         "price_gDfxBd",
