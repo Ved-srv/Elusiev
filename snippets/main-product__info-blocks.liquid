@@ -216,6 +216,129 @@
           </div>
         </div>
 
+
+        {%- when 'category_tags' -%}
+  {%- assign product_block_class = 'product__category-tags' | append: ' ' | append: product_block_class -%}
+  <div class="{{ product_block_class }}" {{ block.shopify_attributes }}>
+    <div class="product__tags-container">
+      {%- comment -%} Season Tags {%- endcomment -%}
+      {%- if product.metafields.custom.season.value != blank -%}
+        <div class="product__tag-group">
+          <span class="product__tag-label">Season:</span>
+          <div class="product__tags-list">
+            {%- for season in product.metafields.custom.season.value -%}
+              <span class="product__tag product__tag--season">{{ season }}</span>
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+
+      {%- comment -%} Occasion Tags {%- endcomment -%}
+      {%- if product.metafields.custom.occasion.value != blank -%}
+        <div class="product__tag-group">
+          <span class="product__tag-label">Occasion:</span>
+          <div class="product__tags-list">
+            {%- for occasion in product.metafields.custom.occasion.value -%}
+              <span class="product__tag product__tag--occasion">{{ occasion }}</span>
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+
+      {%- comment -%} Target Gender Tags {%- endcomment -%}
+      {%- if product.metafields.custom.target_gender.value != blank -%}
+        <div class="product__tag-group">
+          <span class="product__tag-label">For:</span>
+          <div class="product__tags-list">
+            {%- for gender in product.metafields.custom.target_gender.value -%}
+              <span class="product__tag product__tag--gender">{{ gender }}</span>
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+
+    <style>
+      .product__category-tags {
+        margin: 1rem 0;
+        padding: 1rem;
+        background: rgba(var(--color-foreground), 0.02);
+        border-radius: 8px;
+        border: 1px solid rgba(var(--color-foreground), 0.08);
+      }
+
+      .product__tags-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      .product__tag-group {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+
+      .product__tag-label {
+        font-weight: 600;
+        font-size: 0.875rem;
+        color: rgba(var(--color-foreground), 0.7);
+        min-width: fit-content;
+      }
+
+      .product__tags-list {
+        display: flex;
+        gap: 0.375rem;
+        flex-wrap: wrap;
+      }
+
+      .product__tag {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        font-size: 0.75rem;
+        font-weight: 500;
+        border-radius: 20px;
+        text-transform: capitalize;
+        transition: all 0.2s ease;
+      }
+
+      .product__tag--season {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+      }
+
+      .product__tag--occasion {
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        color: white;
+      }
+
+      .product__tag--gender {
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        color: white;
+      }
+
+      .product__tag:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+
+      @media screen and (max-width: 749px) {
+        .product__tag-group {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 0.375rem;
+        }
+        
+        .product__category-tags {
+          padding: 0.75rem;
+        }
+      }
+    </style>
+  </div>
+
+
+
       {%- when 'description' -%}
 
         {% capture metafield_for_product_variant %}

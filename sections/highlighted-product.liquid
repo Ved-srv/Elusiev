@@ -931,6 +931,83 @@
       ]
     },
     {
+  "type": "category_tags",
+  "name": "Category Tags",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Category Tags Display"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_seasons",
+      "label": "Show Season Tags",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_occasions",
+      "label": "Show Occasion Tags", 
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_gender",
+      "label": "Show Target Gender",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "tags_style",
+      "label": "Tags Style",
+      "options": [
+        {
+          "value": "gradient",
+          "label": "Gradient"
+        },
+        {
+          "value": "minimal",
+          "label": "Minimal"
+        },
+        {
+          "value": "outlined",
+          "label": "Outlined"
+        }
+      ],
+      "default": "gradient"
+    },
+    {
+      "type": "select",
+      "id": "spacing_bottom",
+      "label": "Bottom spacing",
+      "options": [
+        {
+          "value": "0",
+          "label": "No"
+        },
+        {
+          "value": "1",
+          "label": "S"
+        },
+        {
+          "value": "2",
+          "label": "M"
+        },
+        {
+          "value": "3",
+          "label": "L"
+        },
+        {
+          "value": "4",
+          "label": "XL"
+        }
+      ],
+      "default": "2"
+    }
+  ]
+},
+    {
       "type": "variant_picker",
       "name": "t:sections.main-product.blocks.variant_picker.name",
       "limit": 1,
