@@ -215,17 +215,6 @@
             {%- endform -%}
           </div>
         </div>
-<!-- DEBUG: Check collection metafields -->
-<div style="background: yellow; padding: 10px; margin: 10px 0;">
-  <strong>Debug Collection Info:</strong><br>
-  Product Collections: {{ product.collections | map: 'title' | join: ', ' }}<br>
-  {% for collection in product.collections %}
-    <br><strong>{{ collection.title }}:</strong><br>
-    - Season: {{ product.metafields.custom.season.value | json }}<br>
-    - Occasion: {{ category.metafields.custom.occasion.value | json }}<br>
-    - Target Gender: {{ collection.metafields.custom.target_gender.value | json }}<br>
-  {% endfor %}
-</div>
 
 {%- when 'category_tags' -%}
   {%- assign product_block_class = 'product__category-tags' | append: ' ' | append: product_block_class -%}
