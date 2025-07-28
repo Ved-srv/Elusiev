@@ -18,19 +18,6 @@
             "spacing_bottom": "1"
           }
         },
-        "text_DwymHL": {
-          "type": "text",
-          "settings": {
-            "spacing_bottom": "1",
-            "heading": "",
-            "icon": "theme-check",
-            "link_to_resource": "none",
-            "text_before_link": false,
-            "heading_secondary": "",
-            "metafield_for_product_variant": "{{ product.metafields.shopify.season | metafield_text: field: 'label' }}",
-            "show_block_content": true
-          }
-        },
         "description_kTH9Yi": {
           "type": "description",
           "settings": {
@@ -41,6 +28,20 @@
             "icon": "theme-box",
             "metafield_for_product_variant": "",
             "show_block_content": true
+          }
+        },
+        "richtext_pVDHXC": {
+          "type": "richtext",
+          "settings": {
+            "spacing_bottom": "0",
+            "text": "<h5>Ideal Season :</h5>{{ product.metafields.custom.season | metafield_tag: field: 'label' }}"
+          }
+        },
+        "richtext_74hhGw": {
+          "type": "richtext",
+          "settings": {
+            "spacing_bottom": "0",
+            "text": "<h5>Ideal Occasion :</h5>{{ product.metafields.shopify.occasion | metafield_tag: field: 'label' }}"
           }
         },
         "judge_me_reviews_preview_badge_H8kaR7": {
@@ -127,8 +128,9 @@
       },
       "block_order": [
         "1e0c79e9-7de0-4eee-b9c5-f27132635fb8",
-        "text_DwymHL",
         "description_kTH9Yi",
+        "richtext_pVDHXC",
+        "richtext_74hhGw",
         "judge_me_reviews_preview_badge_H8kaR7",
         "price_gDfxBd",
         "1e939cd6-0958-4135-a9e5-c50faef01437",
