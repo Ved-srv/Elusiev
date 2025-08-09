@@ -769,19 +769,10 @@
     "accordions_n4BT4M": {
       "type": "accordions",
       "blocks": {
-        "topic_8rMhpm": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "Refund details",
-            "text": "",
-            "page": "refund-returns-policy"
-          }
-        },
         "topic_6DAHj6": {
           "type": "topic",
           "settings": {
-            "is_open": false,
+            "is_open": true,
             "title": "Customer Queries",
             "text": "",
             "page": "faq"
@@ -789,7 +780,6 @@
         }
       },
       "block_order": [
-        "topic_8rMhpm",
         "topic_6DAHj6"
       ],
       "settings": {
