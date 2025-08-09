@@ -217,8 +217,8 @@
             "block_type": "drawer",
             "heading": "Delivery & Returns",
             "link": "shopify://pages/refund-returns-policy",
-            "content": "<p>Shipping and returns can be inserted here.</p>",
-            "page": ""
+            "content": "",
+            "page": "refund-returns-policy"
           }
         },
         "collapsible_qFP38k": {
