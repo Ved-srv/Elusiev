@@ -430,24 +430,14 @@
           "settings": {
             "title": "",
             "collection": "new-in-1",
-            "products": [],
-            "vendor": "",
-            "collection_of_products": "",
-            "show_unavailable_products": false,
-            "card_text_heading": "",
-            "card_text_button_label": "",
-            "card_text_button_style": "button--filled",
-            "card_text_button_link": "",
-            "content_position": "center",
-            "content_alignment": "center"
-          }
-        },
-        "collection_Vznbb8": {
-          "type": "collection",
-          "settings": {
-            "title": "",
-            "collection": "2",
-            "products": [],
+            "products": [
+              "lattafa-khamrah-dukhan-eau-de-parfum-for-him",
+              "afnan-9pm-eau-de-parfum-for-him-updated",
+              "dior-sauvage-eau-de-parfum-for-him",
+              "carolina-herrera-good-girl-eau-de-parfum-for-her",
+              "chanel-no-5-eau-de-parfum-for-her",
+              "chanel-bleu-de-chanel-eau-de-parfum-for-him"
+            ],
             "vendor": "",
             "collection_of_products": "",
             "show_unavailable_products": false,
@@ -461,8 +451,7 @@
         }
       },
       "block_order": [
-        "collection_fmXcip",
-        "collection_Vznbb8"
+        "collection_fmXcip"
       ],
       "settings": {
         "layout": "layout-1",
@@ -584,7 +573,7 @@
             "heading_size": "h4",
             "text": "",
             "button_label": "Own it",
-            "button_link": "shopify://products/carolina-herrera-good-girl-blush-eau-de-parfum-for-her",
+            "button_link": "shopify://products/carolina-herrera-good-girl-eau-de-parfum-for-her",
             "button_style": "button--text",
             "video": "shopify://files/videos/GGB-video.mp4",
             "video_external": "",
@@ -780,15 +769,6 @@
     "accordions_n4BT4M": {
       "type": "accordions",
       "blocks": {
-        "topic_8rMhpm": {
-          "type": "topic",
-          "settings": {
-            "is_open": false,
-            "title": "Refund details",
-            "text": "",
-            "page": "refund-returns-policy"
-          }
-        },
         "topic_6DAHj6": {
           "type": "topic",
           "settings": {
@@ -800,7 +780,6 @@
         }
       },
       "block_order": [
-        "topic_8rMhpm",
         "topic_6DAHj6"
       ],
       "settings": {
@@ -808,7 +787,7 @@
         "heading_size": "h3",
         "section_width": "max-w-narrower",
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "spacing_top": "2",
+        "spacing_top": "6",
         "spacing_bottom": "2"
       }
     }

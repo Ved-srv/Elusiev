@@ -24,7 +24,7 @@
             "title": "Company",
             "title_url": "",
             "menu_link_opacity": 100,
-            "show_first_menu_on_mobile": false
+            "show_first_menu_on_mobile": true
           }
         }
       },
@@ -38,62 +38,6 @@
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "spacing_top": "2",
         "spacing_bottom": "1"
-      }
-    },
-    "marquees_y7rWBp": {
-      "type": "marquees",
-      "blocks": {
-        "item_37Lhk3": {
-          "type": "item",
-          "settings": {
-            "icon": "brand-instagram",
-            "title": "",
-            "link": ""
-          }
-        },
-        "item_dpzL9G": {
-          "type": "item",
-          "settings": {
-            "icon": "brand-whatsapp",
-            "title": "",
-            "link": ""
-          }
-        },
-        "item_hE6mwg": {
-          "type": "item",
-          "settings": {
-            "icon": "brand-facebook",
-            "title": "",
-            "link": ""
-          }
-        },
-        "item_dXwgeN": {
-          "type": "item",
-          "settings": {
-            "icon": "brand-pinterest",
-            "title": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_37Lhk3",
-        "item_dpzL9G",
-        "item_hE6mwg",
-        "item_dXwgeN"
-      ],
-      "name": "t:sections.marquees.name",
-      "settings": {
-        "enable_animation": false,
-        "marquee_duration_rate": 5,
-        "show_shop_by_brand_button": false,
-        "shop_by_brand_text": "Shop By Brand",
-        "shop_by_brand_link": "",
-        "marquee_font_size": 2,
-        "marquee_items_spacing": 2.4,
-        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "spacing_top": "0",
-        "spacing_bottom": "0"
       }
     },
     "footer_JadcgE": {
@@ -140,7 +84,6 @@
   },
   "order": [
     "footer_xjQ6Rm",
-    "marquees_y7rWBp",
     "footer_JadcgE"
   ]
 }
