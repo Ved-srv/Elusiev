@@ -29,7 +29,7 @@
           "type": "richtext",
           "settings": {
             "spacing_bottom": "0",
-            "text": "<h5>Ideal Occasion :</h5>{{ product.metafields.shopify.occasion | metafield_tag: field: 'label' }}"
+            "text": "<h5>Ideal Occasion : </h5>{{ product.metafields.shopify.occasion | metafield_tag: field: 'label' }}"
           }
         },
         "judge_me_reviews_preview_badge_H8kaR7": {
