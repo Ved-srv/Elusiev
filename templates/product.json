@@ -15,19 +15,7 @@
         "1e0c79e9-7de0-4eee-b9c5-f27132635fb8": {
           "type": "title",
           "settings": {
-            "spacing_bottom": "0"
-          }
-        },
-        "description_kTH9Yi": {
-          "type": "description",
-          "settings": {
-            "spacing_bottom": "1",
-            "behaviour": "plain",
-            "heading": "",
-            "text_truncate": 3,
-            "icon": "theme-box",
-            "metafield_for_product_variant": "",
-            "show_block_content": true
+            "spacing_bottom": "1"
           }
         },
         "richtext_pVDHXC": {
@@ -79,6 +67,18 @@
             "show_gift_card_recipient": false
           }
         },
+        "description_kTH9Yi": {
+          "type": "description",
+          "settings": {
+            "spacing_bottom": "1",
+            "behaviour": "plain",
+            "heading": "",
+            "text_truncate": 3,
+            "icon": "theme-box",
+            "metafield_for_product_variant": "",
+            "show_block_content": true
+          }
+        },
         "content_grid_W3Mqy6": {
           "type": "content_grid",
           "settings": {
@@ -128,13 +128,13 @@
       },
       "block_order": [
         "1e0c79e9-7de0-4eee-b9c5-f27132635fb8",
-        "description_kTH9Yi",
         "richtext_pVDHXC",
         "richtext_74hhGw",
         "judge_me_reviews_preview_badge_H8kaR7",
         "price_gDfxBd",
         "1e939cd6-0958-4135-a9e5-c50faef01437",
         "8604a6ff-ad0b-44dd-8068-1de4e062f8e8",
+        "description_kTH9Yi",
         "content_grid_W3Mqy6",
         "content_grid_iCJFCN",
         "content_grid_HTRRPP",
