@@ -24,7 +24,7 @@
             "title": "Company",
             "title_url": "",
             "menu_link_opacity": 100,
-            "show_first_menu_on_mobile": false
+            "show_first_menu_on_mobile": true
           }
         }
       },
