@@ -772,7 +772,7 @@
         "topic_6DAHj6": {
           "type": "topic",
           "settings": {
-            "is_open": true,
+            "is_open": false,
             "title": "Customer Queries",
             "text": "",
             "page": "faq"
