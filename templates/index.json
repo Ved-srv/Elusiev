@@ -430,24 +430,14 @@
           "settings": {
             "title": "",
             "collection": "new-in-1",
-            "products": [],
-            "vendor": "",
-            "collection_of_products": "",
-            "show_unavailable_products": false,
-            "card_text_heading": "",
-            "card_text_button_label": "",
-            "card_text_button_style": "button--filled",
-            "card_text_button_link": "",
-            "content_position": "center",
-            "content_alignment": "center"
-          }
-        },
-        "collection_Vznbb8": {
-          "type": "collection",
-          "settings": {
-            "title": "",
-            "collection": "2",
-            "products": [],
+            "products": [
+              "lattafa-khamrah-dukhan-eau-de-parfum-for-him",
+              "afnan-9pm-eau-de-parfum-for-him-updated",
+              "dior-sauvage-eau-de-parfum-for-him",
+              "carolina-herrera-good-girl-eau-de-parfum-for-her",
+              "chanel-no-5-eau-de-parfum-for-her",
+              "chanel-bleu-de-chanel-eau-de-parfum-for-him"
+            ],
             "vendor": "",
             "collection_of_products": "",
             "show_unavailable_products": false,
@@ -461,8 +451,7 @@
         }
       },
       "block_order": [
-        "collection_fmXcip",
-        "collection_Vznbb8"
+        "collection_fmXcip"
       ],
       "settings": {
         "layout": "layout-1",
