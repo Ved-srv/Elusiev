@@ -22,7 +22,7 @@
           "type": "richtext",
           "settings": {
             "spacing_bottom": "0",
-            "text": "<h5>Ideal Season :</h5>{{ product.metafields.custom.season | metafield_tag: field: 'label' }}"
+            "text": "<h5>Ideal Season : </h5>{{ product.metafields.shopify.season | metafield_tag: field: 'label' }}"
           }
         },
         "richtext_74hhGw": {
