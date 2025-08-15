@@ -6,11 +6,24 @@
   - class: {String} - Class to be applied to the card
   - class_without_image: {String} Class to be applied when the card has no image. Replaces original class
 {%- endcomment -%}
+
+{%- liquid
+  # Hide "for-men" and "for-her" only on the collections index (brands grid)
+  assign hide_this = false
+  if request.page_type == 'list-collections'
+    if collection_ref
+      if collection_ref.handle == 'for-men' or collection_ref.handle == 'for-her'
+        assign hide_this = true
+      endif
+    endif
+  endif 
+-%}
+
+{%- unless hide_this -%}
 {%- liquid
   assign class = class | default: blank
   assign card_style = card_style | default: 'normal'
 
-  # assign collection_heading_placeholder = 'collection.label' | t
   assign heading_size = heading_size | default: false
   assign subheading = subheading | default: blank
 
@@ -51,7 +64,7 @@
     {%- endif -%}
     <div class="card-collection__content text-{{ card_content_alignment }} {% if card_arrow_btn and card_style == 'normal' and card_layout != 'text' %} card-collection__content-arrow{% endif %}">
       {%- if heading != blank -%}
-        <h4 class="card-collection__heading {% if heading_size %}{{ heading_size }}{% endif %}">
+        <h4 class="card-collection__heading {% if heading_size %}{{ heading_size }}{% endif %}" style="display: none;">
           <span>{{- heading -}}</span>
           {%- if section.settings.collection_product_count != 'hide' and collection_ref != blank -%}
             <sup class="card-collection__counter{% if section.settings.collection_product_count == 'with_border' %} counter-border{% endif %}">
@@ -80,3 +93,4 @@
     {%- endif -%}
   </a>
 </div>
+{%- endunless -%}
