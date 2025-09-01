@@ -209,8 +209,12 @@
   endif
 -%}
 
-<script type="application/ld+json">
+{% comment %} <script type="application/ld+json">
   {{ product | structured_data }}
+</script> {% endcomment %}
+
+<script type="application/ld+json">
+{%- render 'product-schema', product: product -%}
 </script>
 
 {% schema %}

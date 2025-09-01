@@ -1,0 +1,166 @@
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+  assign product_images = product.images | map: 'src'
+  
+  comment 'Get metafields for fragrance details'
+  assign ideal_seasons = product.metafields.custom.ideal_season.value | default: blank
+  assign ideal_occasions = product.metafields.custom.ideal_occasion.value | default: blank
+  assign top_notes = product.metafields.custom.top_notes.value | default: blank
+  assign heart_notes = product.metafields.custom.heart_notes.value | default: blank  
+  assign base_notes = product.metafields.custom.base_notes.value | default: blank
+  assign fragrance_family = product.metafields.custom.fragrance_family.value | default: blank
+  
+  comment 'Format arrays to strings'
+  if ideal_seasons != blank and ideal_seasons.size > 0
+    assign seasons_string = ideal_seasons | join: ', '
+  endif
+  if ideal_occasions != blank and ideal_occasions.size > 0
+    assign occasions_string = ideal_occasions | join: ', '
+  endif
+-%}
+
+{
+  "@context": "https://schema.org/",
+  "@type": "Product",
+  "name": {{ product.title | json }},
+  "description": {{ product.description | strip_html | truncate: 300 | json }},
+  "brand": {
+    "@type": "Brand",
+    "name": {{ product.vendor | json }}
+  },
+  "manufacturer": {
+    "@type": "Organization", 
+    "name": {{ product.vendor | json }}
+  },
+  "category": "Beauty > Fragrance > {% if product.tags contains 'women' %}Women's Perfume{% elsif product.tags contains 'men' %}Men's Cologne{% else %}Unisex Fragrance{% endif %}",
+  "productID": "{{ product.id }}",
+  "gtin": "{{ current_variant.barcode | default: current_variant.id }}",
+  "sku": {{ current_variant.sku | json }},
+  "image": [
+    {%- for image in product.images -%}
+      "{{ image | image_url: width: 1200 }}"{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ],
+  "url": "{{ shop.secure_url }}{{ product.url }}",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "{{ cart.currency.iso_code }}",
+    "price": "{{ current_variant.price | money_without_currency | remove: ',' }}",
+    "priceValidUntil": "{{ 'now' | date: '%Y' | plus: 1 }}-12-31",
+    "availability": "{% if current_variant.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}",
+    "itemCondition": "https://schema.org/NewCondition",
+    "seller": {
+      "@type": "Organization",
+      "name": {{ shop.name | json }},
+      "url": "{{ shop.secure_url }}"
+    }
+    {%- if shop.shipping_policy.url -%},
+    "shippingDetails": {
+      "@type": "OfferShippingDetails",
+      "shippingRate": {
+        "@type": "MonetaryAmount",
+        "value": "0",
+        "currency": "{{ cart.currency.iso_code }}"
+      }
+    }
+    {%- endif -%}
+    {%- if shop.refund_policy.url -%},
+    "hasMerchantReturnPolicy": {
+      "@type": "MerchantReturnPolicy",
+      "returnPolicyCategory": "https://schema.org/LimitedByGuaranteeReturn",
+      "merchantReturnDays": 30
+    }
+    {%- endif -%}
+  }
+  {%- if product.variants.size > 1 -%},
+  "hasVariant": [
+    {%- for variant in product.variants -%}
+    {
+      "@type": "ProductModel",
+      "name": "{{ product.title }} - {{ variant.title }}",
+      "sku": {{ variant.sku | json }},
+      "additionalProperty": [
+        {%- for option in variant.options -%}
+        {
+          "@type": "PropertyValue",
+          "name": "{{ product.options[forloop.index0] }}",
+          "value": {{ option | json }}
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor -%}
+      ],
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "{{ cart.currency.iso_code }}",
+        "price": "{{ variant.price | money_without_currency | remove: ',' }}",
+        "availability": "{% if variant.available %}https://schema.org/InStock{% else %}https://schema.org/OutOfStock{% endif %}"
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+  {%- endif -%}
+  {%- comment -%} Add fragrance-specific properties {%- endcomment -%}
+  {%- assign has_additional_properties = false -%}
+  {%- if fragrance_family != blank or top_notes != blank or heart_notes != blank or base_notes != blank or seasons_string != blank or occasions_string != blank -%}
+    {%- assign has_additional_properties = true -%}
+  {%- endif -%}
+  
+  {%- if has_additional_properties -%},
+  "additionalProperty": [
+    {%- if fragrance_family != blank -%}
+    {
+      "@type": "PropertyValue",
+      "name": "Fragrance Family",
+      "value": {{ fragrance_family | json }}
+    },
+    {%- endif -%}
+    {%- if top_notes != blank -%}
+    {
+      "@type": "PropertyValue",
+      "name": "Top Notes",
+      "value": {{ top_notes | json }}
+    },
+    {%- endif -%}
+    {%- if heart_notes != blank -%}
+    {
+      "@type": "PropertyValue",
+      "name": "Heart Notes",
+      "value": {{ heart_notes | json }}
+    },
+    {%- endif -%}
+    {%- if base_notes != blank -%}
+    {
+      "@type": "PropertyValue",
+      "name": "Base Notes", 
+      "value": {{ base_notes | json }}
+    },
+    {%- endif -%}
+    {%- if seasons_string != blank -%}
+    {
+      "@type": "PropertyValue",
+      "name": "Ideal Season",
+      "value": {{ seasons_string | json }}
+    },
+    {%- endif -%}
+    {%- if occasions_string != blank -%}
+    {
+      "@type": "PropertyValue",
+      "name": "Ideal Occasion", 
+      "value": {{ occasions_string | json }}
+    },
+    {%- endif -%}
+    {
+      "@type": "PropertyValue",
+      "name": "Target Gender",
+      "value": "{% if product.tags contains 'women' %}Women{% elsif product.tags contains 'men' %}Men{% else %}Unisex{% endif %}"
+    }
+  ]
+  {%- endif -%}
+  {%- comment -%} Add reviews if available {%- endcomment -%}
+  {%- if product.metafields.reviews.rating.value != blank -%},
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "{{ product.metafields.reviews.rating.value }}",
+    "reviewCount": "{{ product.metafields.reviews.rating_count.value | default: 1 }}"
+  }
+  {%- endif -%}
+}
