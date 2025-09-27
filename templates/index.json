@@ -556,12 +556,39 @@
     "multitile_8FTYPN": {
       "type": "multitile",
       "blocks": {
+        "tile_pTEeg9": {
+          "type": "tile",
+          "settings": {
+            "show_on": "desktop",
+            "column_factor": 3,
+            "row_factor": 1,
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "gradient_background_color": "",
+            "tile_aspect_ratio": "auto",
+            "content_position_vertical": "justify-center",
+            "content_alignment": "align-center text-center",
+            "content_alignment_for_mobile": "align-start--mobile text-start--mobile",
+            "media_position": "background",
+            "heading": "",
+            "heading_size": "h3",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "button--filled",
+            "image": "shopify://shop_images/Lattafa_Fire_on_Ice_Eau_De_Parfum_page3.svg",
+            "video_external": "",
+            "show_controls_on_video": false,
+            "video_external_mobile": "",
+            "show_controls_on_video_mobile": false,
+            "spacing_inner": "2"
+          }
+        },
         "tile_RYEbz7": {
           "type": "tile",
           "settings": {
             "show_on": "both",
-            "column_factor": 6,
-            "row_factor": 4,
+            "column_factor": 3,
+            "row_factor": 1,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
             "gradient_background_color": "",
             "tile_aspect_ratio": "auto",
@@ -585,6 +612,7 @@
         }
       },
       "block_order": [
+        "tile_pTEeg9",
         "tile_RYEbz7"
       ],
       "settings": {
