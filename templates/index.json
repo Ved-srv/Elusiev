@@ -561,7 +561,7 @@
           "settings": {
             "show_on": "both",
             "column_factor": 6,
-            "row_factor": 2,
+            "row_factor": 4,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
             "gradient_background_color": "",
             "tile_aspect_ratio": "auto",
@@ -570,7 +570,7 @@
             "content_alignment_for_mobile": "align-center--mobile text-center--mobile",
             "media_position": "background",
             "heading": "",
-            "heading_size": "h4",
+            "heading_size": "h2",
             "text": "",
             "button_label": "Own it",
             "button_link": "shopify://products/carolina-herrera-good-girl-eau-de-parfum-for-her",
@@ -580,7 +580,7 @@
             "show_controls_on_video": false,
             "video_external_mobile": "",
             "show_controls_on_video_mobile": false,
-            "spacing_inner": "4"
+            "spacing_inner": "6"
           }
         }
       },
