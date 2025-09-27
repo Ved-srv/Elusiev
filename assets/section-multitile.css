@@ -16,8 +16,7 @@
 
 .section-multitile__block {
   position: relative;
-  width: 50%;
-  margin: auto;
+  width: 100%;
   height: var(--block-height, 100%);
   overflow: hidden;
   border-radius: var(--card-corner-radius);
