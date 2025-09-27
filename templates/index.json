@@ -36,7 +36,7 @@
             "show_controls_on_video": false,
             "enable_media_overlay_desktop": true,
             "content_position_mobile": "end",
-            "content_alignment_mobile": "center",
+            "content_alignment_mobile": "end",
             "image_mobile": "shopify://shop_images/GGB-4.jpg",
             "video_external_mobile": "",
             "show_controls_on_video_mobile": false,
