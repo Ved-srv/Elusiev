@@ -779,11 +779,37 @@
     "multitile_Erc8Yx": {
       "type": "multitile",
       "blocks": {
+        "tile_kHLHxR": {
+          "type": "tile",
+          "settings": {
+            "show_on": "both",
+            "column_factor": 3,
+            "row_factor": 1,
+            "color_scheme": "scheme-5",
+            "gradient_background_color": "",
+            "tile_aspect_ratio": "auto",
+            "content_position_vertical": "justify-center",
+            "content_alignment": "align-center text-center",
+            "content_alignment_for_mobile": "align-start--mobile text-start--mobile",
+            "media_position": "background",
+            "heading": "Heading for Multi Content Tiles",
+            "heading_size": "h3",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "button--filled",
+            "video_external": "",
+            "show_controls_on_video": false,
+            "video_external_mobile": "",
+            "show_controls_on_video_mobile": false,
+            "spacing_inner": "2"
+          }
+        },
         "tile_wtQzRb": {
           "type": "tile",
           "settings": {
             "show_on": "both",
-            "column_factor": 6,
+            "column_factor": 3,
             "row_factor": 1,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
             "gradient_background_color": "",
@@ -808,6 +834,7 @@
         }
       },
       "block_order": [
+        "tile_kHLHxR",
         "tile_wtQzRb"
       ],
       "name": "t:sections.multitile.name",
