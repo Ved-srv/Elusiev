@@ -560,8 +560,8 @@
           "type": "tile",
           "settings": {
             "show_on": "both",
-            "column_factor": 3,
-            "row_factor": 3,
+            "column_factor": 6,
+            "row_factor": 2,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
             "gradient_background_color": "",
             "tile_aspect_ratio": "auto",
@@ -591,10 +591,10 @@
         "block_order_mobile": false,
         "heading": "",
         "heading_size": "h3",
-        "heading_alignment": "start",
+        "heading_alignment": "end",
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "section_width": "max-w-full",
-        "spacing_top": "2",
+        "spacing_top": "0",
         "spacing_bottom": "0"
       }
     },
