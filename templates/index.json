@@ -809,7 +809,7 @@
         "tile_kHLHxR": {
           "type": "tile",
           "settings": {
-            "show_on": "both",
+            "show_on": "desktop",
             "column_factor": 3,
             "row_factor": 3,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
