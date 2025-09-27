@@ -643,7 +643,7 @@
           "type": "tile",
           "settings": {
             "show_on": "both",
-            "column_factor": 3,
+            "column_factor": 6,
             "row_factor": 2,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
             "gradient_background_color": "",
@@ -727,7 +727,7 @@
           "type": "tile",
           "settings": {
             "show_on": "both",
-            "column_factor": 1,
+            "column_factor": 6,
             "row_factor": 1,
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
             "gradient_background_color": "",
