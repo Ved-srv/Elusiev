@@ -96,7 +96,7 @@
             "video_external": "",
             "show_controls_on_video": false,
             "enable_media_overlay_desktop": true,
-            "content_position_mobile": "end",
+            "content_position_mobile": "center",
             "content_alignment_mobile": "center",
             "video_external_mobile": "",
             "show_controls_on_video_mobile": false,
