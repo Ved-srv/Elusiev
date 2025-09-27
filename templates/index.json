@@ -621,7 +621,7 @@
         "heading_size": "h3",
         "heading_alignment": "end",
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "section_width": "max-w-fluid",
+        "section_width": "max-w-full",
         "spacing_top": "0",
         "spacing_bottom": "0"
       }
@@ -733,7 +733,7 @@
         "heading_size": "h3",
         "heading_alignment": "start",
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "section_width": "max-w-fluid",
+        "section_width": "max-w-full",
         "spacing_top": "0",
         "spacing_bottom": "0"
       }
@@ -845,7 +845,7 @@
         "heading_size": "h3",
         "heading_alignment": "start",
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "section_width": "max-w-fluid",
+        "section_width": "max-w-full",
         "spacing_top": "0",
         "spacing_bottom": "0"
       }
