@@ -177,7 +177,10 @@
         "judge_me_reviews_review_widget_343jGH": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "disabled": true,
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200
+          }
         }
       },
       "block_order": [
@@ -206,6 +209,79 @@
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "spacing_top": "2",
         "spacing_bottom": "2"
+      }
+    },
+    "multitile_ybjXjD": {
+      "type": "multitile",
+      "blocks": {
+        "tile_TbJPzF": {
+          "type": "tile",
+          "settings": {
+            "show_on": "desktop",
+            "column_factor": 3,
+            "row_factor": 2,
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "gradient_background_color": "",
+            "tile_aspect_ratio": "auto",
+            "content_position_vertical": "justify-center",
+            "content_alignment": "align-center text-center",
+            "content_alignment_for_mobile": "align-start--mobile text-start--mobile",
+            "media_position": "background",
+            "heading": "",
+            "heading_size": "h3",
+            "text": "",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "button--filled",
+            "image": "shopify://shop_images/Rasasi_Hawas_Eclat_Eau_de_Parfum_For_Her.svg",
+            "video_external": "",
+            "show_controls_on_video": false,
+            "video_external_mobile": "",
+            "show_controls_on_video_mobile": false,
+            "spacing_inner": "2"
+          }
+        },
+        "tile_eXgtPf": {
+          "type": "tile",
+          "settings": {
+            "show_on": "both",
+            "column_factor": 3,
+            "row_factor": 2,
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "gradient_background_color": "",
+            "tile_aspect_ratio": "auto",
+            "content_position_vertical": "justify-center",
+            "content_alignment": "align-center text-center",
+            "content_alignment_for_mobile": "start",
+            "media_position": "background",
+            "heading": "",
+            "heading_size": "h3",
+            "text": "",
+            "button_label": "Explore",
+            "button_link": "shopify://products/skull-oversized-t-shirt",
+            "button_style": "button--text",
+            "image": "shopify://shop_images/GGB-3.jpg",
+            "video_external": "",
+            "show_controls_on_video": false,
+            "video_external_mobile": "",
+            "show_controls_on_video_mobile": false,
+            "spacing_inner": "2"
+          }
+        }
+      },
+      "block_order": [
+        "tile_TbJPzF",
+        "tile_eXgtPf"
+      ],
+      "settings": {
+        "block_order_mobile": false,
+        "heading": "",
+        "heading_size": "h3",
+        "heading_alignment": "start",
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "section_width": "max-w-page",
+        "spacing_top": "0",
+        "spacing_bottom": "0"
       }
     },
     "complete_the_set_LAN4cq": {
@@ -250,58 +326,13 @@
         "spacing_top": "2",
         "spacing_bottom": "2"
       }
-    },
-    "multitile_ybjXjD": {
-      "type": "multitile",
-      "blocks": {
-        "tile_eXgtPf": {
-          "type": "tile",
-          "settings": {
-            "show_on": "both",
-            "column_factor": 3,
-            "row_factor": 2,
-            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-            "gradient_background_color": "",
-            "tile_aspect_ratio": "auto",
-            "content_position_vertical": "justify-center",
-            "content_alignment": "align-center text-center",
-            "content_alignment_for_mobile": "start",
-            "media_position": "background",
-            "heading": "",
-            "heading_size": "h3",
-            "text": "",
-            "button_label": "Explore",
-            "button_link": "shopify://products/skull-oversized-t-shirt",
-            "button_style": "button--text",
-            "image": "shopify://shop_images/GGB-3.jpg",
-            "video_external": "",
-            "show_controls_on_video": false,
-            "video_external_mobile": "",
-            "show_controls_on_video_mobile": false,
-            "spacing_inner": "2"
-          }
-        }
-      },
-      "block_order": [
-        "tile_eXgtPf"
-      ],
-      "settings": {
-        "block_order_mobile": false,
-        "heading": "",
-        "heading_size": "h3",
-        "heading_alignment": "start",
-        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "section_width": "max-w-page",
-        "spacing_top": "0",
-        "spacing_bottom": "0"
-      }
     }
   },
   "order": [
     "main",
     "1720277631cea22aba",
     "product_recommendations_hXz6rk",
-    "complete_the_set_LAN4cq",
-    "multitile_ybjXjD"
+    "multitile_ybjXjD",
+    "complete_the_set_LAN4cq"
   ]
 }
