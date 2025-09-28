@@ -31,6 +31,7 @@
             "button_style_2": "button--outlined",
             "content_position": "end",
             "content_alignment": "end",
+            "image": "shopify://shop_images/CH-VGG-NEW-1-1-1.png",
             "video_external": "",
             "show_controls_on_video": false,
             "enable_media_overlay_desktop": true,
