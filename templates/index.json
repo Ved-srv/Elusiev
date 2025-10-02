@@ -879,7 +879,7 @@
     "custom_liquid_BfcBey": {
       "type": "custom-liquid",
       "custom_css": [
-        "hr{height: 9rem;}"
+        "div{margin-top: 0; }"
       ],
       "name": "t:sections.custom-liquid.name",
       "settings": {
