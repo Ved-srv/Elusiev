@@ -24,9 +24,25 @@
         "spacing_top": "0",
         "spacing_bottom": "1"
       }
+    },
+    "social_icons_thnrGd": {
+      "type": "social-icons",
+      "name": "Social Icons",
+      "settings": {
+        "heading": "Follow Us",
+        "icon_size": 32,
+        "instagram_url": "https://www.instagram.com/elusiev.shop?igsh=Z3QxNHFjNDRldWo3",
+        "youtube_url": "https://youtube.com/@elusiev-shop?si=iG7ODxgiZjn0G1li",
+        "pinterest_url": "https://pin.it/KSlkN0wnv",
+        "facebook_url": "",
+        "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+        "spacing_top": "1",
+        "spacing_bottom": "1"
+      }
     }
   },
   "order": [
-    "footer_JadcgE"
+    "footer_JadcgE",
+    "social_icons_thnrGd"
   ]
 }
