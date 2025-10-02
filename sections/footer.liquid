@@ -16,14 +16,14 @@
   }
   
   #shopify-section-{{ section.id }} .footer-column h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: rgba(var(--color-foreground), 1);
   }
   
   #shopify-section-{{ section.id }} .footer-about-text {
-    font-size: 0.95rem;
+    font-size: 1.5rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
     color: rgba(var(--color-foreground), 0.85);
@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
   
   #shopify-section-{{ section.id }} .footer-contact-info a {
@@ -44,7 +44,7 @@
     gap: 0.5rem;
   }
   
-  #shopify-section-{{ section.id }} .footer-links-list {footer-links-list {
+  #shopify-section-{{ section.id }} .footer-links-list {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -56,7 +56,7 @@
   #shopify-section-{{ section.id }} .footer-links-list a {
     color: rgba(var(--color-foreground), 0.85);
     text-decoration: none;
-    font-size: 0.95rem;
+    font-size: 1.5rem;
     transition: color 0.2s;
   }
   
@@ -86,19 +86,19 @@
           <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
             <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328z"/>
           </svg>
-          {{ section.settings.phone | default: "+91-8795546522" }}
+          {{ section.settings.phone | default: "03 9332 5207" }}
         </a>
         <a href="mailto:{{ section.settings.email }}">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
             <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
           </svg>
-          {{ section.settings.email | default: "support@elusiev.com" }}
+          {{ section.settings.email | default: "CS@mystore.com.au" }}
         </a>
         <a href="https://maps.google.com/?q={{ section.settings.address | url_encode }}" target="_blank">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
           </svg>
-          {{ section.settings.address | default: "Vasundhra Enclave, Delhi" }}
+          {{ section.settings.address | default: "92 Forsyth St, Sydney, NSW" }}
         </a>
       </div>
     </div>
@@ -139,19 +139,19 @@
       "type": "text",
       "id": "phone",
       "label": "Phone Number",
-      "default": "03 9332 5207"
+      "default": "+91-8795546522"
     },
     {
       "type": "text",
       "id": "email",
       "label": "Email Address",
-      "default": "CS@mystore.com.au"
+      "default": "support@elusiev.com"
     },
     {
       "type": "text",
       "id": "address",
       "label": "Address",
-      "default": "92 Forsyth St, Sydney, NSW"
+      "default": "Vasundhra Enclave, Delhi"
     },
     {
       "type": "header",
