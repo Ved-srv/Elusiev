@@ -1640,13 +1640,33 @@
       "info": "t:sections.main-product.settings.media_grid_position.info"
     },
     {
-      "type": "select",
-      "id": "grid_gap",
-      "label": "t:sections.main-product.settings.grid_gap.label",
-      "options": [
-      ],
-      "default": "2"
+  "type": "select",
+  "id": "grid_gap",
+  "label": "t:sections.main-product.settings.grid_gap.label",
+  "options": [
+    {
+      "value": "0",
+      "label": "No"
     },
+    {
+      "value": "1",
+      "label": "S"
+    },
+    {
+      "value": "2",
+      "label": "M"
+    },
+    {
+      "value": "4",
+      "label": "L"
+    },
+    {
+      "value": "6",
+      "label": "XL"
+    }
+  ],
+  "default": "2"
+},
     {
       "type": "range",
       "id": "spacing_grid",
@@ -1709,22 +1729,61 @@
       "default": "scheme-1"
     },
     {
-      "type": "select",
-      "id": "spacing_top",
-      "label": "t:sections.global.spacing.spacing_top.label",
-      "options": [
-      ],
-      "default": "0"
+  "type": "select",
+  "id": "spacing_top",
+  "label": "t:sections.global.spacing.spacing_top.label",
+  "options": [
+    {
+      "value": "0",
+      "label": "No"
     },
     {
-      "type": "select",
-      "id": "spacing_bottom",
-      "label": "t:sections.global.spacing.spacing_bottom.label",
-      "options": [
-       
-      ],
-      "default": "0"
+      "value": "1",
+      "label": "S"
+    },
+    {
+      "value": "2",
+      "label": "M"
+    },
+    {
+      "value": "4",
+      "label": "L"
+    },
+    {
+      "value": "6",
+      "label": "XL"
     }
+  ],
+  "default": "0"
+},
+  {
+  "type": "select",
+  "id": "spacing_bottom",
+  "label": "t:sections.global.spacing.spacing_bottom.label",
+  "options": [
+    {
+      "value": "0",
+      "label": "No"
+    },
+    {
+      "value": "1",
+      "label": "S"
+    },
+    {
+      "value": "2",
+      "label": "M"
+    },
+    {
+      "value": "4",
+      "label": "L"
+    },
+    {
+      "value": "6",
+      "label": "XL"
+    }
+  ],
+  "default": "0"
+}
   ]
 }
 {% endschema %}

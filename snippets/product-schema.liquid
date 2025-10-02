@@ -2,15 +2,15 @@
   assign current_variant = product.selected_or_first_available_variant
   assign product_images = product.images | map: 'src'
   
-  comment 'Get metafields for fragrance details'
+  # 'Get metafields for fragrance details'
   assign ideal_seasons = product.metafields.custom.ideal_season.value | default: blank
-  assign ideal_occasions = product.metafields.custom.ideal_occasion.value | default: blank
-  assign top_notes = product.metafields.custom.top_notes.value | default: blank
-  assign heart_notes = product.metafields.custom.heart_notes.value | default: blank  
-  assign base_notes = product.metafields.custom.base_notes.value | default: blank
-  assign fragrance_family = product.metafields.custom.fragrance_family.value | default: blank
+assign ideal_occasions = product.metafields.custom.ideal_occasion.value | default: blank
+assign top_notes = product.metafields.custom.top_notes.value | default: blank
+assign heart_notes = product.metafields.custom.heart_notes.value | default: blank  
+assign base_notes = product.metafields.custom.base_notes.value | default: blank
+assign fragrance_family = product.metafields.custom.fragrance_family.value | default: blank
   
-  comment 'Format arrays to strings'
+  # 'Format arrays to strings'
   if ideal_seasons != blank and ideal_seasons.size > 0
     assign seasons_string = ideal_seasons | join: ', '
   endif
