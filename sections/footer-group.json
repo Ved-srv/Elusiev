@@ -18,7 +18,7 @@
         "email": "CS@mystore.com.au",
         "address": "92 Forsyth St, Sydney, NSW",
         "information_menu": "footer",
-        "faqs_menu": "",
+        "faqs_menu": "faq-menu",
         "section_width": "max-w-page",
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
         "spacing_top": "6",
