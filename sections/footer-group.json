@@ -11,6 +11,17 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "custom_liquid_68QBD6": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.name",
+      "settings": {
+        "custom_liquid": "",
+        "section_width": "max-w-page",
+        "color_scheme": "",
+        "spacing_top": "2",
+        "spacing_bottom": "2"
+      }
+    },
     "footer_JadcgE": {
       "type": "footer",
       "settings": {
@@ -26,5 +37,8 @@
       }
     }
   },
-  "order": ["footer_JadcgE"]
+  "order": [
+    "custom_liquid_68QBD6",
+    "footer_JadcgE"
+  ]
 }
