@@ -21,7 +21,7 @@
         "faqs_menu": "faq-menu",
         "section_width": "max-w-page",
         "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-        "spacing_top": "4",
+        "spacing_top": "0",
         "spacing_bottom": "1"
       }
     }
