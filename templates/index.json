@@ -866,6 +866,7 @@
       "block_order": [
         "topic_6DAHj6"
       ],
+      "disabled": true,
       "settings": {
         "heading": "Frequently asked questions",
         "heading_size": "h3",
