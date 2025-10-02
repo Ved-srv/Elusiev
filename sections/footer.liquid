@@ -1,23 +1,19 @@
 {%- render 'css', css: 'section-footer.css', section_index: section.index -%}
 
 {%- style -%}
-#shopify-section-{{ section.id }} > div {
-  padding-block-start: calc(var(--section-spacing-unit-size) * {{ section.settings.spacing_top }});
-  padding-block-end: calc(var(--section-spacing-unit-size) * {{ section.settings.spacing_bottom }});
-  border-top: 1px solid #CA9567;
-  padding-top: 2rem;
-}
+  #shopify-section-{{ section.id }} > div {
+    padding-block-start: calc(var(--section-spacing-unit-size) * {{ section.settings.spacing_top }});
+    padding-block-end: calc(var(--section-spacing-unit-size) * {{ section.settings.spacing_bottom }});
+  }
   
- #shopify-section-{{ section.id }} .footer-redesign {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 4rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 3rem 2rem;
-  border-top: 1px solid #CA9567;
-  padding-top: 3rem;
-}
+  #shopify-section-{{ section.id }} .footer-redesign {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+  }
   
   #shopify-section-{{ section.id }} .footer-column h3 {
     font-size: 2rem;
