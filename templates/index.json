@@ -878,6 +878,9 @@
     },
     "custom_liquid_BfcBey": {
       "type": "custom-liquid",
+      "custom_css": [
+        "hr{height: 9rem;}"
+      ],
       "name": "t:sections.custom-liquid.name",
       "settings": {
         "custom_liquid": "<hr></hr>",
