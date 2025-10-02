@@ -10,8 +10,7 @@
   assign results_sort_url = results.url | append: '?sort_by=' | append: sort_by
   assign container_width = container_width | default: false
 
-  assign opened_accordions = opened_accordions | default: false
-
+assign opened_accordions = false
   assign products_per_page = products_per_page | default: section.settings.products_per_page | times: 1 | default: 12
 -%}
 
