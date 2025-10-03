@@ -73,6 +73,36 @@
         "collection_QJCcK7": {
           "type": "collection",
           "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "ahmed-al-maghribi",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_V6TdbQ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "ajmal",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_BxmTDz": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "al-haramain",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_QnX6Ww": {
+          "type": "collection",
+          "settings": {
             "color_scheme": "scheme-1",
             "collection": "",
             "heading": "",
@@ -80,7 +110,57 @@
             "subheading": ""
           }
         },
-        "collection_V6TdbQ": {
+        "collection_PbtNid": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_H4cW8C": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_YpTULT": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_KfhzTR": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_zDNLqr": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_Hb3x3E": {
           "type": "collection",
           "settings": {
             "color_scheme": "scheme-1",
@@ -96,7 +176,15 @@
         "collection_jy3kwh",
         "collection_p3k3RG",
         "collection_QJCcK7",
-        "collection_V6TdbQ"
+        "collection_V6TdbQ",
+        "collection_BxmTDz",
+        "collection_QnX6Ww",
+        "collection_PbtNid",
+        "collection_H4cW8C",
+        "collection_YpTULT",
+        "collection_KfhzTR",
+        "collection_zDNLqr",
+        "collection_Hb3x3E"
       ],
       "name": "t:sections.main-list-collections.name",
       "settings": {

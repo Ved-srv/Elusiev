@@ -164,7 +164,7 @@
           "type": "item",
           "settings": {
             "icon": "",
-            "custom_icon": "shopify://shop_images/versace.png",
+            "custom_icon": "shopify://shop_images/Gold-Versace-Logo-PNG-Pic.png",
             "title": "",
             "link": ""
           }
@@ -223,15 +223,6 @@
             "link": ""
           }
         },
-        "item_RgC7CR": {
-          "type": "item",
-          "settings": {
-            "icon": "",
-            "custom_icon": "shopify://shop_images/lattafa_logo_800x800_c54ef2e3-1539-4b80-9a65-63c1c4898ec8.png",
-            "title": "",
-            "link": ""
-          }
-        },
         "item_P7zfCV": {
           "type": "item",
           "settings": {
@@ -264,24 +255,6 @@
           "settings": {
             "icon": "",
             "custom_icon": "shopify://shop_images/jo-malone-logo.png",
-            "title": "",
-            "link": ""
-          }
-        },
-        "item_hHYHzR": {
-          "type": "item",
-          "settings": {
-            "icon": "",
-            "custom_icon": "shopify://shop_images/khadlaj_logo.png",
-            "title": "",
-            "link": ""
-          }
-        },
-        "item_EV6jkC": {
-          "type": "item",
-          "settings": {
-            "icon": "",
-            "custom_icon": "shopify://shop_images/Logo-Afnan-Editado.webp",
             "title": "",
             "link": ""
           }
@@ -344,13 +317,10 @@
         "item_erzdkf",
         "item_qa99Rc",
         "item_b7jACG",
-        "item_RgC7CR",
         "item_P7zfCV",
         "item_rjzBiA",
         "item_gNCnxU",
         "item_8fwBdC",
-        "item_hHYHzR",
-        "item_EV6jkC",
         "item_DnHVxb",
         "item_UecV8h",
         "item_QtU6B3",
