@@ -49,10 +49,21 @@
             "heading_size": "h4",
             "subheading": ""
           }
+        },
+        "collection_jy3kwh": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "acqua-di-parma",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
         }
       },
       "block_order": [
-        "collection_8X84yB"
+        "collection_8X84yB",
+        "collection_jy3kwh"
       ],
       "name": "t:sections.main-list-collections.name",
       "settings": {
