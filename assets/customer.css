@@ -101,7 +101,7 @@
 .account__col.account__col--center {
   display: flex;
   justify-content: center;
-  padding-block: 5.8rem;
+  padding-block:  5.8rem;
 }
 
 .account__col.account__col--center .form-customer__title,
