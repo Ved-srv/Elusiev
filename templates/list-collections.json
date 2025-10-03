@@ -39,9 +39,24 @@
     },
     "main_list_collections_F69ULX": {
       "type": "main-list-collections",
+      "blocks": {
+        "collection_8X84yB": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "abercrombie-and-fitch",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_8X84yB"
+      ],
       "name": "t:sections.main-list-collections.name",
       "settings": {
-        "collections_to_show": "all",
+        "collections_to_show": "selected",
         "card_title_style": "card-single-text",
         "collection_product_count": "show",
         "collections_per_page": 12,
