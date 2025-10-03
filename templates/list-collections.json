@@ -153,6 +153,16 @@
         "collection_zDNLqr": {
           "type": "collection",
           "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "armaf",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_Hb3x3E": {
+          "type": "collection",
+          "settings": {
             "color_scheme": "scheme-1",
             "collection": "",
             "heading": "",
@@ -160,7 +170,167 @@
             "subheading": ""
           }
         },
-        "collection_Hb3x3E": {
+        "collection_RkBkqb": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_ad9a9L": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_8BLJMQ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_TQJxBU": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_6fd6ee": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_RakUFf": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_LyNVWk": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_G3CUVA": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_xH6N9V": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_N9wmL3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_QcrtTM": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_P7Tphk": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_DpkH4H": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_Tnw7wj": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_WyMbVb": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_iiHMNj": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_iUxYEK": {
           "type": "collection",
           "settings": {
             "color_scheme": "scheme-1",
@@ -184,7 +354,24 @@
         "collection_YpTULT",
         "collection_KfhzTR",
         "collection_zDNLqr",
-        "collection_Hb3x3E"
+        "collection_Hb3x3E",
+        "collection_RkBkqb",
+        "collection_ad9a9L",
+        "collection_8BLJMQ",
+        "collection_TQJxBU",
+        "collection_6fd6ee",
+        "collection_RakUFf",
+        "collection_LyNVWk",
+        "collection_G3CUVA",
+        "collection_xH6N9V",
+        "collection_N9wmL3",
+        "collection_QcrtTM",
+        "collection_P7Tphk",
+        "collection_DpkH4H",
+        "collection_Tnw7wj",
+        "collection_WyMbVb",
+        "collection_iiHMNj",
+        "collection_iUxYEK"
       ],
       "name": "t:sections.main-list-collections.name",
       "settings": {
