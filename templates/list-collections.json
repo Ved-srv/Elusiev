@@ -59,11 +59,44 @@
             "heading_size": "h4",
             "subheading": ""
           }
+        },
+        "collection_p3k3RG": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "afnan",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_QJCcK7": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_V6TdbQ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
         }
       },
       "block_order": [
         "collection_8X84yB",
-        "collection_jy3kwh"
+        "collection_jy3kwh",
+        "collection_p3k3RG",
+        "collection_QJCcK7",
+        "collection_V6TdbQ"
       ],
       "name": "t:sections.main-list-collections.name",
       "settings": {
