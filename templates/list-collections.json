@@ -520,21 +520,21 @@
             "subheading": ""
           }
         },
-        "collection_dFa3Cq": {
+        "collection_zQNXL7": {
           "type": "collection",
           "settings": {
             "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
-            "collection": "",
+            "collection": "franck-olivier",
             "heading": "",
             "heading_size": "h4",
             "subheading": ""
           }
         },
-        "collection_zQNXL7": {
+        "collection_KccQDj": {
           "type": "collection",
           "settings": {
-            "color_scheme": "scheme-1",
-            "collection": "",
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "french-avenue",
             "heading": "",
             "heading_size": "h4",
             "subheading": ""
@@ -590,8 +590,8 @@
         "collection_VR3CMm",
         "collection_iJcfgc",
         "collection_TCC6Nq",
-        "collection_dFa3Cq",
-        "collection_zQNXL7"
+        "collection_zQNXL7",
+        "collection_KccQDj"
       ],
       "name": "t:sections.main-list-collections.name",
       "settings": {
