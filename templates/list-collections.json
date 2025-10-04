@@ -1179,6 +1179,153 @@
     },
     "main_list_collections_PL37gC": {
       "type": "main-list-collections",
+      "blocks": {
+        "collection_4PeUeq": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "etat-libre",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_M6rexT": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "thierry-mugler",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_ekbKba": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "tiffany-co",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_NXx6Pe": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "tom-ford",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_RRTTD7": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "tommy-hilfiger",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_t8f4Y6": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "trussardi",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_QMaVjy": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "united-colors-of-benetton",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_QyMng3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "valentino",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_pBPNtr": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "versace-1",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_6Ef8Gi": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "viktor-rolf",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_hK9XqN": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "xerjoff",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_xPBJ7F": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "yves-saint-laurent",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_afFN3T": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "zimaya",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_4PeUeq",
+        "collection_M6rexT",
+        "collection_ekbKba",
+        "collection_NXx6Pe",
+        "collection_RRTTD7",
+        "collection_t8f4Y6",
+        "collection_QMaVjy",
+        "collection_QyMng3",
+        "collection_pBPNtr",
+        "collection_6Ef8Gi",
+        "collection_hK9XqN",
+        "collection_xPBJ7F",
+        "collection_afFN3T"
+      ],
       "name": "t:sections.main-list-collections.name",
       "settings": {
         "collections_to_show": "selected",
