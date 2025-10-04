@@ -611,7 +611,7 @@
       "type": "main-list-collections",
       "name": "t:sections.main-list-collections.name",
       "settings": {
-        "collections_to_show": "all",
+        "collections_to_show": "selected",
         "card_title_style": "card-single-text",
         "collection_product_count": "show",
         "collections_per_page": 12,
