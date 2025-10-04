@@ -609,6 +609,461 @@
     },
     "main_list_collections_m4mbXU": {
       "type": "main-list-collections",
+      "blocks": {
+        "collection_gaVkHf": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "giorgio-armani",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_aJ4T9U": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "givenchy",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_y8dCYr": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "goutal",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_NJ9QLB": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "gucci",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_3nnQyx": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "guerlain",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_pAj8MK": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "guess",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_DDMwtN": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "hermes",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_w8MWtb": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "hugo-boss",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_BQyrrk": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "issey-miyake",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_E983i6": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "jacques-bogart",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_xg4XkN": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "jaguar",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_W73bJE": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "jean-paul-gaultier",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_G7PB7M": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "jennifer-lopez",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_69fpwj": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "jimmy-choo",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_UYdpYf": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "jo-malone",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_ni84Uh": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "juliette-has-a-gun",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_R4xLYE": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "kenneth-cole",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_NyP9Jd": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "kenzo",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_LHMCg3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "khadlaj",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_tJB6r4": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "killian",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_MhUty3": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "lacoste",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_Jjy6CQ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "lalique",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_TNzJUf": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-e5836ac4-7147-42db-ad9b-edcd66ab517a",
+            "collection": "lattafa",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_BdgKfB": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_KKWbdG": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_Gb6GYY": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_VUnCCJ": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_yH4Qbx": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_zHNHNX": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_gmKezt": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_GRcLtK": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_XHDfdT": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_p9imfW": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_pVq99L": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_HGajGK": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_GQycQy": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_63aMaW": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_Cgn47i": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_XitQ3L": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_QXNUmn": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        },
+        "collection_QTMnEk": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "heading": "",
+            "heading_size": "h4",
+            "subheading": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_gaVkHf",
+        "collection_aJ4T9U",
+        "collection_y8dCYr",
+        "collection_NJ9QLB",
+        "collection_3nnQyx",
+        "collection_pAj8MK",
+        "collection_DDMwtN",
+        "collection_w8MWtb",
+        "collection_BQyrrk",
+        "collection_E983i6",
+        "collection_xg4XkN",
+        "collection_W73bJE",
+        "collection_G7PB7M",
+        "collection_69fpwj",
+        "collection_UYdpYf",
+        "collection_ni84Uh",
+        "collection_R4xLYE",
+        "collection_NyP9Jd",
+        "collection_LHMCg3",
+        "collection_tJB6r4",
+        "collection_MhUty3",
+        "collection_Jjy6CQ",
+        "collection_TNzJUf",
+        "collection_BdgKfB",
+        "collection_KKWbdG",
+        "collection_Gb6GYY",
+        "collection_VUnCCJ",
+        "collection_yH4Qbx",
+        "collection_zHNHNX",
+        "collection_gmKezt",
+        "collection_GRcLtK",
+        "collection_XHDfdT",
+        "collection_p9imfW",
+        "collection_pVq99L",
+        "collection_HGajGK",
+        "collection_GQycQy",
+        "collection_63aMaW",
+        "collection_Cgn47i",
+        "collection_XitQ3L",
+        "collection_QXNUmn",
+        "collection_QTMnEk"
+      ],
       "name": "t:sections.main-list-collections.name",
       "settings": {
         "collections_to_show": "selected",
